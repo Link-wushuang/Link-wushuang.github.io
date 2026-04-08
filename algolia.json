@@ -1,11 +1,5 @@
 [
   {
-    "objectID": "09ef54bdd02c531964c22bfd4a8468fe56bbcf5e",
-    "permalink": "/post/blog4/",
-    "title": "Blog4","content": "","date": "2026-04-08 21:18:29",
-    "updated": "2026-04-08 21:18:29"
-  }, 
-  {
     "objectID": "8c06bbc81d4976c7fa938f02c139ba5662de97bd",
     "permalink": "/post/blog3/",
     "title": "Hugo的Github配置","content": " Hugo的Github配置 一、博客部署 1.1 常规部署（必须先做1.1再做1.2） （这个就是后面更新需要手动更新，写完blog后先在cmd里面hugo server -D更新一下public文件夹，然后在将public通过git上传一下）\n登录你的Github账号，在repository界面新建一个仓库，仓库名为如下（用你自己的用户名代替,格式是username.github.io） 打开 /Blog/hugo.toml ，修改 baseurl为 https://Link-wushuang.github.io/，保存 删除 /Blog/public 文件夹，在 /Blog文件夹地址栏呼出的命令行处输入 hugo -D以生成新的 public文件夹 之后再依此输入以下代码：\ncd public # 若手动进 public文件夹则不用输这行 git init git add . git commit -m \u0026amp;#34;first commit\u0026amp;#34; git branch -M main git remote add origin https://github.com/Link-wushuang/Link-wushuang.github.io.git # 记得改成自己的username git push -u origin main # 若失败则把 -u 改为 -f ,这里需要科学上网，我是还要再来一个tun模式 待显示100%进度后，刷新github界面，此时能看到正在运行的仓库，点击 Settings，点击 Pages,在本页面可看到地址，如 Your site is live at https://link-wushuang.github.io/ ，即表示部署成功 1.2 自动部署 （相较于手动发布网站，用Github Actions自动发布网站达成的效果是，每次需更新网站时，只需将Blog文件夹上传到hugo-blog仓库中，之后Github自动就会更新\u0026amp;lt;username\u0026amp;gt;.github.io仓库中的内容，无需手动将public文件夹上传到\u0026amp;lt;username\u0026amp;gt;.github.io仓库中）\n新建一个仓库，可以设置成private 在 /Blog 中新建文件 .gitignore，打开文件，将以下内容复制到文件中后保存,（这里注意将之 …","date": "2026-04-08 00:02:01",
