@@ -1,0 +1,25 @@
+[
+  {
+    "objectID": "09ef54bdd02c531964c22bfd4a8468fe56bbcf5e",
+    "permalink": "/post/blog4/",
+    "title": "Blog4","content": "","date": "2026-04-08 21:18:29",
+    "updated": "2026-04-08 21:18:29"
+  }, 
+  {
+    "objectID": "8c06bbc81d4976c7fa938f02c139ba5662de97bd",
+    "permalink": "/post/blog3/",
+    "title": "Hugo的Github配置","content": " Hugo的Github配置 一、博客部署 1.1 常规部署（必须先做1.1再做1.2） （这个就是后面更新需要手动更新，写完blog后先在cmd里面hugo server -D更新一下public文件夹，然后在将public通过git上传一下）\n登录你的Github账号，在repository界面新建一个仓库，仓库名为如下（用你自己的用户名代替,格式是username.github.io） 打开 /Blog/hugo.toml ，修改 baseurl为 https://Link-wushuang.github.io/，保存 删除 /Blog/public 文件夹，在 /Blog文件夹地址栏呼出的命令行处输入 hugo -D以生成新的 public文件夹 之后再依此输入以下代码：\ncd public # 若手动进 public文件夹则不用输这行 git init git add . git commit -m \u0026amp;#34;first commit\u0026amp;#34; git branch -M main git remote add origin https://github.com/Link-wushuang/Link-wushuang.github.io.git # 记得改成自己的username git push -u origin main # 若失败则把 -u 改为 -f ,这里需要科学上网，我是还要再来一个tun模式 待显示100%进度后，刷新github界面，此时能看到正在运行的仓库，点击 Settings，点击 Pages,在本页面可看到地址，如 Your site is live at https://link-wushuang.github.io/ ，即表示部署成功 1.2 自动部署 （相较于手动发布网站，用Github Actions自动发布网站达成的效果是，每次需更新网站时，只需将Blog文件夹上传到hugo-blog仓库中，之后Github自动就会更新\u0026amp;lt;username\u0026amp;gt;.github.io仓库中的内容，无需手动将public文件夹上传到\u0026amp;lt;username\u0026amp;gt;.github.io仓库中）\n新建一个仓库，可以设置成private 在 /Blog 中新建文件 .gitignore，打开文件，将以下内容复制到文件中后保存,（这里注意将之 …","date": "2026-04-08 00:02:01",
+    "updated": "2026-04-08 00:02:01"
+  }, 
+  {
+    "objectID": "f49b0c0bfcaaf4ef0680c6d87670c24bddfaf8af",
+    "permalink": "/post/blog2/",
+    "title": "Hugo 主题设置","content": " Hugo 主题设置 想要一个美妙的个人博客页面吗，那就来这里吧，嘻嘻\n1. 主题设置 1.1 多语言i18n配置 打开 /Blog/config/_default/params.yml，自定义配置 name和 url，修改完后保存\n打开 /Blog/i18n 文件夹内对应语言的 .yml文件，开启几个就把对应部分都改了(这边可以复制theme里面的i18n，需要哪几个语言就复制哪几个)\n[假设我设置了上方的hugo.toml内的三种语言：简体中文、English，接下来我要为这两种语言配置i18n]\nen.yml部分：\nzh-CN.yml部分：\n1.2 核心设置 本节将讲解该主题的核心配置文件params.yml，将代码一段一段分析功能，助你顺利完成配置\n进入 /Blog/config/_default/params.yml后，请按以下说明进行自定义设置\n代码篇幅非常长，请仔细阅读代码后再做操作，中英文注释很详细，想准确配置一定要看！！\n{ {\u0026amp;lt; details summary=\u0026amp;quot;超级长的代码讲解，仔细看\u0026amp;quot; \u0026amp;gt;} } menu: # 此部分设置菜单文字及图标，前面已有教程说明如何配置此板块 - name: home url: \u0026amp;quot;\u0026amp;quot; icon: \u0026#39;e617\u0026#39; # 可前往 https://github.com/D-Sketon/hexo-theme-reimu/issues/30 选择想要的图标，注意应选iconfont列而非fontawesome列 - name: archives url: \u0026amp;quot;sort\u0026amp;quot; icon: \u0026#39;e63d\u0026#39; - name: about url: \u0026amp;quot;about\u0026amp;quot; icon: \u0026#39;e643\u0026#39; - name: friend url: \u0026amp;quot;friend\u0026amp;quot; icon: \u0026#39;e621\u0026#39; - name: link url: \u0026amp;quot;link\u0026amp;quot; icon: \u0026#39;e639\u0026#39; mainSections: [\u0026amp;quot;post\u0026amp;quot;] # 此栏为时间的显示格式，可不改 yearFormat: \u0026amp;quot;2006\u0026amp;quot; monthFormat: \u0026amp;quot;2006-01\u0026amp;quot; dateFormat: …","date": "2026-04-03 10:12:34",
+    "updated": "2026-04-03 10:12:34"
+  }, 
+  {
+    "objectID": "29c27b4f4fd87ad7a1d3238fcfe52aabeffd8a38",
+    "permalink": "/post/blog1/",
+    "title": "Hugo + GitHub 个人博客搭建教程","content": " Hugo + GitHub 个人博客搭建教程 从零开始，手把手教你使用 Hugo 静态网站生成器搭建个人博客，包括环境准备、博客创建、主题配置等完整流程 一、环境准备 在开始搭建博客之前，我们需要准备两个必要的工具：Git 和 Hugo。\n1.1 安装 Git Git 是一个版本控制工具，用于管理我们的博客源码。\n下载步骤：\n访问 Git 官网 下载适合你操作系统的安装程序 运行安装程序，保持默认设置，一路点击\u0026amp;quot;下一步\u0026amp;quot;即可 安装完成后，打开命令行输入 git --version，如果显示版本号则说明安装成功。\n1.2 下载 Hugo Hugo 是一个用 Go 语言编写的静态网站生成器，以速度快、配置简单著称。\n下载步骤：\n访问 Hugo Releases 页面 选择适合版本的 hugo_extended 版本（Extended 版本支持 SCSS/SASS） 根据你的操作系统选择对应的压缩包下载 ![屏幕截图 2026-04-01 194626](index.assets/屏幕截图 2026-04-01 194626.png)\n我选择的是 hugo_extended_0.159.1_windows-amd64.zip，至于下面的withdeploy貌似是可以更高效的进行配置和部署的，但是我不太会用，所以还是算了吧。。。\n![屏幕截图 2026-04-01 194650](index.assets/屏幕截图 2026-04-01 194650.png)\n下载好压缩包后，先在D盘新建一个hugo文件夹，再在hugo文件夹里再新建一个bin文件夹\n接下来将hugo压缩包解压至bin目录下\n打开环境变量管理器，在Path里面添加hugo.exe的路径\n接下来就是win+R打开cmd，输入hugo version，如果显示版本号就说明hugo安装成功了 ![屏幕截图 2026-04-01 200202](index.assets/屏幕截图 2026-04-01 200202.png)\n二、搭建博客 2.1 创建博客项目 步骤 1：打开命令行\n在D:hugo目录的地址栏输入 cmd，然后按 Enter 键打开命令行窗口。\n步骤 2：创建新站点\n在命令行中输入hugo new site Blog（将 Blog 替换为你想要的博客名称）：\n可以看到你已经新建 …","date": "2026-04-03 09:12:34",
+    "updated": "2026-04-03 09:12:34"
+  }]

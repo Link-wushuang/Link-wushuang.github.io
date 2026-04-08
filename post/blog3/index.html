@@ -1,0 +1,788 @@
+<!doctype html>
+<html
+  lang="zh-CN" 
+  data-theme-mode="true"
+  >
+  <head><meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/><title>
+  Hugo的Github配置 | Link-wushuang
+</title>
+<meta name="description" content="少女祈祷中..."/><script>
+  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"https://Link-wushuang.github.io/\",\"clipboard\":{\"copyright\":{\"count\":50,\"enable\":false,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"pt-br\":\"Falha ao copiar (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"pt-br\":\"Copiado com sucesso (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"expand\":true},\"i18n_languages\":[{\"Lang\":\"zh-cn\",\"Title\":\"辉夜\",\"Weight\":1,\"Disabled\":false,\"Direction\":\"\",\"Label\":\"简体中文\",\"Locale\":\"zh-CN\"},{\"Lang\":\"en\",\"Title\":\"辉夜\",\"Weight\":2,\"Disabled\":false,\"Direction\":\"\",\"Label\":\"English\",\"Locale\":\"en\"}],\"icon_font\":\"4552607_a0oqhord1y\",\"outdate\":{\"daysago\":180,\"enable\":false,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"pt-br\":\"Este artigo foi atualizado pela última vez em {time}. Observe que o conteúdo pode não ser mais aplicável.\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"}}}");
+  
+</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7cNoto%20Serif%20SC:400,400italic,700,700italic%7c&amp;display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7cNoto%20Serif%20SC:400,400italic,700,700italic%7c&amp;display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<link
+    rel="preload"
+    href="//at.alicdn.com/t/c/font_4552607_a0oqhord1y.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  /><link rel="stylesheet" href="/css/loader.min.ac746e154f756f8220326eeb52a719f142ab038be5a8ddf30ea5ef15ef2356ea.css" /><meta property="og:type" content="website" />
+  <meta property="og:title" content="Hugo的Github配置 | Link-wushuang" />
+  <meta
+    property="og:description"
+    content="少女祈祷中..."
+  />
+  <meta property="og:url" content="https://Link-wushuang.github.io/post/blog3/" />
+  <meta
+    property="og:site_name"
+    content="辉夜"
+  />
+  <meta property="og:image" content="https://Link-wushuang.github.io/images/banner3.jpg" />
+  <meta property="article:author" content="Link-wushuang" />
+  <meta property="article:published_time" content="2026-04-08T00:02:01&#43;08:00" />
+  <meta property="article:modified_time" content="2026-04-08T00:02:01&#43;08:00" /><meta property="article:tag" content="Hugo" /><meta name="twitter:card" content="summary" /><meta name="twitter:image" content="https://Link-wushuang.github.io/images/banner3.jpg" />
+<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.min.ee882c107fc52cf080edb31386f83bda14d639970efd0bdaf45256cb29b6595e.css" /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
+    integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"
+    onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/katex@0.16.24/dist/katex.min.css"
+    integrity="sha384-tTgKLjMYmJr94v8qu2PE5MUGSMbyN2xiH266JUB3gpm8vnnJywd1dWSOEfrFz&#43;YI" crossorigin="anonymous"
+    onload="this.onload=null;this.rel='stylesheet'"
+  /><script
+    src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
+    
+    
+    
+    
+    integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@reimujs/aos@0.1.2/dist/aos.css"
+    integrity="sha384-GMRP93c6Hkz9JVKGAuRR3nTS7M07RwPgTFenXiosjq2VbVgvdDNcz1g6Mkj8AONa" crossorigin="anonymous"/></head>
+  <body><div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate"><svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg></div><div class="loading-word">少女祈祷中...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var loaderEl = document.getElementById('loader');
+    var startLoading = () => {
+      time = Date.now();
+      loaderEl.classList.remove("loading");
+    }
+    var hideLoader = () => {
+      document.body.style.overflow = 'auto';
+      loader.classList.add('loading');
+    };
+
+    var endLoading = () => {
+      if (!time) {
+        hideLoader();
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          hideLoader();
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    loaderEl.addEventListener('click', endLoading);
+  </script><div id="copy-tooltip"></div>
+<div id="lang-tooltip">
+本文章没有找到对应的语言版本
+</div>
+<div id="heatmap-tooltip"></div><div id="container">
+      <div id="wrap"><div id="header-nav">
+  <nav id="main-nav" aria-label="Primary navigation"><a class="main-nav-link-wrap" href="/"><div class='main-nav-icon icon '>&#xe617;</div><span class="main-nav-link">首页</span>
+      </a><a class="main-nav-link-wrap" href="/archives"><div class='main-nav-icon icon '>&#xe63d;</div><span class="main-nav-link">归档</span>
+      </a><a class="main-nav-link-wrap" href="/about"><div class='main-nav-icon icon '>&#xe643;</div><span class="main-nav-link">关于</span>
+      </a><a class="main-nav-link-wrap" href="/friend"><div class='main-nav-icon icon '>&#xe621;</div><span class="main-nav-link">友链</span>
+      </a><a class="main-nav-link-wrap" href="/link"><div class='main-nav-icon icon '>&#xe639;</div><span class="main-nav-link">更多</span>
+      </a><a id="main-nav-toggle" class="nav-icon" aria-label="Toggle navigation" role="button"></a>
+  </nav>
+  <nav id="sub-nav" aria-label="Secondary navigation"></nav><nav id="i18n-nav" aria-label="Language selection">
+      <div class="custom-dropdown">
+        <div class="select-selected" id="select-selected" role="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Language menu">
+          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
+          <span id="selected-lang">简体中文</span>
+        </div>
+        <ul class="select-items" id="select-items" role="listbox" aria-label="Languages"><li data-value="zh-cn" role="option" class="selected" aria-selected="true" >简体中文</li><li data-value="en" role="option" aria-selected="false" >English</li></ul>
+      </div>
+      <script>
+        var selectSelected = document.getElementById("select-selected");
+        var selectedLang = document.getElementById("selected-lang");
+        var selectItems = document.getElementById("select-items");
+        var selectOptions = selectItems.querySelectorAll("li");
+
+        selectSelected.addEventListener("click", () => {
+          selectItems.classList.toggle("show");
+          var expanded = selectSelected.getAttribute("aria-expanded") === "true";
+          selectSelected.setAttribute("aria-expanded", (!expanded).toString());
+        });
+
+        selectOptions.forEach((item) => {
+          item.addEventListener("click", () => {
+            const langMap = {};selectedLang.textContent = item.textContent;
+            selectItems.classList.remove("show");
+            selectOptions.forEach((option) => {
+              option.classList.remove("selected");
+            });
+            item.classList.add("selected");
+            if (item.dataset.value === 'zh-cn') {
+              return;
+            }
+            if (!langMap[item.dataset.value]) {
+              _$("#lang-tooltip").style.opacity = "1";
+              setTimeout(() => {
+                _$("#lang-tooltip").style.opacity = "0";
+              }, 1000);
+              return;
+            }
+            window.location = langMap[item.dataset.value];
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".custom-dropdown")) {
+            selectItems.classList.remove("show");
+            selectSelected.setAttribute("aria-expanded", "false");
+          }
+        });
+      </script>
+    </nav><a href="https://github.com/Link-wushuang" class="triangle-badge" title="github" target="_blank" rel="noopener nofollow noreferrer">
+      <div class="icon icon-github triangle-badge-icon"></div>
+    </a></div>
+<header id="header" aria-label="Site header"><picture></picture>
+        <img  fetchpriority="high" src="/images/banner3.jpg" alt="Hugo的Github配置"><div id="header-outer">
+    <div id="header-title"><span id="logo">
+            <h1 data-aos="slide-up">Hugo的Github配置</h1>
+          </span><h2 id="subtitle-wrap" data-aos="slide-down"></h2></div>
+  </div>
+</header><div id="content"
+          aria-label="Page content"
+          class="sidebar-left"
+            ><aside id="sidebar" aria-label="Sidebar"><div class="sidebar-wrapper-container sticky"><div class="sidebar-wrapper">
+    <div
+      class="sidebar-wrap"
+      data-aos="fade-up"
+    ><div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ol>
+    <li><a href="#hugo的github配置">Hugo的Github配置</a>
+      <ol>
+        <li><a href="#一博客部署">一、博客部署</a>
+          <ol>
+            <li><a href="#11-常规部署必须先做11再做12">1.1 常规部署（<strong>必须先做1.1再做1.2</strong>）</a></li>
+            <li><a href="#12-自动部署">1.2 自动部署</a></li>
+          </ol>
+        </li>
+        <li><a href="#二想使用自定义域名">二、想使用自定义域名？</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.png"
+    data-sizes="auto"
+    alt="Link-wushuang"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Link-wushuang</div>
+  <div class="sidebar-description">少女祈祷中...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div><div class="sidebar-state-number">4</div>
+  </div>
+  <a class="sidebar-state-category" href="/categories/" aria-label="sidebar-state-category-link">
+    <div>分类</div>
+    <div class="sidebar-state-number">
+      2
+    </div>
+  </a>
+  <a class="sidebar-state-tag" href="/tags/" aria-label="sidebar-state-tag-link">
+    <div>标签</div>
+    <div class="sidebar-state-number">1</div>
+  </a>
+</div>
+<div class="sidebar-social" ><div class="icon-bilibili sidebar-social-icon">
+        <a
+          href="https://space.bilibili.com/3546753779370552?spm_id_from=333.1007.0.0"
+          itemprop="url"
+          target="_blank"
+          aria-label="bilibili"
+          rel="noopener nofollow noreferrer"
+        ></a>
+      </div><div class="icon-email sidebar-social-icon">
+        <a
+          href="mailto:jingefeng6@gmail.com"
+          itemprop="url"
+          target="_blank"
+          aria-label="email"
+          rel="noopener nofollow noreferrer"
+        ></a>
+      </div><div class="icon-github sidebar-social-icon">
+        <a
+          href="https://github.com/Link-wushuang"
+          itemprop="url"
+          target="_blank"
+          aria-label="github"
+          rel="noopener nofollow noreferrer"
+        ></a>
+      </div></div><div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/"
+        aria-label="首页"
+      ></a><div class='sidebar-menu-icon icon '>&#xe617;</div><div class="sidebar-menu-link">首页</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/archives"
+        aria-label="归档"
+      ></a><div class='sidebar-menu-icon icon '>&#xe63d;</div><div class="sidebar-menu-link">归档</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/about"
+        aria-label="关于"
+      ></a><div class='sidebar-menu-icon icon '>&#xe643;</div><div class="sidebar-menu-link">关于</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/friend"
+        aria-label="友链"
+      ></a><div class='sidebar-menu-icon icon '>&#xe621;</div><div class="sidebar-menu-link">友链</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/link"
+        aria-label="更多"
+      ></a><div class='sidebar-menu-icon icon '>&#xe639;</div><div class="sidebar-menu-link">更多</div>
+    </div></div></div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div><div class="sidebar-widget"></div></div></aside>
+<section id="main" aria-label="Main content"><article
+  class="h-entry article"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
+  <div
+    class="article-inner"
+    data-aos="fade-up"
+  >
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link icon-calendar"
+    data-aos="zoom-in"
+  >
+    <time datetime="2026-04-08 00:02:01 &#43;0800 CST" itemprop="datePublished"
+      >2026-04-08</time
+    >
+    <time style="display: none;" id="post-update-time"
+      >2026-04-08</time
+    >
+  </span><span
+      class="article-date-link icon-calendar-plus"
+      data-aos="zoom-in"
+    >
+      <time datetime="2026-04-08 00:02:01 &#43;0800 CST" itemprop="dateModified"
+        >2026-04-08</time
+      >
+    </span></div>
+</div><div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><h1 id="hugo的github配置">
+<a class="header-anchor" href="#hugo%e7%9a%84github%e9%85%8d%e7%bd%ae"></a>
+Hugo的Github配置
+</h1><h2 id="一博客部署">
+<a class="header-anchor" href="#%e4%b8%80%e5%8d%9a%e5%ae%a2%e9%83%a8%e7%bd%b2"></a>
+一、博客部署
+</h2><h3 id="11-常规部署必须先做11再做12">
+<a class="header-anchor" href="#11-%e5%b8%b8%e8%a7%84%e9%83%a8%e7%bd%b2%e5%bf%85%e9%a1%bb%e5%85%88%e5%81%9a11%e5%86%8d%e5%81%9a12"></a>
+1.1 常规部署（<strong>必须先做1.1再做1.2</strong>）
+</h3><p>（这个就是后面更新需要手动更新，写完<code>blog</code>后先在<code>cmd</code>里面<code>hugo server -D</code>更新一下<code>public</code>文件夹，然后在将<code>public</code>通过<code>git</code>上传一下）</p>
+<ol>
+<li>登录你的<code>Github</code>账号，在<code>repository</code>界面新建一个仓库，仓库名为如下（用你自己的用户名代替,格式是<code>username.github.io</code>）</li>
+</ol>
+<p><img src="/post/blog3/index.assets/image-20260402211253950.png" alt="image-20260402211253950"></p>
+<ol start="2">
+<li>打开<code> /Blog/hugo.toml</code> ，修改<code> baseurl</code>为 <code>https://Link-wushuang.github.io/</code>，保存</li>
+</ol>
+<p><img src="/post/blog3/index.assets/image-20260402211632739.png" alt="image-20260402211632739"></p>
+<ol start="3">
+<li>删除 <code>/Blog/public</code> 文件夹，在 <code>/Blog</code>文件夹地址栏呼出的命令行处输入 <code>hugo -D</code>以生成新的 <code>public</code>文件夹</li>
+</ol>
+<p><img src="/post/blog3/index.assets/image-20260402211839826.png" alt="image-20260402211839826"></p>
+<p>之后再依此输入以下代码：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd public                    # 若手动进 public文件夹则不用输这行
+</span></span><span class="line"><span class="cl">git init
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m &#34;first commit&#34;
+</span></span><span class="line"><span class="cl">git branch -M main
+</span></span><span class="line"><span class="cl">git remote add origin https://github.com/Link-wushuang/Link-wushuang.github.io.git     # 记得改成自己的username
+</span></span><span class="line"><span class="cl">git push -u origin main                         # 若失败则把 -u 改为 -f ,这里需要科学上网，我是还要再来一个tun模式
+</span></span></code></pre></div><ol>
+<li>待显示100%进度后，刷新<code>github</code>界面，此时能看到正在运行的仓库，点击 <code>Settings</code>，点击 <code>Pages</code>,在本页面可看到地址，如 <code>Your site is live at https://link-wushuang.github.io/</code> ，即表示部署成功</li>
+</ol>
+<p><img src="/post/blog3/index.assets/image-20260402214300593.png" alt="image-20260402214300593"></p>
+<p><img src="/post/blog3/index.assets/image-20260402214518264.png" alt="image-20260402214518264"></p>
+<h3 id="12-自动部署">
+<a class="header-anchor" href="#12-%e8%87%aa%e5%8a%a8%e9%83%a8%e7%bd%b2"></a>
+1.2 自动部署
+</h3><p>（相较于手动发布网站，用<code>Github Actions</code>自动发布网站达成的效果是，每次需更新网站时，只需将<code>Blog</code>文件夹上传到<code>hugo-blog</code>仓库中，之后<code>Github</code>自动就会更新<code>&lt;username&gt;.github.io</code>仓库中的内容，无需手动将<code>public</code>文件夹上传到<code>&lt;username&gt;.github.io</code>仓库中）</p>
+<ol>
+<li>新建一个仓库，可以设置成<code>private</code></li>
+</ol>
+<p><img src="/post/blog3/index.assets/image-20260408130606769.png" alt="image-20260408130606769"></p>
+<ol start="2">
+<li>在 <code>/Blog</code> 中新建文件<code> .gitignore</code>，打开文件，将以下内容复制到文件中后保存,（这里注意将之前放在<code>bin</code>文件夹的<code>hugo.exe</code>复制到<code>/Blog</code>目录下，不确定如果不复制有没有问题）</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public
+</span></span><span class="line"><span class="cl">resources
+</span></span><span class="line"><span class="cl">.hugo_build.lock
+</span></span><span class="line"><span class="cl">hugo.exe
+</span></span></code></pre></div><p><img src="/post/blog3/index.assets/image-20260402215733410.png" alt="image-20260402215733410"></p>
+<ol start="3">
+<li>在 <code>/Blog</code> 内创建 <code>.github</code>文件夹，在 <code>.github</code>文件夹内创建 <code>workflows</code>文件夹，在 <code>workflows</code>文件夹内新建文件 <code>hugo_deploy.yaml</code>，将以下代码复制到文件中后保存</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-hugo_deploy.yaml" data-lang="hugo_deploy.yaml"><span class="line"><span class="cl"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">deploy</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="c"># 代码提交到main分支时触发github action</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">on</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">main</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">jobs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">deploy</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Checkout</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v4</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="nt">fetch-depth</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Setup Hugo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-hugo@v3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="nt">hugo-version</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;latest&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="nt">extended</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Build Web</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">hugo -D</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy Web</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-gh-pages@v4</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="nt">PERSONAL_TOKEN</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.TOKEN }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="nt">EXTERNAL_REPOSITORY</span><span class="p">:</span><span class="w"> </span><span class="l">Link-wushuang/Link-wushuang.github.io            </span><span class="w"> </span><span class="c"># 记得改，不然运行不了</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="nt">PUBLISH_BRANCH</span><span class="p">:</span><span class="w"> </span><span class="l">main</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="nt">PUBLISH_DIR</span><span class="p">:</span><span class="w"> </span><span class="l">./public</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="nt">commit_message</span><span class="p">:</span><span class="w"> </span><span class="l">auto deploy</span><span class="w">
+</span></span></span></code></pre></div><ol start="4">
+<li>在仓库界面点击头像，点击 <code>Settings</code>，下滑至<strong>侧边栏</strong>的最底下，点击 <code>Developer settings</code>，点击 <code>Personal access tokens</code>，点击显示的 <code>Token(classic)</code>，点击 <code>Generate new token</code>，点击<code>Generate new token(classic)</code></li>
+</ol>
+<p><img src="/post/blog3/index.assets/image-20260402221421724.png" alt="image-20260402221421724"></p>
+<ol start="5">
+<li>验证用户，可选输入 <code>Note</code>，<code>Expiration</code> 选择 <code>no expiration</code>，<code>Select scopes</code>勾选 <code>repo</code>的全部和 <code>workflow</code>，下滑到最后点击<code>Generate token</code>，<strong>非常重要</strong>，生成的密钥一定要复制保存，只显示一次！！！</li>
+</ol>
+<p><img src="/post/blog3/index.assets/image-20260402221838383.png" alt="image-20260402221838383"></p>
+<ol start="6">
+<li>返回创建的仓库页面，点击<code>Settings</code>，下滑，在侧边栏找到 <code>Security</code>内的 <code>Secret and variables</code>，点击<code>Actions</code>，</li>
+</ol>
+<p><img src="/post/blog3/index.assets/image-20260408131337644.png" alt="image-20260408131337644"></p>
+<ol start="7">
+<li>在 <code>Repository secrets</code>处点击 <code>New repository secret</code>，按下方模板填写，填写完成后点击 <code>Add secret</code></li>
+</ol>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Name*</th>
+          <th style="text-align: center">Secret*</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">TOKEN</td>
+          <td style="text-align: center">ghp_xxxxxxxxxxxxxxxxxxxxxx</td>
+      </tr>
+  </tbody>
+</table>
+<p>上方的 <code>ghp_xxxxxxxxxxxxxxxxx</code>为刚刚第4步生成的密钥粘贴在这,之后可以看到已经成功生成<code>Token</code>这个东东</p>
+<p><img src="/post/blog3/index.assets/image-20260402222340380.png" alt="image-20260402222340380"></p>
+<ol start="8">
+<li>在 <code>/Blog</code>文件夹的地址栏输入<code>cmd</code>呼出命令行，根据具体情况分别输入以下代码（ <strong>看清楚适用的情况，爆红了自己检查</strong>），为确保上传成功，请常开代理</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#######################
+</span></span><span class="line"><span class="cl">以下代码用于首次使用自动部署时
+</span></span><span class="line"><span class="cl">#######################
+</span></span><span class="line"><span class="cl">git init
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m &#34;update&#34;
+</span></span><span class="line"><span class="cl">git branch -M main
+</span></span><span class="line"><span class="cl">git remote add origin https://github.com/Link-wushuang/hugo-blog.git     # 记得改成自己的username
+</span></span><span class="line"><span class="cl">git push -u origin main         # 若失败则输入 `git push -f origin main`
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#######################
+</span></span><span class="line"><span class="cl">以下代码用于已完成第一次自动部署时
+</span></span><span class="line"><span class="cl">#######################
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m &#34;update&#34;
+</span></span><span class="line"><span class="cl">git push                        # 若失败则输入 `git push -u origin main` 或 `git push -f origin main` 
+</span></span></code></pre></div><ol start="9">
+<li>返回 <code>Github</code>界面，点击 <code>Action</code>，当看到当前两个工作流（网页显示<code>workflow</code>）成功运行，显示地址时即可返回<code>.github.io</code>那个仓库的<code>pages</code>查看博客</li>
+</ol>
+<p><img src="/post/blog3/index.assets/image-20260402233919621.png" alt="image-20260402233919621"></p>
+<h2 id="二想使用自定义域名">
+<a class="header-anchor" href="#%e4%ba%8c%e6%83%b3%e4%bd%bf%e7%94%a8%e8%87%aa%e5%ae%9a%e4%b9%89%e5%9f%9f%e5%90%8d"></a>
+二、想使用自定义域名？
+</h2><p>如果想使用其他域名，请参考以下配置，以Cloudflare和华为云为例，其他域名服务商的配置可能有所不同</p>
+<p>配置域名方法：</p>
+<ol>
+<li>
+<p>首先你需要买一个域名</p>
+</li>
+<li>
+<p>在Cloudflare处完成主域名解析，比如在 Cloudflare内解析了一个主域名如 <code>example.com</code>，在执行以下操作前决定好博客要用什么域名，比如 <code>blog.example.com</code>，注意，此处应为二级域名，且仅能为二级域名，其他级别的域名都会绑不上华为云或后续绑好后无法访问博客</p>
+</li>
+<li>
+<p>打开你的梯子且 <strong>一定要开全局！！</strong>，否则注册的是国区而非国际区，之后打开<a href="https://www.huaweicloud.com/intl/zh-cn/">华为云</a>官网，注册账号，用邮箱注册即可，中途如果需要你做登录验证的点选&quot;我已知悉&quot;后点&quot;暂不开启&quot;，需要你绑定手机号的一律跳过！！</p>
+</li>
+<li>
+<p>进入控制台后，在 我的资源 栏点击 公网域名 ，添加域名为刚第 1 步决定好的域名，添加成功后按下面模板分别在 Cloudflare和华为云内配置</p>
+</li>
+<li>
+<p>在 Github 的 Setting - Pages页面，下滑找到 Custom domain，输入域名，点击 Save，再是<strong>一定要可勾选</strong> “Enforce HTTPS”，等待生效即可。若点了 Save，Enforce HTTPS为灰色的不可勾选状态就是有地方配置错了，返回去检查.</p>
+</li>
+<li>
+<p>这样配置完成后，访问域名 <code>https://blog.example.com</code>即可进入博客啦~</p>
+</li>
+</ol>
+</div>
+    <footer class="article-footer"><ul class="article-category-list"><li class="article-tag-list-item" data-aos="zoom-in">
+    <a
+      class="article-category-link"
+      href="/categories/%e8%be%89%e5%a4%9c"
+      data-aos="zoom-in"
+      >辉夜</a
+    >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+    <a
+      class="article-category-link"
+      href="/categories/%e6%b5%b7%e6%a2%a6"
+      data-aos="zoom-in"
+      >海梦</a
+    >
+    </li></ul>
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/tags/hugo"
+        rel="tag"
+        >Hugo</a
+      >
+    </li></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    aria-label="Article navigation"
+    data-aos="fade-up"
+  ><div class="article-nav-link-wrap left"><img
+              data-src="/images/banner2.jpg"
+              data-sizes="auto"
+              alt="Hugo 主题设置"
+              class="lazyload"
+            /><a
+          href="/post/blog2/"
+          aria-label="前一篇:Hugo 主题设置"
+          title="前一篇:Hugo 主题设置"
+        ></a>
+        <div class="article-nav-caption">前一篇</div>
+        <h3 class="article-nav-title">Hugo 主题设置</h3>
+      </div><div class="article-nav-link-wrap right"><img
+              data-src="/images/banner2.jpg"
+              data-sizes="auto"
+              alt="Blog4"
+              class="lazyload"
+            /><a
+          href="/post/blog4/"
+          aria-label="后一篇:Blog4"
+          title="后一篇:Blog4"
+        ></a>
+        <div class="article-nav-caption">后一篇</div>
+        <h3 class="article-nav-title">Blog4</h3>
+      </div></nav></article></section>
+        </div><footer id="footer" aria-label="Site footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info"><div>
+      <span class="icon-copyright"></span>2025-2026<span class="footer-info-sep rotate"></span>Link-wushuang
+    </div><div>
+        基于&nbsp;<a
+          href="https://gohugo.io/"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+          >Hugo</a
+        >&nbsp;Theme.<a
+          href="https://github.com/D-Sketon/hugo-theme-reimu"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+          >Reimu</a
+        >
+      </div><div>
+        <span class="icon-brush"
+          >&nbsp;8.9k</span
+        >
+        &nbsp;|&nbsp;
+        <span class="icon-coffee">&nbsp;00:19</span>
+      </div></div>
+</footer>
+<div class="sidebar-top">
+            <div class="sidebar-top-taichi "></div>
+            <div class="arrow-up"></div>
+          </div><div id="mask" class="hide"></div>
+      </div><nav id="mobile-nav" aria-label="Mobile navigation">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ol>
+    <li><a href="#hugo的github配置">Hugo的Github配置</a>
+      <ol>
+        <li><a href="#一博客部署">一、博客部署</a>
+          <ol>
+            <li><a href="#11-常规部署必须先做11再做12">1.1 常规部署（<strong>必须先做1.1再做1.2</strong>）</a></li>
+            <li><a href="#12-自动部署">1.2 自动部署</a></li>
+          </ol>
+        </li>
+        <li><a href="#二想使用自定义域名">二、想使用自定义域名？</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.png"
+    data-sizes="auto"
+    alt="Link-wushuang"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Link-wushuang</div>
+  <div class="sidebar-description">少女祈祷中...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div><div class="sidebar-state-number">4</div>
+  </div>
+  <a class="sidebar-state-category" href="/categories/" aria-label="sidebar-state-category-link">
+    <div>分类</div>
+    <div class="sidebar-state-number">
+      2
+    </div>
+  </a>
+  <a class="sidebar-state-tag" href="/tags/" aria-label="sidebar-state-tag-link">
+    <div>标签</div>
+    <div class="sidebar-state-number">1</div>
+  </a>
+</div>
+<div class="sidebar-social" ><div class="icon-bilibili sidebar-social-icon">
+        <a
+          href="https://space.bilibili.com/3546753779370552?spm_id_from=333.1007.0.0"
+          itemprop="url"
+          target="_blank"
+          aria-label="bilibili"
+          rel="noopener nofollow noreferrer"
+        ></a>
+      </div><div class="icon-email sidebar-social-icon">
+        <a
+          href="mailto:jingefeng6@gmail.com"
+          itemprop="url"
+          target="_blank"
+          aria-label="email"
+          rel="noopener nofollow noreferrer"
+        ></a>
+      </div><div class="icon-github sidebar-social-icon">
+        <a
+          href="https://github.com/Link-wushuang"
+          itemprop="url"
+          target="_blank"
+          aria-label="github"
+          rel="noopener nofollow noreferrer"
+        ></a>
+      </div></div><div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/"
+        aria-label="首页"
+      ></a><div class='sidebar-menu-icon icon '>&#xe617;</div><div class="sidebar-menu-link">首页</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/archives"
+        aria-label="归档"
+      ></a><div class='sidebar-menu-icon icon '>&#xe63d;</div><div class="sidebar-menu-link">归档</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/about"
+        aria-label="关于"
+      ></a><div class='sidebar-menu-icon icon '>&#xe643;</div><div class="sidebar-menu-link">关于</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/friend"
+        aria-label="友链"
+      ></a><div class='sidebar-menu-icon icon '>&#xe621;</div><div class="sidebar-menu-link">友链</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/link"
+        aria-label="更多"
+      ></a><div class='sidebar-menu-icon icon '>&#xe639;</div><div class="sidebar-menu-link">更多</div>
+    </div></div></div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
+</div><script
+    src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
+    
+    
+    
+    
+    integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
+    
+    
+    
+    
+    integrity="sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script><script src="/js/main.js" integrity="" crossorigin="anonymous"  ></script><script src="/js/aos.js" integrity="" crossorigin="anonymous"  ></script><script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", aosInit);
+    } else {
+      aosInit();
+    }
+  </script><script src="/js/pjax_main.js" integrity="" crossorigin="anonymous" data-pjax ></script><script>
+  var setupFirework = () => {
+    if (! false  || !window.matchMedia('(max-width: 768px)').matches) {
+      if (window.firework) {
+        const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"var(--red-1)\",\"var(--red-2)\",\"var(--red-3)\",\"var(--red-4)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}},{\"colors\":[\"var(--red-0)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"diffuse\"],\"number\":1,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.2,0.5],\"lineWidth\":6,\"radius\":20}}]}");
+        options.excludeElements = options.excludeelements;
+        delete options.excludeelements;
+        window.firework(options);
+      }
+    }
+  }
+</script><script
+    src="https://npm.webcache.cn/mouse-firework@0.2.0/dist/index.umd.js"
+    defer
+    
+    
+    onload="setupFirework()"
+    integrity="sha384-qi9WggRt19tv8Vc7pCHW3ulMNLwrn515zaLEWZjl1px07vz8&#43;pUoWX8n1rgq282T" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/theme-shokax-pjax@0.0.3/dist/index.umd.js"
+    
+    
+    
+    
+    integrity="sha384-xneY1WY8hOfUzswrE4CrYq35N4BdVcxqxwHPr9zawE/jMSCxD&#43;jAPU55x/jj3wlf" crossorigin="anonymous"></script><script src="/js/pjax.js" integrity="" crossorigin="anonymous"  ></script><script
+    src="https://npm.webcache.cn/live2d-widgets@0.9.0/autoload.js"
+    defer
+    
+    
+    
+    integrity="sha384-poTN7wN/SqNhQqo3jdFeX20ikddWeFGkUkDEzsKjgH/ez8aQLn81oI0Cw6q5xNyB" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/quicklink@3.0.1/dist/quicklink.umd.js"
+    
+    
+    
+    
+    integrity="sha384-caMDqvgav/HWdEYQU1QRRHMLleigpL1YHAG0m371DhzfL8rRzUyOb&#43;bEHtwlmYjD" crossorigin="anonymous"></script><script data-pjax>
+    window.quicklink?.listen({
+      timeout:  3000 ,
+      priority:  true ,
+      ignores: JSON.parse("[]")
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div><script data-pjax>
+        window.REIMU_POST = {
+          author: "Link-wushuang",
+          title: "Hugo的Github配置",
+          url: "https:\/\/Link-wushuang.github.io\/post\/blog3\/",
+          description: " Hugo的Github配置 一、博客部署 1.1 常规部署（必须先做1.1再做1.2） （这个就是后面更新需要手动更新，写完blog后先在cmd里面hugo server -D更新一下public文件夹，然后在将public通过git上传一下）\n",
+          cover: "https:\/\/Link-wushuang.github.io\/images\/banner3.jpg",
+        };
+      </script><script src="/js/insert_highlight.js" integrity="" crossorigin="anonymous" data-pjax ></script><script src="/js/tabs.js" integrity="" crossorigin="anonymous" data-pjax defer></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const initPswp = (gallery, children) => {
+          if (_$$(`${gallery} ${children}`).length > 0) {
+            new PhotoSwipeLightbox({
+              gallery,
+              children,pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+        }
+        const pswp = () => {
+          initPswp('.article-entry', 'a.article-gallery-item');
+          initPswp('.article-gallery', 'a.article-gallery-item');
+        }
+        pswp()
+      </script></div>
+</div><script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then((registrations) => {
+        for (let registration of registrations) {
+          registration.unregister();
+        }
+      });
+    }
+  </script><script>
+  const reimuCopyright = String.raw`
+   ______     ______     __     __    __     __  __    
+  /\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+  \ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+   \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+    \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                    
+  `;
+  console.log(String.raw`%c ${reimuCopyright}`, "color: #ff5252;");
+  console.log(
+    "%c Theme.Reimu" + " %c https://github.com/D-Sketon/hugo-theme-reimu ",
+    "color: white; background: #ff5252; padding:5px 0;",
+    "padding:4px;border:1px solid #ff5252;",
+  );
+</script></body>
+</html>
