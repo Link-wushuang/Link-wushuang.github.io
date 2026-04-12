@@ -1,0 +1,98 @@
+2026-04-10 13:29:27.497[cgsdk][DEBUG][17804| 6728] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-10 13:29:27.498[cgsdk][ WARN][17804| 6728] BOOL check failed
+2026-04-10 13:29:27.498[cgsdk][DEBUG][17804| 6728] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-10 13:29:27.499[cgsdk][ WARN][17804| 6728] BOOL check failed
+2026-04-10 13:29:27.499[cgsdk][DEBUG][17804| 6728] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-10 13:29:27.499[cgsdk][ WARN][17804| 6728] BOOL check failed
+2026-04-10 13:29:27.500[cgsdk][DEBUG][17804| 6728] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-10 13:29:27.500[cgsdk][ WARN][17804| 6728] BOOL check failed
+2026-04-10 13:29:27.500[cgsdk][DEBUG][17804| 6728] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-10 13:29:27.500[cgsdk][ WARN][17804| 6728] BOOL check failed
+2026-04-10 13:29:27.501[cgsdk][DEBUG][17804| 6728] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-10 13:29:27.501[cgsdk][ WARN][17804| 6728] BOOL check failed
+2026-04-10 13:29:27.502[cgsdk][DEBUG][17804| 6728] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-10 13:29:27.502[cgsdk][ WARN][17804| 6728] BOOL check failed
+2026-04-10 13:29:27.503[cgsdk][DEBUG][17804| 6728] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-10 13:29:27.503[cgsdk][ WARN][17804| 6728] BOOL check failed
+2026-04-10 13:29:37.831[cgsdk][DEBUG][17804| 6728] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-10 13:29:37.831[cgsdk][ WARN][17804| 6728] BOOL check failed
+2026-04-10 13:29:37.832[cgsdk][DEBUG][17804| 6728] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-10 13:29:37.832[cgsdk][ WARN][17804| 6728] BOOL check failed
+2026-04-10 13:29:37.832[cgsdk][DEBUG][17804| 6728] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-10 13:29:37.832[cgsdk][ WARN][17804| 6728] BOOL check failed
+2026-04-10 13:29:37.833[cgsdk][DEBUG][17804| 6728] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-10 13:29:37.833[cgsdk][ WARN][17804| 6728] BOOL check failed
+2026-04-10 13:29:37.833[cgsdk][DEBUG][17804| 6728] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-10 13:29:37.833[cgsdk][ WARN][17804| 6728] BOOL check failed
+2026-04-10 13:29:37.834[cgsdk][DEBUG][17804| 6728] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-10 13:29:37.834[cgsdk][ WARN][17804| 6728] BOOL check failed
+2026-04-10 13:29:37.834[cgsdk][DEBUG][17804| 6728] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-10 13:29:37.834[cgsdk][ WARN][17804| 6728] BOOL check failed
+2026-04-10 13:29:37.835[cgsdk][DEBUG][17804| 6728] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-10 13:29:37.835[cgsdk][ WARN][17804| 6728] BOOL check failed
+2026-04-10 13:29:56.486[cgsdk][DEBUG][17804| 6728] cgsdk::CgSdkImpl::UnInit
+2026-04-10 13:29:56.486[cgsdk][ WARN][17804| 6728] NULL check failed!
+2026-04-10 13:29:56.487[cgsdk][DEBUG][17804| 6728] cgsdk-loader unloadCgSdk
+2026-04-11 00:07:23.365[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:07:23.365[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:07:23.366[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:07:23.366[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:07:23.366[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:07:23.366[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:07:23.367[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:07:23.367[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:07:23.367[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:07:23.367[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:07:23.368[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:07:23.368[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:07:23.368[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:07:23.368[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:07:23.368[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:07:23.368[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:17:40.789[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:17:40.790[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:17:40.790[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:17:40.790[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:18:31.587[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:18:31.587[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:18:31.587[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:18:31.588[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:18:31.588[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:18:31.588[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:18:31.748[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:18:31.749[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:18:38.752[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:18:38.752[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:18:38.752[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:18:38.752[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:18:38.763[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:18:38.764[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:18:38.934[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:18:38.934[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:18:39.090[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:18:39.091[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:18:39.653[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:18:39.653[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:18:50.049[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:18:50.050[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:26:28.934[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:26:28.937[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:26:28.937[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:26:28.937[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:35:18.976[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:35:18.976[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:35:18.977[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:35:18.977[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:48:44.008[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:48:44.009[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:48:44.010[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:48:44.012[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:59:24.652[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:59:24.653[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 00:59:24.654[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 00:59:24.654[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 01:00:34.243[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::IsCloudGameEnv
+2026-04-11 01:00:34.243[cgsdk][ WARN][36548| 2740] BOOL check failed
+2026-04-11 01:00:34.466[cgsdk][DEBUG][36548| 2740] cgsdk::CgSdkImpl::UnInit
+2026-04-11 01:00:34.466[cgsdk][ WARN][36548| 2740] NULL check failed!
+2026-04-11 01:00:34.467[cgsdk][DEBUG][36548| 2740] cgsdk-loader unloadCgSdk

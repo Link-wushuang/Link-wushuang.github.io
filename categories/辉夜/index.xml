@@ -12,12 +12,42 @@
     
     <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
     
-    <lastBuildDate>Wed, 08 Apr 2026 00:02:01 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2026 15:11:55 +0800</lastBuildDate>
     
     
     <atom:link href="https://Link-wushuang.github.io/categories/%E8%BE%89%E5%A4%9C/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
+    
+    
+
+    <item>
+      <title>Claude Code 配置教程</title>
+      <link>https://Link-wushuang.github.io/post/blog4/</link>
+      <pubDate>Sun, 12 Apr 2026 15:11:55 &#43;0800</pubDate>
+      <author>jingefeng6@gmail.com (Link-wushuang)</author>
+      <guid>https://Link-wushuang.github.io/post/blog4/</guid>
+      <description>
+        <![CDATA[<h1>Claude Code 配置教程</h1><p>作者：Link-wushuang（jingefeng6@gmail.com）</p>
+        
+          <h1 id="claude-code-配置教程">
+<a class="header-anchor" href="#claude-code-%e9%85%8d%e7%bd%ae%e6%95%99%e7%a8%8b"></a>
+Claude Code 配置教程
+</h1><h2 id="一下载claude-code">
+<a class="header-anchor" href="#%e4%b8%80%e4%b8%8b%e8%bd%bdclaude-code"></a>
+一、下载Claude code
+</h2><p>这个呢我是通过npm进行下载的，所以要下node.js和git，这里我就不细说了，可以自己先去下一下。</p>
+<h3 id="11-安装claude-code">
+<a class="header-anchor" href="#11-%e5%ae%89%e8%a3%85claude-code"></a>
+1.1 安装Claude code
+</h3><p>用管理员打开<code>power shell</code>命令窗口，输入<code>npm install -g @anthropic-ai/claude-code</code>然后稍等一会就OK了，因为它只是一个小窗口吧，所以不会很大，很快完成，如果很久没反应，看看是不是网络问题，代理一下或者配置国内的npm镜像（写的时候把窗口关了，忘记截图了。。。）</p>
+        
+        <hr><p>本文2026-04-12首发于<a href='https://Link-wushuang.github.io/'>辉夜</a>，最后修改于2026-04-12</p>]]>
+      </description>
+      
+        <category>辉夜</category><category>海梦</category>
+      
+    </item>
     
     
 
