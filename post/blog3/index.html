@@ -216,17 +216,17 @@
 </div>
 <div class="sidebar-state">
   <div class="sidebar-state-article">
-    <div>文章</div><div class="sidebar-state-number">4</div>
+    <div>文章</div><div class="sidebar-state-number">5</div>
   </div>
   <a class="sidebar-state-category" href="/categories/" aria-label="sidebar-state-category-link">
     <div>分类</div>
     <div class="sidebar-state-number">
-      2
+      1
     </div>
   </a>
   <a class="sidebar-state-tag" href="/tags/" aria-label="sidebar-state-tag-link">
     <div>标签</div>
-    <div class="sidebar-state-number">2</div>
+    <div class="sidebar-state-number">3</div>
   </a>
 </div>
 <div class="sidebar-social" ><div class="icon-bilibili sidebar-social-icon">
@@ -329,15 +329,15 @@ Hugo的Github配置
 <ol>
 <li>登录你的<code>Github</code>账号，在<code>repository</code>界面新建一个仓库，仓库名为如下（用你自己的用户名代替,格式是<code>username.github.io</code>）</li>
 </ol>
-<p><img src="/post/blog3/index.assets/image-20260402211253950.png" alt="image-20260402211253950"></p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260402211253950.png" alt="image-20260402211253950"></p>
 <ol start="2">
 <li>打开<code> /Blog/hugo.toml</code> ，修改<code> baseurl</code>为 <code>https://Link-wushuang.github.io/</code>，保存</li>
 </ol>
-<p><img src="/post/blog3/index.assets/image-20260402211632739.png" alt="image-20260402211632739"></p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260402211632739.png" alt="image-20260402211632739"></p>
 <ol start="3">
 <li>删除 <code>/Blog/public</code> 文件夹，在 <code>/Blog</code>文件夹地址栏呼出的命令行处输入 <code>hugo -D</code>以生成新的 <code>public</code>文件夹</li>
 </ol>
-<p><img src="/post/blog3/index.assets/image-20260402211839826.png" alt="image-20260402211839826"></p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260402211839826.png" alt="image-20260402211839826"></p>
 <p>之后再依此输入以下代码：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd public                    # 若手动进 public文件夹则不用输这行
 </span></span><span class="line"><span class="cl">git init
@@ -349,8 +349,8 @@ Hugo的Github配置
 </span></span></code></pre></div><ol>
 <li>待显示100%进度后，刷新<code>github</code>界面，此时能看到正在运行的仓库，点击 <code>Settings</code>，点击 <code>Pages</code>,在本页面可看到地址，如 <code>Your site is live at https://link-wushuang.github.io/</code> ，即表示部署成功</li>
 </ol>
-<p><img src="/post/blog3/index.assets/image-20260402214300593.png" alt="image-20260402214300593"></p>
-<p><img src="/post/blog3/index.assets/image-20260402214518264.png" alt="image-20260402214518264"></p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260402214300593.png" alt="image-20260402214300593"></p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260402214518264.png" alt="image-20260402214518264"></p>
 <h3 id="12-自动部署">
 <a class="header-anchor" href="#12-%e8%87%aa%e5%8a%a8%e9%83%a8%e7%bd%b2"></a>
 1.2 自动部署
@@ -358,7 +358,7 @@ Hugo的Github配置
 <ol>
 <li>新建一个仓库，可以设置成<code>private</code></li>
 </ol>
-<p><img src="/post/blog3/index.assets/image-20260408130606769.png" alt="image-20260408130606769"></p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260408130606769.png" alt="image-20260408130606769"></p>
 <ol start="2">
 <li>在 <code>/Blog</code> 中新建文件<code> .gitignore</code>，打开文件，将以下内容复制到文件中后保存,（这里注意将之前放在<code>bin</code>文件夹的<code>hugo.exe</code>复制到<code>/Blog</code>目录下，不确定如果不复制有没有问题）</li>
 </ol>
@@ -366,7 +366,7 @@ Hugo的Github配置
 </span></span><span class="line"><span class="cl">resources
 </span></span><span class="line"><span class="cl">.hugo_build.lock
 </span></span><span class="line"><span class="cl">hugo.exe
-</span></span></code></pre></div><p><img src="/post/blog3/index.assets/image-20260402215733410.png" alt="image-20260402215733410"></p>
+</span></span></code></pre></div><p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260402215733410.png" alt="image-20260402215733410"></p>
 <ol start="3">
 <li>在 <code>/Blog</code> 内创建 <code>.github</code>文件夹，在 <code>.github</code>文件夹内创建 <code>workflows</code>文件夹，在 <code>workflows</code>文件夹内新建文件 <code>hugo_deploy.yaml</code>，将以下代码复制到文件中后保存</li>
 </ol>
@@ -407,15 +407,15 @@ Hugo的Github配置
 </span></span></span></code></pre></div><ol start="4">
 <li>在仓库界面点击头像，点击 <code>Settings</code>，下滑至<strong>侧边栏</strong>的最底下，点击 <code>Developer settings</code>，点击 <code>Personal access tokens</code>，点击显示的 <code>Token(classic)</code>，点击 <code>Generate new token</code>，点击<code>Generate new token(classic)</code></li>
 </ol>
-<p><img src="/post/blog3/index.assets/image-20260402221421724.png" alt="image-20260402221421724"></p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260402221421724.png" alt="image-20260402221421724"></p>
 <ol start="5">
 <li>验证用户，可选输入 <code>Note</code>，<code>Expiration</code> 选择 <code>no expiration</code>，<code>Select scopes</code>勾选 <code>repo</code>的全部和 <code>workflow</code>，下滑到最后点击<code>Generate token</code>，<strong>非常重要</strong>，生成的密钥一定要复制保存，只显示一次！！！</li>
 </ol>
-<p><img src="/post/blog3/index.assets/image-20260402221838383.png" alt="image-20260402221838383"></p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260402221838383.png" alt="image-20260402221838383"></p>
 <ol start="6">
 <li>返回创建的仓库页面，点击<code>Settings</code>，下滑，在侧边栏找到 <code>Security</code>内的 <code>Secret and variables</code>，点击<code>Actions</code>，</li>
 </ol>
-<p><img src="/post/blog3/index.assets/image-20260408131337644.png" alt="image-20260408131337644"></p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260408131337644.png" alt="image-20260408131337644"></p>
 <ol start="7">
 <li>在 <code>Repository secrets</code>处点击 <code>New repository secret</code>，按下方模板填写，填写完成后点击 <code>Add secret</code></li>
 </ol>
@@ -434,7 +434,7 @@ Hugo的Github配置
   </tbody>
 </table>
 <p>上方的 <code>ghp_xxxxxxxxxxxxxxxxx</code>为刚刚第4步生成的密钥粘贴在这,之后可以看到已经成功生成<code>Token</code>这个东东</p>
-<p><img src="/post/blog3/index.assets/image-20260402222340380.png" alt="image-20260402222340380"></p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260402222340380.png" alt="image-20260402222340380"></p>
 <ol start="8">
 <li>在 <code>/Blog</code>文件夹的地址栏输入<code>cmd</code>呼出命令行，根据具体情况分别输入以下代码（ <strong>看清楚适用的情况，爆红了自己检查</strong>），为确保上传成功，请常开代理</li>
 </ol>
@@ -489,13 +489,6 @@ Hugo的Github配置
       href="/categories/%e8%be%89%e5%a4%9c"
       data-aos="zoom-in"
       >辉夜</a
-    >
-    </li><li class="article-tag-list-item" data-aos="zoom-in">
-    <a
-      class="article-category-link"
-      href="/categories/%e6%b5%b7%e6%a2%a6"
-      data-aos="zoom-in"
-      >海梦</a
     >
     </li></ul>
 <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
@@ -556,10 +549,10 @@ Hugo的Github配置
         >
       </div><div>
         <span class="icon-brush"
-          >&nbsp;10.3k</span
+          >&nbsp;11.2k</span
         >
         &nbsp;|&nbsp;
-        <span class="icon-coffee">&nbsp;00:22</span>
+        <span class="icon-coffee">&nbsp;00:25</span>
       </div></div>
 </footer>
 <div class="sidebar-top">
@@ -597,17 +590,17 @@ Hugo的Github配置
 </div>
 <div class="sidebar-state">
   <div class="sidebar-state-article">
-    <div>文章</div><div class="sidebar-state-number">4</div>
+    <div>文章</div><div class="sidebar-state-number">5</div>
   </div>
   <a class="sidebar-state-category" href="/categories/" aria-label="sidebar-state-category-link">
     <div>分类</div>
     <div class="sidebar-state-number">
-      2
+      1
     </div>
   </a>
   <a class="sidebar-state-tag" href="/tags/" aria-label="sidebar-state-tag-link">
     <div>标签</div>
-    <div class="sidebar-state-number">2</div>
+    <div class="sidebar-state-number">3</div>
   </a>
 </div>
 <div class="sidebar-social" ><div class="icon-bilibili sidebar-social-icon">
