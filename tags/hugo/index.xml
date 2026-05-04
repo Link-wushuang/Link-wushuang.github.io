@@ -12,12 +12,45 @@
     
     <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
     
-    <lastBuildDate>Wed, 08 Apr 2026 00:02:01 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 12:00:00 +0800</lastBuildDate>
     
     
     <atom:link href="https://Link-wushuang.github.io/tags/hugo/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
+    
+    
+
+    <item>
+      <title>Hugo-Reimu主题美化：随机横幅、封面轮换与图片裁剪配置</title>
+      <link>https://Link-wushuang.github.io/post/blog6/</link>
+      <pubDate>Mon, 04 May 2026 12:00:00 &#43;0800</pubDate>
+      <author>jingefeng6@gmail.com (Link-wushuang)</author>
+      <guid>https://Link-wushuang.github.io/post/blog6/</guid>
+      <description>
+        <![CDATA[<h1>Hugo-Reimu主题美化：随机横幅、封面轮换与图片裁剪配置</h1><p>作者：Link-wushuang（jingefeng6@gmail.com）</p>
+        
+          <h1 id="hugo-reimu主题美化随机横幅封面轮换与图片裁剪配置">
+<a class="header-anchor" href="#hugo-reimu%e4%b8%bb%e9%a2%98%e7%be%8e%e5%8c%96%e9%9a%8f%e6%9c%ba%e6%a8%aa%e5%b9%85%e5%b0%81%e9%9d%a2%e8%bd%ae%e6%8d%a2%e4%b8%8e%e5%9b%be%e7%89%87%e8%a3%81%e5%89%aa%e9%85%8d%e7%bd%ae"></a>
+Hugo-Reimu主题美化：随机横幅、封面轮换与图片裁剪配置
+</h1><p>这篇文章记录一下我对博客做的几个图片相关的优化，主要包括：</p>
+<ul>
+<li>顶部横幅每次刷新随机切换</li>
+<li>首页文章封面图按顺序轮换（跨分页保持连续）</li>
+<li>每张图片单独设置裁剪位置，避免截掉人脸</li>
+<li>修复朋友页头像不显示的问题</li>
+</ul>
+<h2 id="一顶部横幅随机切换">
+<a class="header-anchor" href="#%e4%b8%80%e9%a1%b6%e9%83%a8%e6%a8%aa%e5%b9%85%e9%9a%8f%e6%9c%ba%e5%88%87%e6%8d%a2"></a>
+一、顶部横幅随机切换
+</h2><p>Reimu主题的横幅图是在 <code>params.yml</code> 里面配置的，是静态的，每次打开都是同一张。想要随机的话需要用 JS 在页面加载时动态替换。</p>
+        
+        <hr><p>本文2026-05-04首发于<a href='https://Link-wushuang.github.io/'>辉夜</a>，最后修改于2026-05-04</p>]]>
+      </description>
+      
+        <category>辉夜</category>
+      
+    </item>
     
     
 

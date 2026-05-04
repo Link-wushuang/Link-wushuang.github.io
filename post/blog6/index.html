@@ -1,0 +1,1046 @@
+<!doctype html>
+<html
+  lang="zh-CN" 
+  data-theme-mode="true"
+  >
+  <head><meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/><title>
+  Hugo-Reimu主题美化：随机横幅、封面轮换与图片裁剪配置 | Link-wushuang
+</title>
+<meta name="description" content="少女祈祷中..."/><script>
+  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"https://Link-wushuang.github.io/\",\"clipboard\":{\"copyright\":{\"count\":50,\"enable\":false,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"pt-br\":\"Falha ao copiar (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"pt-br\":\"Copiado com sucesso (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"expand\":true},\"i18n_languages\":[{\"Lang\":\"zh-cn\",\"Title\":\"辉夜\",\"Weight\":1,\"Disabled\":false,\"Direction\":\"\",\"Label\":\"简体中文\",\"Locale\":\"zh-CN\"},{\"Lang\":\"en\",\"Title\":\"辉夜\",\"Weight\":2,\"Disabled\":false,\"Direction\":\"\",\"Label\":\"English\",\"Locale\":\"en\"}],\"icon_font\":\"4552607_a0oqhord1y\",\"outdate\":{\"daysago\":180,\"enable\":false,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"pt-br\":\"Este artigo foi atualizado pela última vez em {time}. Observe que o conteúdo pode não ser mais aplicável.\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"}}}");
+  
+</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7cNoto%20Serif%20SC:400,400italic,700,700italic%7c&amp;display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7cNoto%20Serif%20SC:400,400italic,700,700italic%7c&amp;display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<link
+    rel="preload"
+    href="//at.alicdn.com/t/c/font_4552607_a0oqhord1y.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  /><link rel="stylesheet" href="/css/loader.min.ac746e154f756f8220326eeb52a719f142ab038be5a8ddf30ea5ef15ef2356ea.css" /><meta property="og:type" content="website" />
+  <meta property="og:title" content="Hugo-Reimu主题美化：随机横幅、封面轮换与图片裁剪配置 | Link-wushuang" />
+  <meta
+    property="og:description"
+    content="少女祈祷中..."
+  />
+  <meta property="og:url" content="https://Link-wushuang.github.io/post/blog6/" />
+  <meta
+    property="og:site_name"
+    content="辉夜"
+  />
+  <meta property="og:image" content="https://Link-wushuang.github.io/images/banner3.jpg" />
+  <meta property="article:author" content="Link-wushuang" />
+  <meta property="article:published_time" content="2026-05-04T12:00:00&#43;08:00" />
+  <meta property="article:modified_time" content="2026-05-04T12:00:00&#43;08:00" /><meta property="article:tag" content="Hugo" /><meta name="twitter:card" content="summary" /><meta name="twitter:image" content="https://Link-wushuang.github.io/images/banner3.jpg" />
+<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.min.6b06664d458b7fd4963dcbd1118fd41dbf8e99aa5143d0460ef63e1b68bae4c3.css" /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
+    integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"
+    onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/katex@0.16.24/dist/katex.min.css"
+    integrity="sha384-tTgKLjMYmJr94v8qu2PE5MUGSMbyN2xiH266JUB3gpm8vnnJywd1dWSOEfrFz&#43;YI" crossorigin="anonymous"
+    onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@waline/client@2.15.8/dist/waline.css"
+    integrity="sha384-vltfZtesCdl6NYVcFVcjEaIi5RpNvZe9t7fXvq8twVtcoy&#43;Ub9QgnxUYJmwOhYCK" crossorigin="anonymous"/><script
+    src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
+    
+    
+    
+    
+    integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@reimujs/aos@0.1.2/dist/aos.css"
+    integrity="sha384-GMRP93c6Hkz9JVKGAuRR3nTS7M07RwPgTFenXiosjq2VbVgvdDNcz1g6Mkj8AONa" crossorigin="anonymous"/></head>
+  <body><div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate"><svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg></div><div class="loading-word">少女祈祷中...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var loaderEl = document.getElementById('loader');
+    var startLoading = () => {
+      time = Date.now();
+      loaderEl.classList.remove("loading");
+    }
+    var hideLoader = () => {
+      document.body.style.overflow = 'auto';
+      loader.classList.add('loading');
+    };
+
+    var endLoading = () => {
+      if (!time) {
+        hideLoader();
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          hideLoader();
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    loaderEl.addEventListener('click', endLoading);
+  </script><div id="copy-tooltip"></div>
+<div id="lang-tooltip">
+本文章没有找到对应的语言版本
+</div>
+<div id="heatmap-tooltip"></div><div id="container">
+      <div id="wrap"><div id="header-nav">
+  <nav id="main-nav" aria-label="Primary navigation"><a class="main-nav-link-wrap" href="/"><div class='main-nav-icon icon '>&#xe617;</div><span class="main-nav-link">首页</span>
+      </a><a class="main-nav-link-wrap" href="/archives"><div class='main-nav-icon icon '>&#xe63d;</div><span class="main-nav-link">归档</span>
+      </a><a class="main-nav-link-wrap" href="/about"><div class='main-nav-icon icon '>&#xe643;</div><span class="main-nav-link">关于</span>
+      </a><a class="main-nav-link-wrap" href="/friend"><div class='main-nav-icon icon '>&#xe621;</div><span class="main-nav-link">友链</span>
+      </a><a class="main-nav-link-wrap" href="/link"><div class='main-nav-icon icon '>&#xe639;</div><span class="main-nav-link">更多</span>
+      </a><a id="main-nav-toggle" class="nav-icon" aria-label="Toggle navigation" role="button"></a>
+  </nav>
+  <nav id="sub-nav" aria-label="Secondary navigation"></nav><nav id="i18n-nav" aria-label="Language selection">
+      <div class="custom-dropdown">
+        <div class="select-selected" id="select-selected" role="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Language menu">
+          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
+          <span id="selected-lang">简体中文</span>
+        </div>
+        <ul class="select-items" id="select-items" role="listbox" aria-label="Languages"><li data-value="zh-cn" role="option" class="selected" aria-selected="true" >简体中文</li><li data-value="en" role="option" aria-selected="false" >English</li></ul>
+      </div>
+      <script>
+        var selectSelected = document.getElementById("select-selected");
+        var selectedLang = document.getElementById("selected-lang");
+        var selectItems = document.getElementById("select-items");
+        var selectOptions = selectItems.querySelectorAll("li");
+
+        selectSelected.addEventListener("click", () => {
+          selectItems.classList.toggle("show");
+          var expanded = selectSelected.getAttribute("aria-expanded") === "true";
+          selectSelected.setAttribute("aria-expanded", (!expanded).toString());
+        });
+
+        selectOptions.forEach((item) => {
+          item.addEventListener("click", () => {
+            const langMap = {};selectedLang.textContent = item.textContent;
+            selectItems.classList.remove("show");
+            selectOptions.forEach((option) => {
+              option.classList.remove("selected");
+            });
+            item.classList.add("selected");
+            if (item.dataset.value === 'zh-cn') {
+              return;
+            }
+            if (!langMap[item.dataset.value]) {
+              _$("#lang-tooltip").style.opacity = "1";
+              setTimeout(() => {
+                _$("#lang-tooltip").style.opacity = "0";
+              }, 1000);
+              return;
+            }
+            window.location = langMap[item.dataset.value];
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".custom-dropdown")) {
+            selectItems.classList.remove("show");
+            selectSelected.setAttribute("aria-expanded", "false");
+          }
+        });
+      </script>
+    </nav><a href="https://github.com/Link-wushuang" class="triangle-badge" title="github" target="_blank" rel="noopener nofollow noreferrer">
+      <div class="icon icon-github triangle-badge-icon"></div>
+    </a></div>
+<header id="header" aria-label="Site header"><picture></picture>
+        <img  fetchpriority="high" src="/images/banner3.jpg" alt="Hugo-Reimu主题美化：随机横幅、封面轮换与图片裁剪配置"><div id="header-outer">
+    <div id="header-title"><span id="logo">
+            <h1 data-aos="slide-up">Hugo-Reimu主题美化：随机横幅、封面轮换与图片裁剪配置</h1>
+          </span><h2 id="subtitle-wrap" data-aos="slide-down"></h2></div>
+  </div>
+</header><div id="content"
+          aria-label="Page content"
+          class="sidebar-left"
+            ><aside id="sidebar" aria-label="Sidebar"><div class="sidebar-wrapper-container sticky"><div class="sidebar-wrapper">
+    <div
+      class="sidebar-wrap"
+      data-aos="fade-up"
+    ><div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ol>
+    <li><a href="#hugo-reimu主题美化随机横幅封面轮换与图片裁剪配置">Hugo-Reimu主题美化：随机横幅、封面轮换与图片裁剪配置</a>
+      <ol>
+        <li><a href="#一顶部横幅随机切换">一、顶部横幅随机切换</a>
+          <ol>
+            <li><a href="#1-准备横幅图片">1. 准备横幅图片</a></li>
+            <li><a href="#2-在-afterfooterhtml-添加-js">2. 在 afterFooter.html 添加 JS</a></li>
+          </ol>
+        </li>
+        <li><a href="#二首页封面图顺序轮换">二、首页封面图顺序轮换</a>
+          <ol>
+            <li><a href="#1-配置-datacoversyml">1. 配置 data/covers.yml</a></li>
+            <li><a href="#2-修改-posthtml">2. 修改 post.html</a></li>
+            <li><a href="#3-修改-indexhtml-计算全局偏移">3. 修改 index.html 计算全局偏移</a></li>
+          </ol>
+        </li>
+        <li><a href="#三底部导航图片同步封面顺序">三、底部导航图片同步封面顺序</a></li>
+        <li><a href="#四图片裁剪位置控制">四、图片裁剪位置控制</a></li>
+        <li><a href="#五修复朋友页头像不显示">五、修复朋友页头像不显示</a></li>
+        <li><a href="#小结">小结</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.png"
+    data-sizes="auto"
+    alt="Link-wushuang"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Link-wushuang</div>
+  <div class="sidebar-description">少女祈祷中...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div><div class="sidebar-state-number">6</div>
+  </div>
+  <a class="sidebar-state-category" href="/categories/" aria-label="sidebar-state-category-link">
+    <div>分类</div>
+    <div class="sidebar-state-number">
+      1
+    </div>
+  </a>
+  <a class="sidebar-state-tag" href="/tags/" aria-label="sidebar-state-tag-link">
+    <div>标签</div>
+    <div class="sidebar-state-number">3</div>
+  </a>
+</div>
+<div class="sidebar-social" ><div class="icon-bilibili sidebar-social-icon">
+        <a
+          href="https://space.bilibili.com/3546753779370552?spm_id_from=333.1007.0.0"
+          itemprop="url"
+          target="_blank"
+          aria-label="bilibili"
+          rel="noopener nofollow noreferrer"
+        ></a>
+      </div><div class="icon-email sidebar-social-icon">
+        <a
+          href="mailto:jingefeng6@gmail.com"
+          itemprop="url"
+          target="_blank"
+          aria-label="email"
+          rel="noopener nofollow noreferrer"
+        ></a>
+      </div><div class="icon-github sidebar-social-icon">
+        <a
+          href="https://github.com/Link-wushuang"
+          itemprop="url"
+          target="_blank"
+          aria-label="github"
+          rel="noopener nofollow noreferrer"
+        ></a>
+      </div></div><div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/"
+        aria-label="首页"
+      ></a><div class='sidebar-menu-icon icon '>&#xe617;</div><div class="sidebar-menu-link">首页</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/archives"
+        aria-label="归档"
+      ></a><div class='sidebar-menu-icon icon '>&#xe63d;</div><div class="sidebar-menu-link">归档</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/about"
+        aria-label="关于"
+      ></a><div class='sidebar-menu-icon icon '>&#xe643;</div><div class="sidebar-menu-link">关于</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/friend"
+        aria-label="友链"
+      ></a><div class='sidebar-menu-icon icon '>&#xe621;</div><div class="sidebar-menu-link">友链</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/link"
+        aria-label="更多"
+      ></a><div class='sidebar-menu-icon icon '>&#xe639;</div><div class="sidebar-menu-link">更多</div>
+    </div></div></div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div><div class="sidebar-widget"></div></div></aside>
+<section id="main" aria-label="Main content"><article
+  class="h-entry article"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
+  <div
+    class="article-inner"
+    data-aos="fade-up"
+  >
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link icon-calendar"
+    data-aos="zoom-in"
+  >
+    <time datetime="2026-05-04 12:00:00 &#43;0800 &#43;0800" itemprop="datePublished"
+      >2026-05-04</time
+    >
+    <time style="display: none;" id="post-update-time"
+      >2026-05-04</time
+    >
+  </span><span
+      class="article-date-link icon-calendar-plus"
+      data-aos="zoom-in"
+    >
+      <time datetime="2026-05-04 12:00:00 &#43;0800 &#43;0800" itemprop="dateModified"
+        >2026-05-04</time
+      >
+    </span></div>
+</div><div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><h1 id="hugo-reimu主题美化随机横幅封面轮换与图片裁剪配置">
+<a class="header-anchor" href="#hugo-reimu%e4%b8%bb%e9%a2%98%e7%be%8e%e5%8c%96%e9%9a%8f%e6%9c%ba%e6%a8%aa%e5%b9%85%e5%b0%81%e9%9d%a2%e8%bd%ae%e6%8d%a2%e4%b8%8e%e5%9b%be%e7%89%87%e8%a3%81%e5%89%aa%e9%85%8d%e7%bd%ae"></a>
+Hugo-Reimu主题美化：随机横幅、封面轮换与图片裁剪配置
+</h1><p>这篇文章记录一下我对博客做的几个图片相关的优化，主要包括：</p>
+<ul>
+<li>顶部横幅每次刷新随机切换</li>
+<li>首页文章封面图按顺序轮换（跨分页保持连续）</li>
+<li>每张图片单独设置裁剪位置，避免截掉人脸</li>
+<li>修复朋友页头像不显示的问题</li>
+</ul>
+<h2 id="一顶部横幅随机切换">
+<a class="header-anchor" href="#%e4%b8%80%e9%a1%b6%e9%83%a8%e6%a8%aa%e5%b9%85%e9%9a%8f%e6%9c%ba%e5%88%87%e6%8d%a2"></a>
+一、顶部横幅随机切换
+</h2><p>Reimu主题的横幅图是在 <code>params.yml</code> 里面配置的，是静态的，每次打开都是同一张。想要随机的话需要用 JS 在页面加载时动态替换。</p>
+<h3 id="1-准备横幅图片">
+<a class="header-anchor" href="#1-%e5%87%86%e5%a4%87%e6%a8%aa%e5%b9%85%e5%9b%be%e7%89%87"></a>
+1. 准备横幅图片
+</h3><p>把你想用的横幅图片放到 <code>static/images/</code> 目录下。</p>
+<h3 id="2-在-afterfooterhtml-添加-js">
+<a class="header-anchor" href="#2-%e5%9c%a8-afterfooterhtml-%e6%b7%bb%e5%8a%a0-js"></a>
+2. 在 afterFooter.html 添加 JS
+</h3><p>打开 <code>layouts/partials/afterFooter.html</code>，在文件末尾添加以下代码：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">data-pjax</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">banners</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span> <span class="nx">src</span><span class="o">:</span> <span class="s1">&#39;/images/banner1.jpg&#39;</span><span class="p">,</span>  <span class="nx">pos</span><span class="o">:</span> <span class="s1">&#39;50% 40%&#39;</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span> <span class="nx">src</span><span class="o">:</span> <span class="s1">&#39;/images/banner2.jpg&#39;</span><span class="p">,</span>  <span class="nx">pos</span><span class="o">:</span> <span class="s1">&#39;50% 40%&#39;</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span> <span class="nx">src</span><span class="o">:</span> <span class="s1">&#39;/images/marin1.jpg&#39;</span><span class="p">,</span>   <span class="nx">pos</span><span class="o">:</span> <span class="s1">&#39;50% 8%&#39;</span>  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span> <span class="nx">src</span><span class="o">:</span> <span class="s1">&#39;/images/marin2.jpg&#39;</span><span class="p">,</span>   <span class="nx">pos</span><span class="o">:</span> <span class="s1">&#39;50% 15%&#39;</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 继续添加你的图片...
+</span></span></span><span class="line"><span class="cl">  <span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kd">function</span> <span class="nx">applyBanner</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="nx">banners</span><span class="p">[</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="nx">banners</span><span class="p">.</span><span class="nx">length</span><span class="p">)];</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">picture</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#page-header picture&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">img</span>     <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#page-header img&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">picture</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="kd">var</span> <span class="nx">sources</span> <span class="o">=</span> <span class="nx">picture</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;source&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">sources</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">s</span><span class="p">)</span> <span class="p">{</span> <span class="nx">s</span><span class="p">.</span><span class="nx">srcset</span> <span class="o">=</span> <span class="nx">b</span><span class="p">.</span><span class="nx">src</span><span class="p">;</span> <span class="p">});</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">img</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">img</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="nx">b</span><span class="p">.</span><span class="nx">src</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">img</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">objectPosition</span> <span class="o">=</span> <span class="nx">b</span><span class="p">.</span><span class="nx">pos</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">readyState</span> <span class="o">===</span> <span class="s1">&#39;loading&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;DOMContentLoaded&#39;</span><span class="p">,</span> <span class="nx">applyBanner</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">applyBanner</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">})();</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>每个图片对象里面的 <code>pos</code> 就是裁剪位置（下面会详细说），这里先填 <code>50% 40%</code> 就行。</p>
+<p><code>data-pjax</code> 这个属性是为了让使用了 pjax 的主题在页面跳转时也能重新执行这段脚本。</p>
+<h2 id="二首页封面图顺序轮换">
+<a class="header-anchor" href="#%e4%ba%8c%e9%a6%96%e9%a1%b5%e5%b0%81%e9%9d%a2%e5%9b%be%e9%a1%ba%e5%ba%8f%e8%bd%ae%e6%8d%a2"></a>
+二、首页封面图顺序轮换
+</h2><p>默认情况下，Reimu 主题用 <code>randomCover.html</code> 这个 partial 来给每篇文章分配封面。不过这个方式有个问题：Hugo 构建时是并发渲染的，导致分配顺序不稳定，看起来&quot;随机&quot;但其实没规律。</p>
+<p>想要 1→2→3→…→11→1 这样按顺序循环的话，改用索引取模的方式更可靠。</p>
+<h3 id="1-配置-datacoversyml">
+<a class="header-anchor" href="#1-%e9%85%8d%e7%bd%ae-datacoversyml"></a>
+1. 配置 data/covers.yml
+</h3><p>在 <code>data/covers.yml</code> 里面按顺序列出所有封面图：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl">- <span class="l">images/marin1.jpg</span><span class="w">
+</span></span></span><span class="line"><span class="cl">- <span class="l">images/marin2.jpg</span><span class="w">
+</span></span></span><span class="line"><span class="cl">- <span class="l">images/marin3.jpg</span><span class="w">
+</span></span></span><span class="line"><span class="cl">- <span class="l">images/marin4.jpg</span><span class="w">
+</span></span></span><span class="line"><span class="cl">- <span class="l">images/marin5.jpg</span><span class="w">
+</span></span></span><span class="line"><span class="cl">- <span class="l">images/marin6.jpg</span><span class="w">
+</span></span></span><span class="line"><span class="cl">- <span class="l">images/marin7.jpg</span><span class="w">
+</span></span></span><span class="line"><span class="cl">- <span class="l">images/marin8.jpg</span><span class="w">
+</span></span></span><span class="line"><span class="cl">- <span class="l">images/marin9.jpg</span><span class="w">
+</span></span></span><span class="line"><span class="cl">- <span class="l">images/marin10.jpg</span><span class="w">
+</span></span></span><span class="line"><span class="cl">- <span class="l">images/marin11.jpg</span><span class="w">
+</span></span></span></code></pre></div><h3 id="2-修改-posthtml">
+<a class="header-anchor" href="#2-%e4%bf%ae%e6%94%b9-posthtml"></a>
+2. 修改 post.html
+</h3><p>打开 <code>layouts/partials/post.html</code>，找到没有自定义封面时的那个 else 分支，把 <code>randomCover.html</code> 的调用替换成按索引取封面：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span><span class="line"><span class="cl">  <span class="cp">{{-</span><span class="w"> </span><span class="nx">$covers</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">$ctx</span><span class="na">.Site.Data.covers</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span><span class="line"><span class="cl">  <span class="cp">{{-</span><span class="w"> </span><span class="nx">$cover</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="k">index</span><span class="w"> </span><span class="nx">$covers</span><span class="w"> </span><span class="o">(</span><span class="nx">mod</span><span class="w"> </span><span class="nx">$index</span><span class="w"> </span><span class="o">(</span><span class="k">len</span><span class="w"> </span><span class="nx">$covers</span><span class="o">))</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">img</span>
+</span></span><span class="line"><span class="cl">    <span class="na">data-src</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="nx">$cover</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">relURL</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">data-sizes</span><span class="o">=</span><span class="s">&#34;auto&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">alt</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="nx">$page</span><span class="na">.Title</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">class</span><span class="o">=</span><span class="s">&#34;lazyload&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span></code></pre></div><p>这里的 <code>$index</code> 就是文章的全局序号，用 <code>mod</code> 对封面图数量取余，就能实现循环。</p>
+<h3 id="3-修改-indexhtml-计算全局偏移">
+<a class="header-anchor" href="#3-%e4%bf%ae%e6%94%b9-indexhtml-%e8%ae%a1%e7%ae%97%e5%85%a8%e5%b1%80%e5%81%8f%e7%a7%bb"></a>
+3. 修改 index.html 计算全局偏移
+</h3><p>分页的时候，每一页的文章序号 <code>$k</code> 都是从 0 开始的，所以第 2 页的第 1 篇文章序号还是 0，封面图就跟第 1 页的第 1 篇一样了。</p>
+<p>需要在 <code>layouts/index.html</code> 里面算出当前页之前有多少篇文章，然后加进去：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="nx">$offset</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">0</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="k">range</span><span class="w"> </span><span class="nx">$paginator</span><span class="na">.Pagers</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span><span class="line"><span class="cl">  <span class="cp">{{-</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="k">lt</span><span class="w"> </span><span class="na">.PageNumber</span><span class="w"> </span><span class="nx">$paginator</span><span class="na">.PageNumber</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">{{-</span><span class="w"> </span><span class="nx">$offset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">add</span><span class="w"> </span><span class="nx">$offset</span><span class="w"> </span><span class="o">(</span><span class="k">len</span><span class="w"> </span><span class="na">.Pages</span><span class="o">)</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span><span class="line"><span class="cl">  <span class="cp">{{-</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span></code></pre></div><p>然后把所有调用 <code>post.html</code> 的地方，<code>index</code> 参数从 <code>$k</code> 改成 <code>(add $offset $k)</code>，比如：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;post.html&#34;</span><span class="w"> </span><span class="o">(</span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;index&#34;</span><span class="w"> </span><span class="o">(</span><span class="nx">add</span><span class="w"> </span><span class="nx">$offset</span><span class="w"> </span><span class="nx">$k</span><span class="o">)</span><span class="w"> </span><span class="s">&#34;ctx&#34;</span><span class="w"> </span><span class="na">$</span><span class="w"> </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="nx">$v</span><span class="o">)</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span></code></pre></div><p>这样第 2 页的文章就会从第 1 页的末尾继续算，封面图也就接着轮换了。</p>
+<h2 id="三底部导航图片同步封面顺序">
+<a class="header-anchor" href="#%e4%b8%89%e5%ba%95%e9%83%a8%e5%af%bc%e8%88%aa%e5%9b%be%e7%89%87%e5%90%8c%e6%ad%a5%e5%b0%81%e9%9d%a2%e9%a1%ba%e5%ba%8f"></a>
+三、底部导航图片同步封面顺序
+</h2><p>文章页底部的上一篇/下一篇导航也有缩略图。想让这个缩略图和该文章在首页显示的封面一致的话，需要找到这篇文章在全站的全局序号，然后用同样的 <code>mod</code> 逻辑取封面。</p>
+<p>打开 <code>layouts/partials/post/nav.html</code>，找到没有自定义封面时的图片部分，改成这样：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="nx">$covers</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="na">.Site.Data.covers</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="nx">$allPages</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">where</span><span class="w"> </span><span class="na">.Site.RegularPages</span><span class="w"> </span><span class="s">&#34;Section&#34;</span><span class="w"> </span><span class="s">&#34;in&#34;</span><span class="w"> </span><span class="na">.Site.Params.mainSections</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="na">.PrevInSection</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span><span class="line"><span class="cl">  <span class="cp">{{-</span><span class="w"> </span><span class="nx">$prevIdx</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">0</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span><span class="line"><span class="cl">  <span class="cp">{{-</span><span class="w"> </span><span class="k">range</span><span class="w"> </span><span class="nx">$i</span><span class="o">,</span><span class="w"> </span><span class="nx">$p</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">$allPages</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">{{-</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="k">eq</span><span class="w"> </span><span class="nx">$p</span><span class="w"> </span><span class="na">$.PrevInSection</span><span class="w"> </span><span class="cp">-}}{{-</span><span class="w"> </span><span class="nx">$prevIdx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">$i</span><span class="w"> </span><span class="cp">-}}{{-</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span><span class="line"><span class="cl">  <span class="cp">{{-</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span><span class="line"><span class="cl">  <span class="cp">{{-</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="na">.PrevInSection.Params.cover</span><span class="w"> </span><span class="o">(</span><span class="k">not</span><span class="w"> </span><span class="o">(</span><span class="nx">strings</span><span class="na">.HasPrefix</span><span class="w"> </span><span class="na">.PrevInSection.Params.cover</span><span class="w"> </span><span class="s">&#34;rgb&#34;</span><span class="o">))</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">data-src</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.PrevInSection.Params.cover</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">relURL</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span> <span class="err">...</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="cp">{{-</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">data-src</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="k">index</span><span class="w"> </span><span class="nx">$covers</span><span class="w"> </span><span class="o">(</span><span class="nx">mod</span><span class="w"> </span><span class="nx">$prevIdx</span><span class="w"> </span><span class="o">(</span><span class="k">len</span><span class="w"> </span><span class="nx">$covers</span><span class="o">))</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">relURL</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span> <span class="err">...</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="cp">{{-</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span><span class="line"><span class="cl"><span class="cp">{{-</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">-}}</span>
+</span></span></code></pre></div><p>下一篇同理，用 <code>$nextIdx</code> 做一样的操作。</p>
+<h2 id="四图片裁剪位置控制">
+<a class="header-anchor" href="#%e5%9b%9b%e5%9b%be%e7%89%87%e8%a3%81%e5%89%aa%e4%bd%8d%e7%bd%ae%e6%8e%a7%e5%88%b6"></a>
+四、图片裁剪位置控制
+</h2><p>封面图和导航图用的是 <code>object-fit: cover</code>，默认会居中裁剪。如果图片里人物的脸在偏上或偏下的位置，就需要调整 <code>object-position</code>。</p>
+<p>用 lazysizes 的 <code>lazyloaded</code> 事件来动态设置，在 <code>afterFooter.html</code> 里面添加：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">coverPositions</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="s1">&#39;/images/marin1.jpg&#39;</span><span class="o">:</span> <span class="s1">&#39;50% 8%&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s1">&#39;/images/marin2.jpg&#39;</span><span class="o">:</span> <span class="s1">&#39;50% 8%&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s1">&#39;/images/marin5.jpg&#39;</span><span class="o">:</span> <span class="s1">&#39;50% 20%&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s1">&#39;/images/marin7.jpg&#39;</span><span class="o">:</span> <span class="s1">&#39;50% 8%&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// 需要调整的图片都加进来
+</span></span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;lazyloaded&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">img</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">src</span> <span class="o">=</span> <span class="nx">img</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s1">&#39;src&#39;</span><span class="p">)</span> <span class="o">||</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">key</span> <span class="o">=</span> <span class="nx">src</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/^.*?(\/images\/)/</span><span class="p">,</span> <span class="s1">&#39;/images/&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">isNav</span> <span class="o">=</span> <span class="o">!!</span><span class="nx">img</span><span class="p">.</span><span class="nx">closest</span><span class="p">(</span><span class="s1">&#39;#article-nav&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">isNav</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">img</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">objectPosition</span> <span class="o">=</span> <span class="s1">&#39;50% 25%&#39;</span><span class="p">;</span>  <span class="c1">// 导航图统一用这个
+</span></span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">coverPositions</span><span class="p">[</span><span class="nx">key</span><span class="p">])</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">img</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">objectPosition</span> <span class="o">=</span> <span class="nx">coverPositions</span><span class="p">[</span><span class="nx">key</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><p><code>object-position</code> 的格式是 <code>水平位置 垂直位置</code>，垂直方向上数字越小越往上，越大越往下。比如 <code>50% 8%</code> 就是靠上显示，适合人物脸在图片上方的情况。</p>
+<p>导航图和首页卡片的区分方式是 <code>img.closest('#article-nav')</code>，在导航区域内的就是导航图，否则就是首页封面卡片。</p>
+<h2 id="五修复朋友页头像不显示">
+<a class="header-anchor" href="#%e4%ba%94%e4%bf%ae%e5%a4%8d%e6%9c%8b%e5%8f%8b%e9%a1%b5%e5%a4%b4%e5%83%8f%e4%b8%8d%e6%98%be%e7%a4%ba"></a>
+五、修复朋友页头像不显示
+</h2><p>如果你的朋友页头像一直不显示（透明的），大概率是 <code>friendsLink.html</code> 里面用的是普通 <code>src</code> 而不是懒加载的 <code>data-src</code>。</p>
+<p>Reimu 主题的友链样式里 <code>.friend-avatar</code> 默认是 <code>opacity: 0</code>，只有加了 <code>lazyloaded</code> 这个 class 之后才变成 <code>opacity: 1</code>。如果不走懒加载，这个 class 永远不会加上去，头像就一直是透明的。</p>
+<p>打开 <code>layouts/shortcodes/friendsLink.html</code>，找到头像 img 标签，改成懒加载的写法：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span>
+</span></span><span class="line"><span class="cl">  <span class="na">class</span><span class="o">=</span><span class="s">&#34;friend-avatar lazyload no-lightbox&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">data-src</span><span class="o">=</span><span class="s">&#34;{{ .image }}&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">alt</span><span class="o">=</span><span class="s">&#34;{{ .name }}&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">/&gt;</span>
+</span></span></code></pre></div><p>把 <code>src</code> 改成 <code>data-src</code>，然后在 class 里面加上 <code>lazyload</code>，就好了。</p>
+<h2 id="小结">
+<a class="header-anchor" href="#%e5%b0%8f%e7%bb%93"></a>
+小结
+</h2><p>这几个改动主要是：</p>
+<ol>
+<li>JS 随机横幅 + <code>data-pjax</code> 支持 pjax 跳转</li>
+<li>封面图用索引取模代替 Scratch 队列，解决并发渲染的不稳定问题</li>
+<li>全局偏移保证分页时封面连续</li>
+<li><code>lazyloaded</code> 事件动态设置裁剪位置</li>
+<li>友链头像改为懒加载写法</li>
+</ol>
+<p>都是一些小改动，但折腾起来还是花了不少时间，希望对也在用 Reimu 主题的朋友有帮助嘻嘻</p>
+</div>
+    <footer class="article-footer"><a
+          data-aos="zoom-in"
+          href="/post/blog6/#comments"
+          class="article-comment-link"
+        >
+          <span
+            class="post-comments-count waline-comment-count"
+            data-path="/post/blog6/"
+            itemprop="commentCount"
+          ></span>
+          留言
+        </a><span
+          data-aos="zoom-in"
+          class="article-visitor-link"
+        >
+          <span
+            class="waline-pageview-count"
+            data-path="/post/blog6/"
+            >0</span
+          >
+          <em class="post-meta-item-text">阅读量</em>
+        </span><ul class="article-category-list"><li class="article-tag-list-item" data-aos="zoom-in">
+    <a
+      class="article-category-link"
+      href="/categories/%e8%be%89%e5%a4%9c"
+      data-aos="zoom-in"
+      >辉夜</a
+    >
+    </li></ul>
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/tags/hugo"
+        rel="tag"
+        >Hugo</a
+      >
+    </li></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    aria-label="Article navigation"
+    data-aos="fade-up"
+  ><div class="article-nav-link-wrap left"><img
+            data-src="/images/marin2.jpg"
+            data-sizes="auto"
+            alt="Typora &#43; PicGo &#43; 阿里云OSS搭建图床"
+            class="lazyload"
+          /><a
+          href="/post/blog5/"
+          aria-label="前一篇:Typora &#43; PicGo &#43; 阿里云OSS搭建图床"
+          title="前一篇:Typora &#43; PicGo &#43; 阿里云OSS搭建图床"
+        ></a>
+        <div class="article-nav-caption">前一篇</div>
+        <h3 class="article-nav-title">Typora &#43; PicGo &#43; 阿里云OSS搭建图床</h3>
+      </div></nav></article><section id="comments" data-aos="fade-up">
+<div class="comment-header"><h2 class="comment-title">说些什么吧！</h2>
+  <div class="comment-selector">
+    <div class="comment-selector-wrap"><div class="selector-item" data-selector="waline">
+          <span>waline</span>
+        </div></div>
+  </div>
+</div>
+
+<div class="comment-content"><div class="comment waline-comment" data-aos="fade-up"
+     >
+    </div></div>
+</section></section>
+        </div><footer id="footer" aria-label="Site footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info"><div>
+      <span class="icon-copyright"></span>2025-2026<span class="footer-info-sep rotate"></span>Link-wushuang
+    </div><div>
+        基于&nbsp;<a
+          href="https://gohugo.io/"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+          >Hugo</a
+        >&nbsp;Theme.<a
+          href="https://github.com/D-Sketon/hugo-theme-reimu"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+          >Reimu</a
+        >
+      </div><div>
+        <span class="icon-brush"
+          >&nbsp;13.1k</span
+        >
+        &nbsp;|&nbsp;
+        <span class="icon-coffee">&nbsp;00:29</span>
+      </div></div>
+</footer>
+<div class="sidebar-top">
+            <div class="sidebar-top-taichi "></div>
+            <div class="arrow-up"></div>
+          </div><div id="mask" class="hide"></div>
+      </div><nav id="mobile-nav" aria-label="Mobile navigation">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ol>
+    <li><a href="#hugo-reimu主题美化随机横幅封面轮换与图片裁剪配置">Hugo-Reimu主题美化：随机横幅、封面轮换与图片裁剪配置</a>
+      <ol>
+        <li><a href="#一顶部横幅随机切换">一、顶部横幅随机切换</a>
+          <ol>
+            <li><a href="#1-准备横幅图片">1. 准备横幅图片</a></li>
+            <li><a href="#2-在-afterfooterhtml-添加-js">2. 在 afterFooter.html 添加 JS</a></li>
+          </ol>
+        </li>
+        <li><a href="#二首页封面图顺序轮换">二、首页封面图顺序轮换</a>
+          <ol>
+            <li><a href="#1-配置-datacoversyml">1. 配置 data/covers.yml</a></li>
+            <li><a href="#2-修改-posthtml">2. 修改 post.html</a></li>
+            <li><a href="#3-修改-indexhtml-计算全局偏移">3. 修改 index.html 计算全局偏移</a></li>
+          </ol>
+        </li>
+        <li><a href="#三底部导航图片同步封面顺序">三、底部导航图片同步封面顺序</a></li>
+        <li><a href="#四图片裁剪位置控制">四、图片裁剪位置控制</a></li>
+        <li><a href="#五修复朋友页头像不显示">五、修复朋友页头像不显示</a></li>
+        <li><a href="#小结">小结</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.png"
+    data-sizes="auto"
+    alt="Link-wushuang"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Link-wushuang</div>
+  <div class="sidebar-description">少女祈祷中...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div><div class="sidebar-state-number">6</div>
+  </div>
+  <a class="sidebar-state-category" href="/categories/" aria-label="sidebar-state-category-link">
+    <div>分类</div>
+    <div class="sidebar-state-number">
+      1
+    </div>
+  </a>
+  <a class="sidebar-state-tag" href="/tags/" aria-label="sidebar-state-tag-link">
+    <div>标签</div>
+    <div class="sidebar-state-number">3</div>
+  </a>
+</div>
+<div class="sidebar-social" ><div class="icon-bilibili sidebar-social-icon">
+        <a
+          href="https://space.bilibili.com/3546753779370552?spm_id_from=333.1007.0.0"
+          itemprop="url"
+          target="_blank"
+          aria-label="bilibili"
+          rel="noopener nofollow noreferrer"
+        ></a>
+      </div><div class="icon-email sidebar-social-icon">
+        <a
+          href="mailto:jingefeng6@gmail.com"
+          itemprop="url"
+          target="_blank"
+          aria-label="email"
+          rel="noopener nofollow noreferrer"
+        ></a>
+      </div><div class="icon-github sidebar-social-icon">
+        <a
+          href="https://github.com/Link-wushuang"
+          itemprop="url"
+          target="_blank"
+          aria-label="github"
+          rel="noopener nofollow noreferrer"
+        ></a>
+      </div></div><div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/"
+        aria-label="首页"
+      ></a><div class='sidebar-menu-icon icon '>&#xe617;</div><div class="sidebar-menu-link">首页</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/archives"
+        aria-label="归档"
+      ></a><div class='sidebar-menu-icon icon '>&#xe63d;</div><div class="sidebar-menu-link">归档</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/about"
+        aria-label="关于"
+      ></a><div class='sidebar-menu-icon icon '>&#xe643;</div><div class="sidebar-menu-link">关于</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/friend"
+        aria-label="友链"
+      ></a><div class='sidebar-menu-icon icon '>&#xe621;</div><div class="sidebar-menu-link">友链</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/link"
+        aria-label="更多"
+      ></a><div class='sidebar-menu-icon icon '>&#xe639;</div><div class="sidebar-menu-link">更多</div>
+    </div></div></div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
+</div><script
+    src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
+    
+    
+    
+    
+    integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
+    
+    
+    
+    
+    integrity="sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script><script src="/js/main.js" integrity="" crossorigin="anonymous"  ></script><script src="/js/aos.js" integrity="" crossorigin="anonymous"  ></script><script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", aosInit);
+    } else {
+      aosInit();
+    }
+  </script><script src="/js/pjax_main.js" integrity="" crossorigin="anonymous" data-pjax ></script><script>
+  var setupFirework = () => {
+    if (! false  || !window.matchMedia('(max-width: 768px)').matches) {
+      if (window.firework) {
+        const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"var(--red-1)\",\"var(--red-2)\",\"var(--red-3)\",\"var(--red-4)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}},{\"colors\":[\"var(--red-0)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"diffuse\"],\"number\":1,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.2,0.5],\"lineWidth\":6,\"radius\":20}}]}");
+        options.excludeElements = options.excludeelements;
+        delete options.excludeelements;
+        window.firework(options);
+      }
+    }
+  }
+</script><script
+    src="https://npm.webcache.cn/mouse-firework@0.2.0/dist/index.umd.js"
+    defer
+    
+    
+    onload="setupFirework()"
+    integrity="sha384-qi9WggRt19tv8Vc7pCHW3ulMNLwrn515zaLEWZjl1px07vz8&#43;pUoWX8n1rgq282T" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/theme-shokax-pjax@0.0.3/dist/index.umd.js"
+    
+    
+    
+    
+    integrity="sha384-xneY1WY8hOfUzswrE4CrYq35N4BdVcxqxwHPr9zawE/jMSCxD&#43;jAPU55x/jj3wlf" crossorigin="anonymous"></script><script src="/js/pjax.js" integrity="" crossorigin="anonymous"  ></script><script
+    src="https://npm.webcache.cn/live2d-widgets@0.9.0/autoload.js"
+    defer
+    
+    
+    
+    integrity="sha384-poTN7wN/SqNhQqo3jdFeX20ikddWeFGkUkDEzsKjgH/ez8aQLn81oI0Cw6q5xNyB" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/quicklink@3.0.1/dist/quicklink.umd.js"
+    
+    
+    
+    
+    integrity="sha384-caMDqvgav/HWdEYQU1QRRHMLleigpL1YHAG0m371DhzfL8rRzUyOb&#43;bEHtwlmYjD" crossorigin="anonymous"></script><script data-pjax>
+    window.quicklink?.listen({
+      timeout:  3000 ,
+      priority:  true ,
+      ignores: JSON.parse("[]")
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div><script data-pjax>
+        window.REIMU_POST = {
+          author: "Link-wushuang",
+          title: "Hugo-Reimu主题美化：随机横幅、封面轮换与图片裁剪配置",
+          url: "https:\/\/Link-wushuang.github.io\/post\/blog6\/",
+          description: " Hugo-Reimu主题美化：随机横幅、封面轮换与图片裁剪配置 这篇文章记录一下我对博客做的几个图片相关的优化，主要包括：\n顶部横幅每次刷新随机切换 首页文章封面图按顺序轮换（跨分页保持连续） 每张图片单独设置裁剪位置，避免截掉人脸 修复朋友页头像不显示的问题 一、顶部横幅随机切换 Reimu主题的横幅图是在 params.yml 里面配置的，是静态的，每次打开都是同一张。想要随机的话需要用 JS 在页面加载时动态替换。\n",
+          cover: "https:\/\/Link-wushuang.github.io\/images\/banner3.jpg",
+        };
+      </script><script src="/js/insert_highlight.js" integrity="" crossorigin="anonymous" data-pjax ></script><script src="/js/tabs.js" integrity="" crossorigin="anonymous" data-pjax defer></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const initPswp = (gallery, children) => {
+          if (_$$(`${gallery} ${children}`).length > 0) {
+            new PhotoSwipeLightbox({
+              gallery,
+              children,pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+        }
+        const pswp = () => {
+          initPswp('.article-entry', 'a.article-gallery-item');
+          initPswp('.article-gallery', 'a.article-gallery-item');
+        }
+        pswp()
+      </script><script data-pjax>
+  var loadScript = (src, integrity) => {
+    const script = document.createElement('script');
+    script.src = src;
+    if (integrity) script.integrity = integrity;
+    script.crossOrigin = 'anonymous';
+    return script;
+  };
+  var commentConfigKeys = ['valine', 'waline', 'twikoo', 'gitalk', 'giscus', 'disqus', 'utterances'];
+  var commentConfig = {waline: {
+      enable: true,
+      load: async () => {
+        const container = document.querySelector('.waline-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        let walineInit;
+        const walineCdn = 'https:\/\/npm.webcache.cn\/@waline\/client@2.15.8\/dist\/waline.mjs';
+        
+        if ('webcache|@waline\/client@2.15.8\/dist\/waline.mjs'.startsWith('local')) {
+          
+          const module = await safeImport(walineCdn);
+          walineInit = module.init;
+        } else {
+          
+          const module = await safeImport(
+            walineCdn, 
+            'sha384-9sbqJjrfGjbkI6\/PI4nU\/MvBfEmkkPC4YK9I4zBeMIf1CVCZdCMH\/KinBEAZII\/5'
+          );
+          walineInit = module.init;
+        }
+        
+        window.walineInstance = walineInit({
+          el: '.waline-comment',
+          serverURL: 'https:\/\/waline-blog-rho-ashy.vercel.app\/',
+          lang: document.documentElement.lang || 'en',
+          locale: JSON.parse("{}"),
+          emoji: JSON.parse("[\"https://unpkg.com/@waline/emojis@1.2.0/weibo\",\"https://unpkg.com/@waline/emojis@1.2.0/alus\",\"https://unpkg.com/@waline/emojis@1.2.0/bilibili\",\"https://unpkg.com/@waline/emojis@1.2.0/qq\",\"https://unpkg.com/@waline/emojis@1.2.0/tieba\",\"https://unpkg.com/@waline/emojis@1.2.0/tw-emoji\"]"),
+          meta: JSON.parse("[\"nickS\",\"mail\",\"link\"]"),
+          requiredMeta: JSON.parse("[\"nick\",\"mail\"]"),
+          wordLimit:  0 ,
+          comment: true,
+          pageSize:  10 ,
+          dark: 'html[data-theme="dark"]',
+          pageview:  true ,
+        });
+      }
+    },};
+  commentConfig.enable = commentConfigKeys.some(key => commentConfig?.[key]?.enable);
+
+  var defaultComment = '';
+  if (commentConfig.enable) {
+    
+    var savedCommentType = localStorage.getItem('commentType');
+    
+    
+    if (savedCommentType) {
+      if (commentConfig[savedCommentType]?.enable) {
+        defaultComment = savedCommentType;
+      }
+    }
+    
+    
+    if (!defaultComment) {
+      var configDefault = 'waline';
+      if (commentConfig[configDefault]?.enable) {
+        defaultComment = configDefault;
+      }
+    }
+    
+    
+    if (!defaultComment) {
+      defaultComment = commentConfigKeys.find(sys => commentConfig?.[sys]?.enable) || '';
+    }
+  }
+
+  function loadComments() {
+    if (!commentConfig.enable) return;
+    
+    const loadedComments = {
+      valine: false,
+      waline: false,
+      twikoo: false,
+      gitalk: false,
+      giscus: false
+    };
+
+    
+    const hideAllComments = () => {
+      const commentContainers = document.querySelectorAll('.comment');
+      commentContainers.forEach(container => {
+        container.style.display = 'none';
+      });
+    };
+
+    
+    const loadCommentSystem = (type) => {
+      if (loadedComments[type]) {
+        
+        document.querySelector(`.${type}-comment`).style.display = 'block';
+        return;
+      }
+
+      
+      commentConfig[type]?.load();
+      loadedComments[type] = true;
+    };
+
+    
+    const changeActiveCommentItems = (item) => {
+      const commentItems = document.querySelectorAll('.selector-item');
+      for (let i = 0; i < commentItems.length; i++) {
+        commentItems[i].classList.remove('active');
+      }
+      item.classList.add('active');
+
+      
+      const commentType = item.getAttribute('data-selector');
+
+      
+      hideAllComments();
+
+      
+      loadCommentSystem(commentType);
+    };
+
+    const commentInit = () => {
+      
+      const commentItems = document.querySelectorAll('.selector-item');
+      for (let item of commentItems) {
+        item.addEventListener('click', () => {
+          
+          const commentType = item.getAttribute('data-selector');
+          window.localStorage.setItem('commentType', commentType);
+          
+          changeActiveCommentItems(item);
+        });
+      }
+
+      
+      if (defaultComment) {
+        const defaultSelectorItem = document.querySelector(`[data-selector="${defaultComment}"]`);
+        if (!defaultSelectorItem) return;
+        defaultSelectorItem.style.display = 'block';
+        defaultSelectorItem.classList.add('active');
+        loadCommentSystem(defaultComment);
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', commentInit);
+    } else {
+      commentInit();
+    }
+  };
+  loadComments();
+</script></div>
+</div><script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then((registrations) => {
+        for (let registration of registrations) {
+          registration.unregister();
+        }
+      });
+    }
+  </script><script>
+  const reimuCopyright = String.raw`
+   ______     ______     __     __    __     __  __    
+  /\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+  \ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+   \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+    \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                    
+  `;
+  console.log(String.raw`%c ${reimuCopyright}`, "color: #ff5252;");
+  console.log(
+    "%c Theme.Reimu" + " %c https://github.com/D-Sketon/hugo-theme-reimu ",
+    "color: white; background: #ff5252; padding:5px 0;",
+    "padding:4px;border:1px solid #ff5252;",
+  );
+</script><script data-pjax>
+  (function () {
+    var banners = [
+      { src: '/images/banner1.jpg',  pos: '50% 40%' },
+      { src: '/images/banner2.jpg',  pos: '50% 40%' },
+      { src: '/images/banner3.jpg',  pos: '50% 40%' },
+      { src: '/images/banner5.jpg',  pos: '50% 40%' },
+      { src: '/images/marin1.jpg',   pos: '50% 8%'  },
+      { src: '/images/marin2.jpg',   pos: '50% 15%' },
+      { src: '/images/marin4.jpg',   pos: '50% 35%' },
+      { src: '/images/marin6.jpg',   pos: '50% 25%' },
+      { src: '/images/marin7.jpg',   pos: '50% 15%' },
+      { src: '/images/marin8.jpg',   pos: '50% 25%' },
+      { src: '/images/marin9.jpg',   pos: '50% 25%' },
+      { src: '/images/marin10.jpg',  pos: '50% 15%' },
+    ];
+
+    
+    var coverPositions = {
+      '/images/marin1.jpg':  '50% 8%',
+      '/images/marin2.jpg':  '50% 8%',
+      '/images/marin3.jpg':  '50% 8%',
+      '/images/marin5.jpg':  '50% 20%',
+      '/images/marin7.jpg':  '50% 8%',
+    };
+
+    function applyRandomBanner() {
+      var item = banners[Math.floor(Math.random() * banners.length)];
+      var header = document.getElementById('header');
+      if (!header) return;
+      header.querySelectorAll('picture source').forEach(function (s) { s.srcset = item.src; });
+      var pImg = header.querySelector('picture img');
+      if (pImg) { pImg.src = item.src; pImg.style.objectPosition = item.pos; }
+      var plainImg = header.querySelector(':scope > img:not([style*="hidden"])');
+      if (plainImg) { plainImg.src = item.src; plainImg.style.objectPosition = item.pos; }
+    }
+
+    var navPositions = {};
+
+    document.addEventListener('lazyloaded', function (e) {
+      var img = e.target;
+      var src = img.getAttribute('src') || '';
+      var key = src.replace(/^.*?(\/images\/)/, '/images/');
+      var isNav = !!img.closest('#article-nav');
+      if (isNav) {
+        img.style.objectPosition = navPositions[key] || '50% 25%';
+      } else if (coverPositions[key]) {
+        img.style.objectPosition = coverPositions[key];
+      }
+    });
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', applyRandomBanner);
+    } else {
+      applyRandomBanner();
+    }
+  })();
+</script>
+</body>
+</html>

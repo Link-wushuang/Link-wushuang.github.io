@@ -2,24 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://Link-wushuang.github.io/link/</loc>
-    <lastmod>2026-05-03T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://Link-wushuang.github.io/</loc>
-    <lastmod>2026-05-03T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Link-wushuang.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://Link-wushuang.github.io/"
-                />
-  </url><url>
     <loc>https://Link-wushuang.github.io/categories/</loc>
-    <lastmod>2026-04-13T10:52:54+08:00</lastmod>
+    <lastmod>2026-05-04T12:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -31,8 +15,14 @@
                 href="https://Link-wushuang.github.io/categories/"
                 />
   </url><url>
+    <loc>https://Link-wushuang.github.io/tags/hugo/</loc>
+    <lastmod>2026-05-04T12:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://Link-wushuang.github.io/post/blog6/</loc>
+    <lastmod>2026-05-04T12:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://Link-wushuang.github.io/tags/</loc>
-    <lastmod>2026-04-13T10:52:54+08:00</lastmod>
+    <lastmod>2026-05-04T12:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -44,13 +34,29 @@
                 href="https://Link-wushuang.github.io/tags/"
                 />
   </url><url>
+    <loc>https://Link-wushuang.github.io/</loc>
+    <lastmod>2026-05-04T12:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Link-wushuang.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://Link-wushuang.github.io/"
+                />
+  </url><url>
+    <loc>https://Link-wushuang.github.io/categories/%E8%BE%89%E5%A4%9C/</loc>
+    <lastmod>2026-05-04T12:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://Link-wushuang.github.io/link/</loc>
+    <lastmod>2026-05-03T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://Link-wushuang.github.io/tags/typora/</loc>
     <lastmod>2026-04-13T10:52:54+08:00</lastmod>
   </url><url>
     <loc>https://Link-wushuang.github.io/post/blog5/</loc>
-    <lastmod>2026-04-13T10:52:54+08:00</lastmod>
-  </url><url>
-    <loc>https://Link-wushuang.github.io/categories/%E8%BE%89%E5%A4%9C/</loc>
     <lastmod>2026-04-13T10:52:54+08:00</lastmod>
   </url><url>
     <loc>https://Link-wushuang.github.io/tags/claude-code/</loc>
@@ -58,9 +64,6 @@
   </url><url>
     <loc>https://Link-wushuang.github.io/post/blog4/</loc>
     <lastmod>2026-04-12T15:11:55+08:00</lastmod>
-  </url><url>
-    <loc>https://Link-wushuang.github.io/tags/hugo/</loc>
-    <lastmod>2026-04-08T00:02:01+08:00</lastmod>
   </url><url>
     <loc>https://Link-wushuang.github.io/post/blog3/</loc>
     <lastmod>2026-04-08T00:02:01+08:00</lastmod>
