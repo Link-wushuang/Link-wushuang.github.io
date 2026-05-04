@@ -818,7 +818,7 @@
       '/images/marin1.jpg':  '50% 8%',
       '/images/marin2.jpg':  '50% 8%',
       '/images/marin3.jpg':  '50% 8%',
-      '/images/marin5.jpg':  '50% 8%',
+      '/images/marin5.jpg':  '50% 20%',
       '/images/marin7.jpg':  '50% 8%',
     };
 
@@ -833,11 +833,18 @@
       if (plainImg) { plainImg.src = item.src; plainImg.style.objectPosition = item.pos; }
     }
 
+    var navPositions = {};
+
     document.addEventListener('lazyloaded', function (e) {
       var img = e.target;
       var src = img.getAttribute('src') || '';
       var key = src.replace(/^.*?(\/images\/)/, '/images/');
-      if (coverPositions[key]) img.style.objectPosition = coverPositions[key];
+      var isNav = !!img.closest('#article-nav');
+      if (isNav) {
+        img.style.objectPosition = navPositions[key] || '50% 25%';
+      } else if (coverPositions[key]) {
+        img.style.objectPosition = coverPositions[key];
+      }
     });
 
     if (document.readyState === 'loading') {

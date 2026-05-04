@@ -1212,11 +1212,11 @@ details 折叠面板
     aria-label="Article navigation"
     data-aos="fade-up"
   ><div class="article-nav-link-wrap left"><img
-              data-src="/images/marin1.jpg"
-              data-sizes="auto"
-              alt="Hugo &#43; GitHub 个人博客搭建教程"
-              class="lazyload"
-            /><a
+            data-src="/images/marin5.jpg"
+            data-sizes="auto"
+            alt="Hugo &#43; GitHub 个人博客搭建教程"
+            class="lazyload"
+          /><a
           href="/post/blog1/"
           aria-label="前一篇:Hugo &#43; GitHub 个人博客搭建教程"
           title="前一篇:Hugo &#43; GitHub 个人博客搭建教程"
@@ -1224,11 +1224,11 @@ details 折叠面板
         <div class="article-nav-caption">前一篇</div>
         <h3 class="article-nav-title">Hugo &#43; GitHub 个人博客搭建教程</h3>
       </div><div class="article-nav-link-wrap right"><img
-              data-src="/images/marin2.jpg"
-              data-sizes="auto"
-              alt="Hugo的Github配置"
-              class="lazyload"
-            /><a
+            data-src="/images/marin3.jpg"
+            data-sizes="auto"
+            alt="Hugo的Github配置"
+            class="lazyload"
+          /><a
           href="/post/blog3/"
           aria-label="后一篇:Hugo的Github配置"
           title="后一篇:Hugo的Github配置"
@@ -1683,7 +1683,7 @@ details 折叠面板
       '/images/marin1.jpg':  '50% 8%',
       '/images/marin2.jpg':  '50% 8%',
       '/images/marin3.jpg':  '50% 8%',
-      '/images/marin5.jpg':  '50% 8%',
+      '/images/marin5.jpg':  '50% 20%',
       '/images/marin7.jpg':  '50% 8%',
     };
 
@@ -1698,11 +1698,18 @@ details 折叠面板
       if (plainImg) { plainImg.src = item.src; plainImg.style.objectPosition = item.pos; }
     }
 
+    var navPositions = {};
+
     document.addEventListener('lazyloaded', function (e) {
       var img = e.target;
       var src = img.getAttribute('src') || '';
       var key = src.replace(/^.*?(\/images\/)/, '/images/');
-      if (coverPositions[key]) img.style.objectPosition = coverPositions[key];
+      var isNav = !!img.closest('#article-nav');
+      if (isNav) {
+        img.style.objectPosition = navPositions[key] || '50% 25%';
+      } else if (coverPositions[key]) {
+        img.style.objectPosition = coverPositions[key];
+      }
     });
 
     if (document.readyState === 'loading') {
