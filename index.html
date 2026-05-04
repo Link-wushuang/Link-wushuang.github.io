@@ -403,7 +403,7 @@
         post-cover left
       "
     ><img
-            data-src="/images/banner2.jpg"
+            data-src="/images/marin1.jpg"
             data-sizes="auto"
             alt="Typora &#43; PicGo &#43; 阿里云OSS搭建图床"
             class="lazyload"
@@ -448,7 +448,7 @@
         post-cover right
       "
     ><img
-            data-src="/images/banner2.jpg"
+            data-src="/images/marin1.jpg"
             data-sizes="auto"
             alt="Claude Code 配置教程"
             class="lazyload"
@@ -494,7 +494,7 @@
         post-cover left
       "
     ><img
-            data-src="/images/banner2.jpg"
+            data-src="/images/marin1.jpg"
             data-sizes="auto"
             alt="Hugo的Github配置"
             class="lazyload"
@@ -539,7 +539,7 @@
         post-cover right
       "
     ><img
-            data-src="/images/banner2.jpg"
+            data-src="/images/marin1.jpg"
             data-sizes="auto"
             alt="Hugo 主题设置"
             class="lazyload"
@@ -786,5 +786,56 @@
     "color: white; background: #ff5252; padding:5px 0;",
     "padding:4px;border:1px solid #ff5252;",
   );
-</script></body>
+</script><script data-pjax>
+  (function () {
+    var banners = [
+      { src: '/images/banner1.jpg',  pos: '50% 40%' },
+      { src: '/images/banner2.jpg',  pos: '50% 40%' },
+      { src: '/images/banner3.jpg',  pos: '50% 40%' },
+      { src: '/images/banner5.jpg',  pos: '50% 40%' },
+      { src: '/images/marin1.jpg',   pos: '50% 8%'  },
+      { src: '/images/marin2.jpg',   pos: '50% 15%' },
+      { src: '/images/marin4.jpg',   pos: '50% 35%' },
+      { src: '/images/marin6.jpg',   pos: '50% 25%' },
+      { src: '/images/marin7.jpg',   pos: '50% 15%' },
+      { src: '/images/marin8.jpg',   pos: '50% 25%' },
+      { src: '/images/marin9.jpg',   pos: '50% 25%' },
+      { src: '/images/marin10.jpg',  pos: '50% 15%' },
+    ];
+
+    
+    var coverPositions = {
+      '/images/marin1.jpg':  '50% 8%',
+      '/images/marin2.jpg':  '50% 8%',
+      '/images/marin3.jpg':  '50% 8%',
+      '/images/marin5.jpg':  '50% 8%',
+      '/images/marin7.jpg':  '50% 8%',
+    };
+
+    function applyRandomBanner() {
+      var item = banners[Math.floor(Math.random() * banners.length)];
+      var header = document.getElementById('header');
+      if (!header) return;
+      header.querySelectorAll('picture source').forEach(function (s) { s.srcset = item.src; });
+      var pImg = header.querySelector('picture img');
+      if (pImg) { pImg.src = item.src; pImg.style.objectPosition = item.pos; }
+      var plainImg = header.querySelector(':scope > img:not([style*="hidden"])');
+      if (plainImg) { plainImg.src = item.src; plainImg.style.objectPosition = item.pos; }
+    }
+
+    document.addEventListener('lazyloaded', function (e) {
+      var img = e.target;
+      var src = img.getAttribute('src') || '';
+      var key = src.replace(/^.*?(\/images\/)/, '/images/');
+      if (coverPositions[key]) img.style.objectPosition = coverPositions[key];
+    });
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', applyRandomBanner);
+    } else {
+      applyRandomBanner();
+    }
+  })();
+</script>
+</body>
 </html>

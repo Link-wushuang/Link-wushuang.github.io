@@ -393,9 +393,9 @@
         >2026-05-03</time
       >
     </span></div>
-</div><div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><div class="tabs" id="tab-tab_233dc3c7_1777816619215913485">
-		<ul class="nav-tabs"><li class="tab active"><a class="#tab_233dc3c7_1777816619215913485-1">🚀 项目</a></li><li class="tab"><a class="#tab_233dc3c7_1777816619215913485-2">🛠 工具箱</a></li><div class="tab-indicator"></div></ul>
-		<div class="tab-content"><div class="tab-pane active" id="tab_233dc3c7_1777816619215913485-1"><div class="post-link-card-wrap">
+</div><div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><div class="tabs" id="tab-tab_233dc3c7_1777866307541659443">
+		<ul class="nav-tabs"><li class="tab active"><a class="#tab_233dc3c7_1777866307541659443-1">🚀 项目</a></li><li class="tab"><a class="#tab_233dc3c7_1777866307541659443-2">🛠 工具箱</a></li><div class="tab-indicator"></div></ul>
+		<div class="tab-content"><div class="tab-pane active" id="tab_233dc3c7_1777866307541659443-1"><div class="post-link-card-wrap">
   <div class="post-link-card">
     <a href="https://link-wushuang.github.io/" title="本博客" rel="noopener nofollow noreferrer" target="_blank"></a>
     <div class="post-link-card-cover-wrap auto">
@@ -408,7 +408,7 @@
       </div>
     </div>
   </div>
-</div></div><div class="tab-pane" id="tab_233dc3c7_1777816619215913485-2"><table>
+</div></div><div class="tab-pane" id="tab_233dc3c7_1777866307541659443-2"><table>
   <thead>
       <tr>
           <th>工具</th>
@@ -855,5 +855,56 @@
     "color: white; background: #ff5252; padding:5px 0;",
     "padding:4px;border:1px solid #ff5252;",
   );
-</script></body>
+</script><script data-pjax>
+  (function () {
+    var banners = [
+      { src: '/images/banner1.jpg',  pos: '50% 40%' },
+      { src: '/images/banner2.jpg',  pos: '50% 40%' },
+      { src: '/images/banner3.jpg',  pos: '50% 40%' },
+      { src: '/images/banner5.jpg',  pos: '50% 40%' },
+      { src: '/images/marin1.jpg',   pos: '50% 8%'  },
+      { src: '/images/marin2.jpg',   pos: '50% 15%' },
+      { src: '/images/marin4.jpg',   pos: '50% 35%' },
+      { src: '/images/marin6.jpg',   pos: '50% 25%' },
+      { src: '/images/marin7.jpg',   pos: '50% 15%' },
+      { src: '/images/marin8.jpg',   pos: '50% 25%' },
+      { src: '/images/marin9.jpg',   pos: '50% 25%' },
+      { src: '/images/marin10.jpg',  pos: '50% 15%' },
+    ];
+
+    
+    var coverPositions = {
+      '/images/marin1.jpg':  '50% 8%',
+      '/images/marin2.jpg':  '50% 8%',
+      '/images/marin3.jpg':  '50% 8%',
+      '/images/marin5.jpg':  '50% 8%',
+      '/images/marin7.jpg':  '50% 8%',
+    };
+
+    function applyRandomBanner() {
+      var item = banners[Math.floor(Math.random() * banners.length)];
+      var header = document.getElementById('header');
+      if (!header) return;
+      header.querySelectorAll('picture source').forEach(function (s) { s.srcset = item.src; });
+      var pImg = header.querySelector('picture img');
+      if (pImg) { pImg.src = item.src; pImg.style.objectPosition = item.pos; }
+      var plainImg = header.querySelector(':scope > img:not([style*="hidden"])');
+      if (plainImg) { plainImg.src = item.src; plainImg.style.objectPosition = item.pos; }
+    }
+
+    document.addEventListener('lazyloaded', function (e) {
+      var img = e.target;
+      var src = img.getAttribute('src') || '';
+      var key = src.replace(/^.*?(\/images\/)/, '/images/');
+      if (coverPositions[key]) img.style.objectPosition = coverPositions[key];
+    });
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', applyRandomBanner);
+    } else {
+      applyRandomBanner();
+    }
+  })();
+</script>
+</body>
 </html>
