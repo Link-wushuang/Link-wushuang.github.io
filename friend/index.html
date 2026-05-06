@@ -47,7 +47,7 @@
   <meta property="article:author" content="Link-wushuang" />
   <meta property="article:published_time" content="2022-06-09T20:12:52&#43;08:00" />
   <meta property="article:modified_time" content="2026-05-03T00:00:00&#43;08:00" /><meta name="twitter:card" content="summary" /><meta name="twitter:image" content="https://Link-wushuang.github.io/images/banner3.jpg" />
-<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.min.6b06664d458b7fd4963dcbd1118fd41dbf8e99aa5143d0460ef63e1b68bae4c3.css" /><link
+<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.min.b7a67291ebd4c5b916741c7adfd4d660dfe7f06445f166e57c304b5ee2612b33.css" /><link
     rel="preload"
     as="style"
     href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
@@ -422,7 +422,7 @@
       </div>
       <div class="friend-info-wrap">
         <div class="friend-name">Nora-李蔡菲大王</div>
-        <div class="friend-desc">请问冯金戈什么时候女仆装！</div>
+        <div class="friend-desc">请问fjg什么时候女仆装！</div>
         <div class="friend-link">https://github.com/Nora-0721/</div>
       </div>
     </div></div>
@@ -502,10 +502,7 @@
         <span class="icon-coffee">&nbsp;00:30</span>
       </div></div>
 </footer>
-<div class="sidebar-top">
-            <div class="sidebar-top-taichi "></div>
-            <div class="arrow-up"></div>
-          </div><div id="mask" class="hide"></div>
+<div id="mask" class="hide"></div>
       </div><nav id="mobile-nav" aria-label="Mobile navigation">
   <div class="sidebar-wrap"><div class="sidebar-author">
   <img
@@ -587,7 +584,158 @@
         aria-label="更多"
       ></a><div class='sidebar-menu-icon icon '>&#xe639;</div><div class="sidebar-menu-link">更多</div>
     </div></div></div></nav>
-</div><script
+</div><script src="https://unpkg.com/oh-my-live2d@latest"></script>
+<script>
+  (function () {
+    if (window.__blogLive2dInitialized) return;
+    window.__blogLive2dInitialized = true;
+
+    var CLICK_MESSAGES = [
+      "你为什么要戳我？",
+      "今天天气真好啊！",
+      "快来和我一起玩耍吧，嘻嘻！",
+      "哎呀不要再碰我了！",
+      "你喜欢我的新衣服吗？",
+      "我好像听到了什么声音哦！",
+      "你在看什么呢？",
+      "我感觉有点冷，能不能给我一个拥抱？",
+      "你喜欢吃什么呢？",
+      "我好像看到了一只可爱的小动物！",
+      "你觉得我今天的发型怎么样？",
+      "我好像闻到了什么好吃的味道！",
+      "你喜欢我的新配件吗？",
+      "我好像看到了一只小鸟在飞！",
+      "你觉得我今天的表情怎么样？"
+    ];
+
+    var IDLE_MESSAGES = [
+      "哎呀好无聊啊！",
+      "接下来应该干什么呢？",
+      "我好像听到了什么声音哦！",
+      "你在看什么呢？",
+      "我感觉有点冷，能不能给我一个拥抱？",
+      "你喜欢我吗？",
+      "我好像看到了一只可爱的小动物！",
+      "啦啦啦啦~"
+    ];
+
+    var FACES = [
+      { id: 'aixin',   label: '爱心眼' },
+      { id: 'qqy',     label: '圈圈眼' },
+      { id: 'heilian', label: '黑化'   },
+      { id: 'mz',      label: '戴帽子' }
+    ];
+
+    var OUTFITS = [
+      { id: 'waitao',      label: '脱外套'    },
+      { id: 'quinzi',      label: '裙子'      },
+      { id: 'jkbao',       label: 'JK包'      },
+      { id: 'shoubing',    label: '手柄'      },
+      { id: 'maweir_hide', label: '马尾R隐藏' },
+      { id: 'maweil_hide', label: '马尾L隐藏' }
+    ];
+
+    var faceIdx = -1;
+    var outfitIdx = -1;
+
+    function nextFace(oml2d) {
+      faceIdx = (faceIdx + 1) % FACES.length;
+      var face = FACES[faceIdx];
+      oml2d.models.model.expression(face.id);
+      oml2d.tipsMessage('表情：' + face.label, 2500, 8);
+    }
+
+    function nextOutfit(oml2d) {
+      outfitIdx = (outfitIdx + 1) % OUTFITS.length;
+      var outfit = OUTFITS[outfitIdx];
+      oml2d.models.model.expression(outfit.id);
+      oml2d.tipsMessage('装扮：' + outfit.label, 2500, 8);
+    }
+
+    function startLive2D() {
+      if (typeof OML2D === "undefined") return;
+
+      try {
+        var oml2d = window.__oml2d = OML2D.loadOml2d({
+          dockedPosition: "right",
+          models: [
+            {
+              path: "/live2d/model/ariu/ariu.model3.json",
+              position: [0, 60],
+              scale: 0.1,
+              stageStyle: { width: 280, height: 400 }
+            }
+          ],
+          menus: {
+            items: function (defaultItems) {
+              var filtered = defaultItems.filter(function (item) {
+                return item.id !== 'SwitchModelClothes';
+              });
+              return filtered.concat([
+                {
+                  id: 'SwitchFace',
+                  title: '切换表情',
+                  onClick: function (oml2d) { nextFace(oml2d); }
+                },
+                {
+                  id: 'SwitchOutfit',
+                  title: '切换装扮',
+                  onClick: function (oml2d) { nextOutfit(oml2d); }
+                }
+              ]);
+            }
+          },
+          tips: {
+            idleTips: {
+              wordTheDay: false,
+              duration: 4000,
+              interval: 15000,
+              message: IDLE_MESSAGES
+            }
+          }
+        });
+
+        setTimeout(function () {
+          var faceIcon = document.querySelector('#SwitchFace .oml2d-icon');
+          var outfitIcon = document.querySelector('#SwitchOutfit .oml2d-icon');
+          if (faceIcon) {
+            faceIcon.setAttribute('viewBox', '0 0 24 24');
+            faceIcon.innerHTML =
+              '<circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none"/>' +
+              '<circle cx="9" cy="10" r="1.5" fill="currentColor"/>' +
+              '<circle cx="15" cy="10" r="1.5" fill="currentColor"/>' +
+              '<path d="M9 14.5 Q12 17 15 14.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>';
+          }
+          if (outfitIcon) {
+            outfitIcon.setAttribute('viewBox', '0 0 24 24');
+            outfitIcon.innerHTML =
+              '<path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.57a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.57a2 2 0 0 0-1.34-2.13z"' +
+              ' stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>';
+          }
+        }, 1000);
+
+        document.addEventListener("click", function (event) {
+          var stage = document.getElementById("oml2d-stage");
+          if (!stage || !stage.contains(event.target)) return;
+          oml2d.tipsMessage(
+            CLICK_MESSAGES[Math.floor(Math.random() * CLICK_MESSAGES.length)],
+            2600,
+            10
+          );
+        });
+      } catch (error) {
+        console.error("Failed to load Live2D model", error);
+      }
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", startLive2D, { once: true });
+    } else {
+      startLive2D();
+    }
+  })();
+</script>
+<script
     src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
     
     
@@ -637,12 +785,6 @@
     
     
     integrity="sha384-xneY1WY8hOfUzswrE4CrYq35N4BdVcxqxwHPr9zawE/jMSCxD&#43;jAPU55x/jj3wlf" crossorigin="anonymous"></script><script src="/js/pjax.js" integrity="" crossorigin="anonymous"  ></script><script
-    src="https://npm.webcache.cn/live2d-widgets@0.9.0/autoload.js"
-    defer
-    
-    
-    
-    integrity="sha384-poTN7wN/SqNhQqo3jdFeX20ikddWeFGkUkDEzsKjgH/ez8aQLn81oI0Cw6q5xNyB" crossorigin="anonymous"></script><script
     src="https://npm.webcache.cn/quicklink@3.0.1/dist/quicklink.umd.js"
     
     
