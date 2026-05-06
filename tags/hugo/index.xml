@@ -12,12 +12,35 @@
     
     <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
     
-    <lastBuildDate>Mon, 04 May 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2026 12:00:00 +0800</lastBuildDate>
     
     
     <atom:link href="https://Link-wushuang.github.io/tags/hugo/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
+    
+    
+
+    <item>
+      <title>Hugo博客配置评论区——Waline &#43; Vercel &#43; Neon</title>
+      <link>https://Link-wushuang.github.io/post/blog7/</link>
+      <pubDate>Wed, 06 May 2026 12:00:00 &#43;0800</pubDate>
+      <author>jingefeng6@gmail.com (Link-wushuang)</author>
+      <guid>https://Link-wushuang.github.io/post/blog7/</guid>
+      <description>
+        <![CDATA[<h1>Hugo博客配置评论区——Waline + Vercel + Neon</h1><p>作者：Link-wushuang（jingefeng6@gmail.com）</p>
+        
+          <h1 id="hugo博客配置评论区waline--vercel--neon">
+<a class="header-anchor" href="#hugo%e5%8d%9a%e5%ae%a2%e9%85%8d%e7%bd%ae%e8%af%84%e8%ae%ba%e5%8c%bawaline--vercel--neon"></a>
+Hugo博客配置评论区——Waline + Vercel + Neon
+</h1><p>我的博客用的是 hugo-reimu 主题，评论系统选的 Waline，服务端部署在 Vercel，数据库用的是 Neon（PostgreSQL）。整个过程跟着官方教程走就行：</p>
+        
+        <hr><p>本文2026-05-06首发于<a href='https://Link-wushuang.github.io/'>辉夜</a>，最后修改于2026-05-06</p>]]>
+      </description>
+      
+        <category>辉夜</category>
+      
+    </item>
     
     
 

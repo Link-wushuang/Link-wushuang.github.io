@@ -1,5 +1,11 @@
 [
   {
+    "objectID": "8f5a4f4c1fa0fd4cb9cae53d15444f190228c20e",
+    "permalink": "/post/blog7/",
+    "title": "Hugo博客配置评论区——Waline + Vercel + Neon","content": " Hugo博客配置评论区——Waline + Vercel + Neon 我的博客用的是 hugo-reimu 主题，评论系统选的 Waline，服务端部署在 Vercel，数据库用的是 Neon（PostgreSQL）。整个过程跟着官方教程走就行：\nWaline 快速上手\n配置 Hugo 博客端 部署完之后，Vercel 会给你一个服务端地址，打开 config/_default/params.yml，找到 waline 部分填进去：\nwaline: enable: true serverURL: https://你的项目名.vercel.app/ 保存之后重新构建，评论框就出来啦\n之前的网上有些教程是用的LeanCloud，那个快要停服了，所有这个官网给的是用Neon。注意一下哦\n","date": "2026-05-06 12:00:00",
+    "updated": "2026-05-06 12:00:00"
+  }, 
+  {
     "objectID": "8be7fb54dfc3c9139072e6927ba7506309e49684",
     "permalink": "/post/blog6/",
     "title": "Hugo-Reimu主题美化：随机横幅、封面轮换与图片裁剪配置","content": " Hugo-Reimu主题美化：随机横幅、封面轮换与图片裁剪配置 这篇文章记录一下我对博客做的几个图片相关的优化，主要包括：\n顶部横幅每次刷新随机切换 首页文章封面图按顺序轮换（跨分页保持连续） 每张图片单独设置裁剪位置，避免截掉人脸 修复朋友页头像不显示的问题 一、顶部横幅随机切换 Reimu主题的横幅图是在 params.yml 里面配置的，是静态的，每次打开都是同一张。想要随机的话需要用 JS 在页面加载时动态替换。\n1. 准备横幅图片 把你想用的横幅图片放到 static/images/ 目录下。\n2. 在 afterFooter.html 添加 JS 打开 layouts/partials/afterFooter.html，在文件末尾添加以下代码：\n\u0026amp;lt;script data-pjax\u0026amp;gt; (function () { var banners = [ { src: \u0026amp;#39;/images/banner1.jpg\u0026amp;#39;, pos: \u0026amp;#39;50% 40%\u0026amp;#39; }, { src: \u0026amp;#39;/images/banner2.jpg\u0026amp;#39;, pos: \u0026amp;#39;50% 40%\u0026amp;#39; }, { src: \u0026amp;#39;/images/marin1.jpg\u0026amp;#39;, pos: \u0026amp;#39;50% 8%\u0026amp;#39; }, { src: \u0026amp;#39;/images/marin2.jpg\u0026amp;#39;, pos: \u0026amp;#39;50% 15%\u0026amp;#39; }, // 继续添加你的图片... ]; function applyBanner() { var b = banners[Math.floor(Math.random() * banners.length)]; var picture = document.querySelector(\u0026amp;#39;#page-header picture\u0026amp;#39;); var img = document.querySelector(\u0026amp;#39;#page-header img\u0026amp;#39;); if (picture) { var sources = picture.querySelectorAll(\u0026amp;#39;source\u0026amp;#39;); sources.forEach(function (s) { s.srcset = b.src; …","date": "2026-05-04 12:00:00",
