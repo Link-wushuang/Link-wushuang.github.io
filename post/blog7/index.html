@@ -327,6 +327,8 @@ Hugo博客配置评论区——Waline + Vercel + Neon
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">serverURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://你的项目名.vercel.app/</span><span class="w">
 </span></span></span></code></pre></div><p>保存之后重新构建，评论框就出来啦</p>
 <p>之前的网上有些教程是用的LeanCloud，那个快要停服了，所有这个官网给的是用Neon。注意一下哦</p>
+<hr>
+<p>本博客大体由 Claude 生成，Link 也是借助 Claude 进行修改的。</p>
 </div>
     <footer class="article-footer"><a
           data-aos="zoom-in"
@@ -427,7 +429,7 @@ Hugo博客配置评论区——Waline + Vercel + Neon
         >
       </div><div>
         <span class="icon-brush"
-          >&nbsp;15.4k</span
+          >&nbsp;15.8k</span
         >
         &nbsp;|&nbsp;
         <span class="icon-coffee">&nbsp;00:35</span>
@@ -641,24 +643,24 @@ Hugo博客配置评论区——Waline + Vercel + Neon
           }
         });
 
-        setTimeout(function () {
+        var iconObserver = new MutationObserver(function () {
           var faceIcon = document.querySelector('#SwitchFace .oml2d-icon');
           var outfitIcon = document.querySelector('#SwitchOutfit .oml2d-icon');
-          if (faceIcon) {
-            faceIcon.setAttribute('viewBox', '0 0 24 24');
-            faceIcon.innerHTML =
-              '<circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none"/>' +
-              '<circle cx="9" cy="10" r="1.5" fill="currentColor"/>' +
-              '<circle cx="15" cy="10" r="1.5" fill="currentColor"/>' +
-              '<path d="M9 14.5 Q12 17 15 14.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>';
-          }
-          if (outfitIcon) {
-            outfitIcon.setAttribute('viewBox', '0 0 24 24');
-            outfitIcon.innerHTML =
-              '<path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.57a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.57a2 2 0 0 0-1.34-2.13z"' +
-              ' stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>';
-          }
-        }, 1000);
+          if (!faceIcon || !outfitIcon) return;
+          faceIcon.setAttribute('viewBox', '0 0 24 24');
+          faceIcon.innerHTML =
+            '<circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none"/>' +
+            '<circle cx="9" cy="10" r="1.5" fill="currentColor"/>' +
+            '<circle cx="15" cy="10" r="1.5" fill="currentColor"/>' +
+            '<path d="M9 14.5 Q12 17 15 14.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>';
+          outfitIcon.setAttribute('viewBox', '0 0 24 24');
+          outfitIcon.innerHTML =
+            '<path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.57a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.57a2 2 0 0 0-1.34-2.13z"' +
+            ' stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>';
+          iconObserver.disconnect();
+        });
+        iconObserver.observe(document.body, { childList: true, subtree: true });
+        setTimeout(function () { iconObserver.disconnect(); }, 30000);
 
         document.addEventListener("click", function (event) {
           var stage = document.getElementById("oml2d-stage");

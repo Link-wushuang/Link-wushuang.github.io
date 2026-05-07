@@ -8,7 +8,7 @@
   {
     "objectID": "8f5a4f4c1fa0fd4cb9cae53d15444f190228c20e",
     "permalink": "/post/blog7/",
-    "title": "Hugo博客配置评论区——Waline + Vercel + Neon","content": " Hugo博客配置评论区——Waline + Vercel + Neon 我的博客用的是 hugo-reimu 主题，评论系统选的 Waline，服务端部署在 Vercel，数据库用的是 Neon（PostgreSQL）。整个过程跟着官方教程走就行：\nWaline 快速上手\n配置 Hugo 博客端 部署完之后，Vercel 会给你一个服务端地址，打开 config/_default/params.yml，找到 waline 部分填进去：\nwaline: enable: true serverURL: https://你的项目名.vercel.app/ 保存之后重新构建，评论框就出来啦\n之前的网上有些教程是用的LeanCloud，那个快要停服了，所有这个官网给的是用Neon。注意一下哦\n","date": "2026-05-06 12:00:00",
+    "title": "Hugo博客配置评论区——Waline + Vercel + Neon","content": " Hugo博客配置评论区——Waline + Vercel + Neon 我的博客用的是 hugo-reimu 主题，评论系统选的 Waline，服务端部署在 Vercel，数据库用的是 Neon（PostgreSQL）。整个过程跟着官方教程走就行：\nWaline 快速上手\n配置 Hugo 博客端 部署完之后，Vercel 会给你一个服务端地址，打开 config/_default/params.yml，找到 waline 部分填进去：\nwaline: enable: true serverURL: https://你的项目名.vercel.app/ 保存之后重新构建，评论框就出来啦\n之前的网上有些教程是用的LeanCloud，那个快要停服了，所有这个官网给的是用Neon。注意一下哦\n本博客大体由 Claude 生成，Link 也是借助 Claude 进行修改的。\n","date": "2026-05-06 12:00:00",
     "updated": "2026-05-06 12:00:00"
   }, 
   {
