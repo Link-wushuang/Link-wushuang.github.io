@@ -620,7 +620,7 @@ This article does not have a corresponding language version
     window.quicklink?.listen({
       timeout:  3000 ,
       priority:  true ,
-      ignores: JSON.parse("[]")
+      ignores: [/\/cdn-cgi\//].concat(JSON.parse("[]"))
     });
   </script>
 

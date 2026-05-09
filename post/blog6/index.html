@@ -934,7 +934,7 @@ Hugo-Reimu主题美化：随机横幅、封面轮换与图片裁剪配置
     window.quicklink?.listen({
       timeout:  3000 ,
       priority:  true ,
-      ignores: JSON.parse("[]")
+      ignores: [/\/cdn-cgi\//].concat(JSON.parse("[]"))
     });
   </script>
 

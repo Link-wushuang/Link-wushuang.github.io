@@ -1154,7 +1154,7 @@ createCalendar(document.querySelector("#heatmap"), transformArticlesData(article
     window.quicklink?.listen({
       timeout:  3000 ,
       priority:  true ,
-      ignores: JSON.parse("[]")
+      ignores: [/\/cdn-cgi\//].concat(JSON.parse("[]"))
     });
   </script>
 
