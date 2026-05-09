@@ -12,12 +12,35 @@
     
     <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
     
-    <lastBuildDate>Wed, 06 May 2026 18:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 10:00:00 +0800</lastBuildDate>
     
     
     <atom:link href="https://blog.linkwushuang.top/tags/hugo/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
+    
+    
+
+    <item>
+      <title>Hugo博客接入Cloudflare——自定义域名 &#43; CDN加速 &#43; 缓存优化</title>
+      <link>https://blog.linkwushuang.top/post/blog9/</link>
+      <pubDate>Sat, 09 May 2026 10:00:00 &#43;0800</pubDate>
+      <author>jingefeng6@gmail.com (Link-wushuang)</author>
+      <guid>https://blog.linkwushuang.top/post/blog9/</guid>
+      <description>
+        <![CDATA[<h1>Hugo博客接入Cloudflare——自定义域名 + CDN加速 + 缓存优化</h1><p>作者：Link-wushuang（jingefeng6@gmail.com）</p>
+        
+          <h1 id="hugo博客接入cloudflare自定义域名--cdn加速--缓存优化">
+<a class="header-anchor" href="#hugo%e5%8d%9a%e5%ae%a2%e6%8e%a5%e5%85%a5cloudflare%e8%87%aa%e5%ae%9a%e4%b9%89%e5%9f%9f%e5%90%8d--cdn%e5%8a%a0%e9%80%9f--%e7%bc%93%e5%ad%98%e4%bc%98%e5%8c%96"></a>
+Hugo博客接入Cloudflare——自定义域名 + CDN加速 + 缓存优化
+</h1><p>博客一直放在 GitHub Pages 上，国内访问速度一般，于是趁着搞了个自定义域名，顺手接入了 Cloudflare，记录一下整个配置过程。</p>
+        
+        <hr><p>本文2026-05-09首发于<a href='https://blog.linkwushuang.top/'>辉夜</a>，最后修改于2026-05-09</p>]]>
+      </description>
+      
+        <category>辉夜</category>
+      
+    </item>
     
     
 
