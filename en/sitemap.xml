@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://Link-wushuang.github.io/en/categories/</loc>
+    <loc>https://blog.linkwushuang.top/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="https://Link-wushuang.github.io/categories/"
+                href="https://blog.linkwushuang.top/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://Link-wushuang.github.io/en/categories/"
+                href="https://blog.linkwushuang.top/en/categories/"
                 />
   </url><url>
-    <loc>https://Link-wushuang.github.io/en/tags/</loc>
+    <loc>https://blog.linkwushuang.top/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="https://Link-wushuang.github.io/tags/"
+                href="https://blog.linkwushuang.top/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://Link-wushuang.github.io/en/tags/"
+                href="https://blog.linkwushuang.top/en/tags/"
                 />
   </url><url>
-    <loc>https://Link-wushuang.github.io/en/</loc>
+    <loc>https://blog.linkwushuang.top/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="https://Link-wushuang.github.io/"
+                href="https://blog.linkwushuang.top/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://Link-wushuang.github.io/en/"
+                href="https://blog.linkwushuang.top/en/"
                 />
   </url>
 </urlset>

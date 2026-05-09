@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>辉夜</title>
-    <link>https://Link-wushuang.github.io/algolia.json</link>
+    <link>https://blog.linkwushuang.top/algolia.json</link>
     <description>Recent content from 辉夜</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Wed, 06 May 2026 18:00:00 +0800</lastBuildDate>
     
     
-    <atom:link href="https://Link-wushuang.github.io/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://blog.linkwushuang.top/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,10 +23,10 @@
 
     <item>
       <title>Hugo博客配置Live2D看板娘——免费皮套 &#43; 表情装扮切换</title>
-      <link>https://Link-wushuang.github.io/post/blog8/</link>
+      <link>https://blog.linkwushuang.top/post/blog8/</link>
       <pubDate>Wed, 06 May 2026 18:00:00 &#43;0800</pubDate>
       <author>jingefeng6@gmail.com (Link-wushuang)</author>
-      <guid>https://Link-wushuang.github.io/post/blog8/</guid>
+      <guid>https://blog.linkwushuang.top/post/blog8/</guid>
       <description>
         <![CDATA[<h1>Hugo博客配置Live2D看板娘——免费皮套 + 表情装扮切换</h1><p>作者：Link-wushuang（jingefeng6@gmail.com）</p>
         
@@ -35,7 +35,7 @@
 Hugo博客配置Live2D看板娘——免费皮套 + 表情装扮切换
 </h1><p>博客右下角的小人是 Live2D 看板娘，这篇记录一下怎么配置的，皮套用的是 B 站 UP 分享的免费模型，用 oh-my-live2d 这个库加载，顺带加了表情和装扮的切换按钮。</p>
         
-        <hr><p>本文2026-05-06首发于<a href='https://Link-wushuang.github.io/'>辉夜</a>，最后修改于2026-05-06</p>]]>
+        <hr><p>本文2026-05-06首发于<a href='https://blog.linkwushuang.top/'>辉夜</a>，最后修改于2026-05-06</p>]]>
       </description>
       
         <category>辉夜</category>
@@ -46,10 +46,10 @@ Hugo博客配置Live2D看板娘——免费皮套 + 表情装扮切换
 
     <item>
       <title>Hugo博客配置评论区——Waline &#43; Vercel &#43; Neon</title>
-      <link>https://Link-wushuang.github.io/post/blog7/</link>
+      <link>https://blog.linkwushuang.top/post/blog7/</link>
       <pubDate>Wed, 06 May 2026 12:00:00 &#43;0800</pubDate>
       <author>jingefeng6@gmail.com (Link-wushuang)</author>
-      <guid>https://Link-wushuang.github.io/post/blog7/</guid>
+      <guid>https://blog.linkwushuang.top/post/blog7/</guid>
       <description>
         <![CDATA[<h1>Hugo博客配置评论区——Waline + Vercel + Neon</h1><p>作者：Link-wushuang（jingefeng6@gmail.com）</p>
         
@@ -58,7 +58,7 @@ Hugo博客配置Live2D看板娘——免费皮套 + 表情装扮切换
 Hugo博客配置评论区——Waline + Vercel + Neon
 </h1><p>我的博客用的是 hugo-reimu 主题，评论系统选的 Waline，服务端部署在 Vercel，数据库用的是 Neon（PostgreSQL）。整个过程跟着官方教程走就行：</p>
         
-        <hr><p>本文2026-05-06首发于<a href='https://Link-wushuang.github.io/'>辉夜</a>，最后修改于2026-05-06</p>]]>
+        <hr><p>本文2026-05-06首发于<a href='https://blog.linkwushuang.top/'>辉夜</a>，最后修改于2026-05-06</p>]]>
       </description>
       
         <category>辉夜</category>
@@ -69,10 +69,10 @@ Hugo博客配置评论区——Waline + Vercel + Neon
 
     <item>
       <title>Hugo-Reimu主题美化：随机横幅、封面轮换与图片裁剪配置</title>
-      <link>https://Link-wushuang.github.io/post/blog6/</link>
+      <link>https://blog.linkwushuang.top/post/blog6/</link>
       <pubDate>Mon, 04 May 2026 12:00:00 &#43;0800</pubDate>
       <author>jingefeng6@gmail.com (Link-wushuang)</author>
-      <guid>https://Link-wushuang.github.io/post/blog6/</guid>
+      <guid>https://blog.linkwushuang.top/post/blog6/</guid>
       <description>
         <![CDATA[<h1>Hugo-Reimu主题美化：随机横幅、封面轮换与图片裁剪配置</h1><p>作者：Link-wushuang（jingefeng6@gmail.com）</p>
         
@@ -91,7 +91,7 @@ Hugo-Reimu主题美化：随机横幅、封面轮换与图片裁剪配置
 一、顶部横幅随机切换
 </h2><p>Reimu主题的横幅图是在 <code>params.yml</code> 里面配置的，是静态的，每次打开都是同一张。想要随机的话需要用 JS 在页面加载时动态替换。</p>
         
-        <hr><p>本文2026-05-04首发于<a href='https://Link-wushuang.github.io/'>辉夜</a>，最后修改于2026-05-04</p>]]>
+        <hr><p>本文2026-05-04首发于<a href='https://blog.linkwushuang.top/'>辉夜</a>，最后修改于2026-05-04</p>]]>
       </description>
       
         <category>辉夜</category>
@@ -102,10 +102,10 @@ Hugo-Reimu主题美化：随机横幅、封面轮换与图片裁剪配置
 
     <item>
       <title>Typora &#43; PicGo &#43; 阿里云OSS搭建图床</title>
-      <link>https://Link-wushuang.github.io/post/blog5/</link>
+      <link>https://blog.linkwushuang.top/post/blog5/</link>
       <pubDate>Mon, 13 Apr 2026 10:52:54 &#43;0800</pubDate>
       <author>jingefeng6@gmail.com (Link-wushuang)</author>
-      <guid>https://Link-wushuang.github.io/post/blog5/</guid>
+      <guid>https://blog.linkwushuang.top/post/blog5/</guid>
       <description>
         <![CDATA[<h1>Typora + PicGo + 阿里云OSS搭建图床</h1><p>作者：Link-wushuang（jingefeng6@gmail.com）</p>
         
@@ -114,7 +114,7 @@ Hugo-Reimu主题美化：随机横幅、封面轮换与图片裁剪配置
 Typora + PicGo + 阿里云OSS搭建图床
 </h1><p>这样你就可以解决图片发上博客或者传给别人打不开的情况啦！（这个也有一些其他的方式，比如说用Gitee，不过我已经买都买了，那就这样吧）</p>
         
-        <hr><p>本文2026-04-13首发于<a href='https://Link-wushuang.github.io/'>辉夜</a>，最后修改于2026-04-13</p>]]>
+        <hr><p>本文2026-04-13首发于<a href='https://blog.linkwushuang.top/'>辉夜</a>，最后修改于2026-04-13</p>]]>
       </description>
       
         <category>辉夜</category>
@@ -125,10 +125,10 @@ Typora + PicGo + 阿里云OSS搭建图床
 
     <item>
       <title>Claude Code 配置教程</title>
-      <link>https://Link-wushuang.github.io/post/blog4/</link>
+      <link>https://blog.linkwushuang.top/post/blog4/</link>
       <pubDate>Sun, 12 Apr 2026 15:11:55 &#43;0800</pubDate>
       <author>jingefeng6@gmail.com (Link-wushuang)</author>
-      <guid>https://Link-wushuang.github.io/post/blog4/</guid>
+      <guid>https://blog.linkwushuang.top/post/blog4/</guid>
       <description>
         <![CDATA[<h1>Claude Code 配置教程</h1><p>作者：Link-wushuang（jingefeng6@gmail.com）</p>
         
@@ -144,7 +144,7 @@ Claude Code 配置教程
 1.1 安装Claude code
 </h3><p>用管理员打开<code>power shell</code>命令窗口，输入<code>npm install -g @anthropic-ai/claude-code</code>然后稍等一会就OK了，因为它只是一个小窗口吧，所以不会很大，很快完成，如果很久没反应，看看是不是网络问题，代理一下或者配置国内的npm镜像（写的时候把窗口关了，忘记截图了。。。）</p>
         
-        <hr><p>本文2026-04-12首发于<a href='https://Link-wushuang.github.io/'>辉夜</a>，最后修改于2026-04-12</p>]]>
+        <hr><p>本文2026-04-12首发于<a href='https://blog.linkwushuang.top/'>辉夜</a>，最后修改于2026-04-12</p>]]>
       </description>
       
         <category>辉夜</category>
@@ -155,10 +155,10 @@ Claude Code 配置教程
 
     <item>
       <title>Hugo的Github配置</title>
-      <link>https://Link-wushuang.github.io/post/blog3/</link>
+      <link>https://blog.linkwushuang.top/post/blog3/</link>
       <pubDate>Wed, 08 Apr 2026 00:02:01 &#43;0800</pubDate>
       <author>jingefeng6@gmail.com (Link-wushuang)</author>
-      <guid>https://Link-wushuang.github.io/post/blog3/</guid>
+      <guid>https://blog.linkwushuang.top/post/blog3/</guid>
       <description>
         <![CDATA[<h1>Hugo的Github配置</h1><p>作者：Link-wushuang（jingefeng6@gmail.com）</p>
         
@@ -173,7 +173,7 @@ Hugo的Github配置
 1.1 常规部署（<strong>必须先做1.1再做1.2</strong>）
 </h3><p>（这个就是后面更新需要手动更新，写完<code>blog</code>后先在<code>cmd</code>里面<code>hugo server -D</code>更新一下<code>public</code>文件夹，然后在将<code>public</code>通过<code>git</code>上传一下）</p>
         
-        <hr><p>本文2026-04-08首发于<a href='https://Link-wushuang.github.io/'>辉夜</a>，最后修改于2026-04-08</p>]]>
+        <hr><p>本文2026-04-08首发于<a href='https://blog.linkwushuang.top/'>辉夜</a>，最后修改于2026-04-08</p>]]>
       </description>
       
         <category>辉夜</category>
@@ -184,10 +184,10 @@ Hugo的Github配置
 
     <item>
       <title>Hugo 主题设置</title>
-      <link>https://Link-wushuang.github.io/post/blog2/</link>
+      <link>https://blog.linkwushuang.top/post/blog2/</link>
       <pubDate>Fri, 03 Apr 2026 10:12:34 &#43;0800</pubDate>
       <author>jingefeng6@gmail.com (Link-wushuang)</author>
-      <guid>https://Link-wushuang.github.io/post/blog2/</guid>
+      <guid>https://blog.linkwushuang.top/post/blog2/</guid>
       <description>
         <![CDATA[<h1>Hugo 主题设置</h1><p>作者：Link-wushuang（jingefeng6@gmail.com）</p>
         
@@ -205,7 +205,7 @@ Hugo 主题设置
 <li>
 <p>打开 <code>/Blog/config/_default/params.yml</code>，自定义配置<code> name</code>和 <code>url</code>，修改完后保存</p>
         
-        <hr><p>本文2026-04-03首发于<a href='https://Link-wushuang.github.io/'>辉夜</a>，最后修改于2026-04-03</p>]]>
+        <hr><p>本文2026-04-03首发于<a href='https://blog.linkwushuang.top/'>辉夜</a>，最后修改于2026-04-03</p>]]>
       </description>
       
         <category>辉夜</category>
@@ -216,10 +216,10 @@ Hugo 主题设置
 
     <item>
       <title>Hugo &#43; GitHub 个人博客搭建教程</title>
-      <link>https://Link-wushuang.github.io/post/blog1/</link>
+      <link>https://blog.linkwushuang.top/post/blog1/</link>
       <pubDate>Fri, 03 Apr 2026 09:12:34 &#43;0800</pubDate>
       <author>jingefeng6@gmail.com (Link-wushuang)</author>
-      <guid>https://Link-wushuang.github.io/post/blog1/</guid>
+      <guid>https://blog.linkwushuang.top/post/blog1/</guid>
       <description>
         <![CDATA[<h1>Hugo + GitHub 个人博客搭建教程</h1><p>作者：Link-wushuang（jingefeng6@gmail.com）</p>
         
@@ -234,7 +234,7 @@ Hugo + GitHub 个人博客搭建教程
 一、环境准备
 </h2><p>在开始搭建博客之前，我们需要准备两个必要的工具：Git 和 Hugo。</p>
         
-        <hr><p>本文2026-04-03首发于<a href='https://Link-wushuang.github.io/'>辉夜</a>，最后修改于2026-04-03</p>]]>
+        <hr><p>本文2026-04-03首发于<a href='https://blog.linkwushuang.top/'>辉夜</a>，最后修改于2026-04-03</p>]]>
       </description>
       
         <category>辉夜</category>

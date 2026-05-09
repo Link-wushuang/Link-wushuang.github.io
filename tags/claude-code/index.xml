@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Claude Code on 辉夜</title>
-    <link>https://Link-wushuang.github.io/tags/claude-code/</link>
+    <link>https://blog.linkwushuang.top/tags/claude-code/</link>
     <description>Recent content from 辉夜</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Sun, 12 Apr 2026 15:11:55 +0800</lastBuildDate>
     
     
-    <atom:link href="https://Link-wushuang.github.io/tags/claude-code/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://blog.linkwushuang.top/tags/claude-code/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,10 +23,10 @@
 
     <item>
       <title>Claude Code 配置教程</title>
-      <link>https://Link-wushuang.github.io/post/blog4/</link>
+      <link>https://blog.linkwushuang.top/post/blog4/</link>
       <pubDate>Sun, 12 Apr 2026 15:11:55 &#43;0800</pubDate>
       <author>jingefeng6@gmail.com (Link-wushuang)</author>
-      <guid>https://Link-wushuang.github.io/post/blog4/</guid>
+      <guid>https://blog.linkwushuang.top/post/blog4/</guid>
       <description>
         <![CDATA[<h1>Claude Code 配置教程</h1><p>作者：Link-wushuang（jingefeng6@gmail.com）</p>
         
@@ -42,7 +42,7 @@ Claude Code 配置教程
 1.1 安装Claude code
 </h3><p>用管理员打开<code>power shell</code>命令窗口，输入<code>npm install -g @anthropic-ai/claude-code</code>然后稍等一会就OK了，因为它只是一个小窗口吧，所以不会很大，很快完成，如果很久没反应，看看是不是网络问题，代理一下或者配置国内的npm镜像（写的时候把窗口关了，忘记截图了。。。）</p>
         
-        <hr><p>本文2026-04-12首发于<a href='https://Link-wushuang.github.io/'>辉夜</a>，最后修改于2026-04-12</p>]]>
+        <hr><p>本文2026-04-12首发于<a href='https://blog.linkwushuang.top/'>辉夜</a>，最后修改于2026-04-12</p>]]>
       </description>
       
         <category>辉夜</category>

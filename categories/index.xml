@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 辉夜</title>
-    <link>https://Link-wushuang.github.io/categories/</link>
+    <link>https://blog.linkwushuang.top/categories/</link>
     <description>Recent content from 辉夜</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
@@ -15,7 +15,7 @@
     <lastBuildDate></lastBuildDate>
     
     
-    <atom:link href="https://Link-wushuang.github.io/categories/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://blog.linkwushuang.top/categories/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
