@@ -12,12 +12,43 @@
     
     <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
     
-    <lastBuildDate>Fri, 15 May 2026 12:54:11 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 10:00:00 +0800</lastBuildDate>
     
     
     <atom:link href="https://blog.linkwushuang.top/post/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
+    
+    
+
+    <item>
+      <title>配置 Claude Code 并接入 DeepSeek API 教程</title>
+      <link>https://blog.linkwushuang.top/post/blog12/</link>
+      <pubDate>Tue, 26 May 2026 10:00:00 &#43;0800</pubDate>
+      <author>jingefeng6@gmail.com (Link-wushuang)</author>
+      <guid>https://blog.linkwushuang.top/post/blog12/</guid>
+      <description>
+        <![CDATA[<h1>配置 Claude Code 并接入 DeepSeek API 教程</h1><p>作者：Link-wushuang（jingefeng6@gmail.com）</p>
+        
+          <h1 id="配置-claude-code-并接入-deepseek-api-教程">
+<a class="header-anchor" href="#%e9%85%8d%e7%bd%ae-claude-code-%e5%b9%b6%e6%8e%a5%e5%85%a5-deepseek-api-%e6%95%99%e7%a8%8b"></a>
+配置 Claude Code 并接入 DeepSeek API 教程
+</h1><p>这篇是一个完整的从零开始的教程，包括安装 Claude Code、配置 CC-Switch，以及接入 DeepSeek API，一步到位嘻嘻。</p>
+<hr>
+<h2 id="一安装-claude-code">
+<a class="header-anchor" href="#%e4%b8%80%e5%ae%89%e8%a3%85-claude-code"></a>
+一、安装 Claude Code
+</h2><h3 id="11-安装前准备">
+<a class="header-anchor" href="#11-%e5%ae%89%e8%a3%85%e5%89%8d%e5%87%86%e5%a4%87"></a>
+1.1 安装前准备
+</h3><p>Claude Code 是通过 npm 安装的，所以要先装好 Node.js和 <strong>Git</strong>。</p>
+        
+        <hr><p>本文2026-05-26首发于<a href='https://blog.linkwushuang.top/'>辉夜</a>，最后修改于2026-05-26</p>]]>
+      </description>
+      
+        <category>辉夜</category>
+      
+    </item>
     
     
 
@@ -251,38 +282,6 @@ Hugo的Github配置
 </h3><p>（这个就是后面更新需要手动更新，写完<code>blog</code>后先在<code>cmd</code>里面<code>hugo server -D</code>更新一下<code>public</code>文件夹，然后在将<code>public</code>通过<code>git</code>上传一下）</p>
         
         <hr><p>本文2026-04-08首发于<a href='https://blog.linkwushuang.top/'>辉夜</a>，最后修改于2026-04-08</p>]]>
-      </description>
-      
-        <category>辉夜</category>
-      
-    </item>
-    
-    
-
-    <item>
-      <title>Hugo 主题设置</title>
-      <link>https://blog.linkwushuang.top/post/blog2/</link>
-      <pubDate>Fri, 03 Apr 2026 10:12:34 &#43;0800</pubDate>
-      <author>jingefeng6@gmail.com (Link-wushuang)</author>
-      <guid>https://blog.linkwushuang.top/post/blog2/</guid>
-      <description>
-        <![CDATA[<h1>Hugo 主题设置</h1><p>作者：Link-wushuang（jingefeng6@gmail.com）</p>
-        
-          <h1 id="hugo-主题设置">
-<a class="header-anchor" href="#hugo-%e4%b8%bb%e9%a2%98%e8%ae%be%e7%bd%ae"></a>
-Hugo 主题设置
-</h1><p>想要一个美妙的个人博客页面吗，那就来这里吧，嘻嘻</p>
-<h2 id="1-主题设置">
-<a class="header-anchor" href="#1-%e4%b8%bb%e9%a2%98%e8%ae%be%e7%bd%ae"></a>
-1. 主题设置
-</h2><h3 id="11-多语言i18n配置">
-<a class="header-anchor" href="#11-%e5%a4%9a%e8%af%ad%e8%a8%80i18n%e9%85%8d%e7%bd%ae"></a>
-1.1 多语言i18n配置
-</h3><ol>
-<li>
-<p>打开 <code>/Blog/config/_default/params.yml</code>，自定义配置<code> name</code>和 <code>url</code>，修改完后保存</p>
-        
-        <hr><p>本文2026-04-03首发于<a href='https://blog.linkwushuang.top/'>辉夜</a>，最后修改于2026-04-03</p>]]>
       </description>
       
         <category>辉夜</category>

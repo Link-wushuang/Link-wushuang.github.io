@@ -8,7 +8,7 @@
   name="viewport"
   content="width=device-width, initial-scale=1, shrink-to-fit=no"
 /><title>
-  海梦 | Link-wushuang
+  配置 Claude Code 并接入 DeepSeek API 教程 | Link-wushuang
 </title>
 <meta name="description" content="少女祈祷中..."/><script>
   window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"https://blog.linkwushuang.top/\",\"clipboard\":{\"copyright\":{\"count\":50,\"enable\":false,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"pt-br\":\"Falha ao copiar (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"pt-br\":\"Copiado com sucesso (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"expand\":true},\"i18n_languages\":[{\"Lang\":\"zh-cn\",\"Title\":\"辉夜\",\"Weight\":1,\"Disabled\":false,\"Direction\":\"\",\"Label\":\"简体中文\",\"Locale\":\"zh-CN\"},{\"Lang\":\"en\",\"Title\":\"辉夜\",\"Weight\":2,\"Disabled\":false,\"Direction\":\"\",\"Label\":\"English\",\"Locale\":\"en\"}],\"icon_font\":\"4552607_a0oqhord1y\",\"outdate\":{\"daysago\":180,\"enable\":false,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"pt-br\":\"Este artigo foi atualizado pela última vez em {time}. Observe que o conteúdo pode não ser mais aplicável.\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"}}}");
@@ -33,20 +33,20 @@
     type="font/woff2"
     crossorigin="anonymous"
   /><link rel="stylesheet" href="/css/loader.min.ac746e154f756f8220326eeb52a719f142ab038be5a8ddf30ea5ef15ef2356ea.css" /><meta property="og:type" content="website" />
-  <meta property="og:title" content="海梦 | Link-wushuang" />
+  <meta property="og:title" content="配置 Claude Code 并接入 DeepSeek API 教程 | Link-wushuang" />
   <meta
     property="og:description"
     content="少女祈祷中..."
   />
-  <meta property="og:url" content="https://blog.linkwushuang.top/categories/%E6%B5%B7%E6%A2%A6/" />
+  <meta property="og:url" content="https://blog.linkwushuang.top/post/blog12/" />
   <meta
     property="og:site_name"
     content="辉夜"
   />
   <meta property="og:image" content="https://blog.linkwushuang.top/images/banner3.jpg" />
   <meta property="article:author" content="Link-wushuang" />
-  <meta property="article:published_time" content="2026-05-10T11:17:29&#43;08:00" />
-  <meta property="article:modified_time" content="2026-05-10T11:17:29&#43;08:00" /><meta name="twitter:card" content="summary" /><meta name="twitter:image" content="https://blog.linkwushuang.top/images/banner3.jpg" /><link rel="alternate" type="application/rss+xml" href="https://blog.linkwushuang.top/categories/%E6%B5%B7%E6%A2%A6/index.xml" title="辉夜">
+  <meta property="article:published_time" content="2026-05-26T10:00:00&#43;08:00" />
+  <meta property="article:modified_time" content="2026-05-26T10:00:00&#43;08:00" /><meta property="article:tag" content="Claude code, DeepSeek" /><meta name="twitter:card" content="summary" /><meta name="twitter:image" content="https://blog.linkwushuang.top/images/banner3.jpg" />
 <link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.min.b7a67291ebd4c5b916741c7adfd4d660dfe7f06445f166e57c304b5ee2612b33.css" /><link
     rel="preload"
     as="style"
@@ -124,7 +124,7 @@
       </a><a class="main-nav-link-wrap" href="/link"><div class='main-nav-icon icon '>&#xe639;</div><span class="main-nav-link">更多</span>
       </a><a id="main-nav-toggle" class="nav-icon" aria-label="Toggle navigation" role="button"></a>
   </nav>
-  <nav id="sub-nav" aria-label="Secondary navigation"><a id="nav-rss-link" class="nav-icon" href="/categories/%E6%B5%B7%E6%A2%A6/index.xml" title="RSS 订阅" aria-label="RSS 订阅" target="_blank"></a></nav><nav id="i18n-nav" aria-label="Language selection">
+  <nav id="sub-nav" aria-label="Secondary navigation"></nav><nav id="i18n-nav" aria-label="Language selection">
       <div class="custom-dropdown">
         <div class="select-selected" id="select-selected" role="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Language menu">
           <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
@@ -176,19 +176,78 @@
     </nav><a href="https://github.com/Link-wushuang" class="triangle-badge" title="github" target="_blank" rel="noopener nofollow noreferrer">
       <div class="icon icon-github triangle-badge-icon"></div>
     </a></div>
-<header id="header" aria-label="Site header"><picture><source media="(min-width: 1080px)" srcset="/images/banner1.jpg"><source media="(min-width: 766px)" srcset="/images/banner3.jpg"><source media="(min-width: 707px)" srcset="/images/banner2.jpg"><img  fetchpriority="high" src="/images/banner3.jpg" alt="海梦"></picture><img alt="海梦" style="visibility: hidden;"><div id="header-outer">
+<header id="header" aria-label="Site header"><picture></picture>
+        <img  fetchpriority="high" src="/images/banner3.jpg" alt="配置 Claude Code 并接入 DeepSeek API 教程"><div id="header-outer">
     <div id="header-title"><span id="logo">
-            <h1 data-aos="slide-up">目录</h1>
-          </span><h2 id="subtitle-wrap" data-aos="slide-down"><span id="subtitle">海梦</span></h2></div>
+            <h1 data-aos="slide-up">配置 Claude Code 并接入 DeepSeek API 教程</h1>
+          </span><h2 id="subtitle-wrap" data-aos="slide-down"></h2></div>
   </div>
 </header><div id="content"
           aria-label="Page content"
           class="sidebar-left"
-            ><aside id="sidebar" aria-label="Sidebar"><div class="sidebar-wrapper-container "><div class="sidebar-wrapper">
+            ><aside id="sidebar" aria-label="Sidebar"><div class="sidebar-wrapper-container sticky"><div class="sidebar-wrapper">
     <div
       class="sidebar-wrap"
       data-aos="fade-up"
-    ><div class="sidebar-author">
+    ><div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ol>
+    <li><a href="#配置-claude-code-并接入-deepseek-api-教程">配置 Claude Code 并接入 DeepSeek API 教程</a>
+      <ol>
+        <li><a href="#一安装-claude-code">一、安装 Claude Code</a>
+          <ol>
+            <li><a href="#11-安装前准备">1.1 安装前准备</a></li>
+            <li><a href="#12-安装-claude-code">1.2 安装 Claude Code</a></li>
+            <li><a href="#13-配置环境变量">1.3 配置环境变量</a>
+              <ol>
+                <li><a href="#131-确认安装成功">1.3.1 确认安装成功</a></li>
+                <li><a href="#132-找到-npm-全局安装路径">1.3.2 找到 npm 全局安装路径</a></li>
+                <li><a href="#133-检查这个目录有没有-claude">1.3.3 检查这个目录有没有 <code>claude</code></a></li>
+                <li><a href="#134-如果有但命令仍然不能用--path-问题">1.3.4 如果有，但命令仍然不能用 → PATH 问题</a></li>
+                <li><a href="#135-重新打开终端">1.3.5 重新打开终端</a></li>
+              </ol>
+            </li>
+            <li><a href="#14-配置网络跳过登录弹窗">1.4 配置网络（跳过登录弹窗）</a>
+              <ol>
+                <li><a href="#141-找到-claudejson-文件">1.4.1 找到 claude.json 文件</a></li>
+                <li><a href="#142-修改-json-文件">1.4.2 修改 json 文件</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li><a href="#二下载并安装-cc-switch">二、下载并安装 CC-Switch</a>
+          <ol>
+            <li><a href="#21-下载-cc-switch">2.1 下载 CC-Switch</a></li>
+            <li><a href="#22-安装-cc-switch">2.2 安装 CC-Switch</a></li>
+          </ol>
+        </li>
+        <li><a href="#三获取-deepseek-api-key">三、获取 DeepSeek API Key</a>
+          <ol>
+            <li><a href="#31-注册-deepseek-开放平台">3.1 注册 DeepSeek 开放平台</a></li>
+            <li><a href="#32-充值余额新用户有免费额度">3.2 充值余额（新用户有免费额度）</a></li>
+          </ol>
+        </li>
+        <li><a href="#四在-cc-switch-中配置-deepseek">四、在 CC-Switch 中配置 DeepSeek</a>
+          <ol>
+            <li><a href="#41-添加-deepseek-提供商">4.1 添加 DeepSeek 提供商</a></li>
+            <li><a href="#42-确认配置成功">4.2 确认配置成功</a></li>
+          </ol>
+        </li>
+        <li><a href="#五在-claude-code-中使用-deepseek">五、在 Claude Code 中使用 DeepSeek</a>
+          <ol>
+            <li><a href="#51-打开-claude-code">5.1 打开 Claude Code</a></li>
+            <li><a href="#52-切换模型">5.2 切换模型</a></li>
+            <li><a href="#53-测试一下">5.3 测试一下</a></li>
+          </ol>
+        </li>
+        <li><a href="#小结">小结</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
   <img
     data-src="/avatar/avatar.png"
     data-sizes="auto"
@@ -267,293 +326,296 @@
         href="/link"
         aria-label="更多"
       ></a><div class='sidebar-menu-icon icon '>&#xe639;</div><div class="sidebar-menu-link">更多</div>
-    </div></div></div>
-  </div><div class="sidebar-widget"><div class="widget-wrapper">
-    <div
-      class="widget-wrap"
-      data-aos="fade-up"
-    >
-      <div style="display: flex; justify-content: space-between;">
-        <h3 class="widget-title">分类</h3></div>
-      <div class="widget">
-        <ul class="category-list"><li class="category-list-item">
-                <a class="category-list-link" href="/categories/%E6%B5%B7%E6%A2%A6/" 
-                  title="海梦"
-                  >海梦</a
-                >
-              </li><li class="category-list-item">
-                <a class="category-list-link" href="/categories/%E8%BE%89%E5%A4%9C/" 
-                  title="辉夜"
-                  >辉夜</a
-                >
-              </li></ul>
-      </div>
-    </div>
-  </div><div class="widget-wrapper">
-    <div
-      class="widget-wrap"
-      data-aos="fade-up"
-    >
-      <div style="display: flex; justify-content: space-between;">
-        <h3 class="widget-title">标签</h3></div>
-      <div class="widget">
-        <ul class="tag-list" itemprop="keywords"><li class="tag-item">
-                <a
-                  class="tag-link"
-                  href="/tags/claude/"
-                  aria-label="标签: Claude"
-                  title="Claude"
-                >
-                  Claude
-                </a>
-              </li><li class="tag-item">
-                <a
-                  class="tag-link"
-                  href="/tags/claude-code/"
-                  aria-label="标签: Claude Code"
-                  title="Claude Code"
-                >
-                  Claude Code
-                </a>
-              </li><li class="tag-item">
-                <a
-                  class="tag-link"
-                  href="/tags/cloudflare/"
-                  aria-label="标签: Cloudflare"
-                  title="Cloudflare"
-                >
-                  Cloudflare
-                </a>
-              </li><li class="tag-item">
-                <a
-                  class="tag-link"
-                  href="/tags/codex/"
-                  aria-label="标签: Codex"
-                  title="Codex"
-                >
-                  Codex
-                </a>
-              </li><li class="tag-item">
-                <a
-                  class="tag-link"
-                  href="/tags/deepseek/"
-                  aria-label="标签: DeepSeek"
-                  title="DeepSeek"
-                >
-                  DeepSeek
-                </a>
-              </li><li class="tag-item">
-                <a
-                  class="tag-link"
-                  href="/tags/github-pages/"
-                  aria-label="标签: GitHub Pages"
-                  title="GitHub Pages"
-                >
-                  GitHub Pages
-                </a>
-              </li><li class="tag-item">
-                <a
-                  class="tag-link"
-                  href="/tags/hugo/"
-                  aria-label="标签: Hugo"
-                  title="Hugo"
-                >
-                  Hugo
-                </a>
-              </li><li class="tag-item">
-                <a
-                  class="tag-link"
-                  href="/tags/life/"
-                  aria-label="标签: Life"
-                  title="Life"
-                >
-                  Life
-                </a>
-              </li><li class="tag-item">
-                <a
-                  class="tag-link"
-                  href="/tags/typora/"
-                  aria-label="标签: Typora"
-                  title="Typora"
-                >
-                  Typora
-                </a>
-              </li></ul>
-      </div>
-    </div>
-  </div><div class="widget-wrapper">
+    </div></div></div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div><div class="sidebar-widget"></div></div></aside>
+<section id="main" aria-label="Main content"><article
+  class="h-entry article"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
   <div
-    class="widget-wrap"
+    class="article-inner"
     data-aos="fade-up"
   >
-    <h3 class="widget-title">标签云</h3><div class="widget tagcloud"><a
-            style="font-size:10px"
-            href="/tags/claude/"
-            aria-label="标签: Claude"
-            >Claude</a
-          ><a
-            style="font-size:10px"
-            href="/tags/claude-code/"
-            aria-label="标签: Claude Code"
-            >Claude Code</a
-          ><a
-            style="font-size:10px"
-            href="/tags/cloudflare/"
-            aria-label="标签: Cloudflare"
-            >Cloudflare</a
-          ><a
-            style="font-size:10px"
-            href="/tags/codex/"
-            aria-label="标签: Codex"
-            >Codex</a
-          ><a
-            style="font-size:10px"
-            href="/tags/deepseek/"
-            aria-label="标签: DeepSeek"
-            >DeepSeek</a
-          ><a
-            style="font-size:10px"
-            href="/tags/github-pages/"
-            aria-label="标签: GitHub Pages"
-            >GitHub Pages</a
-          ><a
-            style="font-size:10px"
-            href="/tags/hugo/"
-            aria-label="标签: Hugo"
-            >Hugo</a
-          ><a
-            style="font-size:10px"
-            href="/tags/life/"
-            aria-label="标签: Life"
-            >Life</a
-          ><a
-            style="font-size:10px"
-            href="/tags/typora/"
-            aria-label="标签: Typora"
-            >Typora</a
-          ></div>
-  </div>
-</div><div class="widget-wrapper">
-    <div
-      class="widget-wrap"
-      data-aos="fade-up"
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link icon-calendar"
+    data-aos="zoom-in"
+  >
+    <time datetime="2026-05-26 10:00:00 &#43;0800 &#43;0800" itemprop="datePublished"
+      >2026-05-26</time
     >
-      <h3 class="widget-title">最新文章</h3>
-      <div class="widget">
-        <ul><li>
-              <a href="/post/blog12/" title="配置 Claude Code 并接入 DeepSeek API 教程">配置 Claude Code 并接入 DeepSeek API 教程</a>
-            </li><li>
-              <a href="/post/blog11/" title="Claude、codex订阅方案">Claude、codex订阅方案</a>
-            </li><li>
-              <a href="/post/blog10/" title="Zero">Zero</a>
-            </li><li>
-              <a href="/post/blog9/" title="Hugo博客接入Cloudflare——自定义域名 &#43; CDN加速 &#43; 缓存优化">Hugo博客接入Cloudflare——自定义域名 &#43; CDN加速 &#43; 缓存优化</a>
-            </li><li>
-              <a href="/post/blog8/" title="Hugo博客配置Live2D看板娘——免费皮套 &#43; 表情装扮切换">Hugo博客配置Live2D看板娘——免费皮套 &#43; 表情装扮切换</a>
-            </li></ul>
-      </div>
-    </div>
-  </div></div></div></aside>
-<section id="main" aria-label="Main content"><div
-    class="archives-outer-wrap"
-    data-aos="fade-up"
-  ><div class="tag-wrap"><div
-      class="archives-tag-list-item"
+    <time style="display: none;" id="post-update-time"
+      >2026-05-26</time
+    >
+  </span><span
+      class="article-date-link icon-calendar-plus"
       data-aos="zoom-in"
     >
-      <a class="archives-tag-list-link" href="/tags/claude/"
-        >Claude</a
+      <time datetime="2026-05-26 10:00:00 &#43;0800 &#43;0800" itemprop="dateModified"
+        >2026-05-26</time
       >
-    </div><div
-      class="archives-tag-list-item"
+    </span></div>
+</div><div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><h1 id="配置-claude-code-并接入-deepseek-api-教程">
+<a class="header-anchor" href="#%e9%85%8d%e7%bd%ae-claude-code-%e5%b9%b6%e6%8e%a5%e5%85%a5-deepseek-api-%e6%95%99%e7%a8%8b"></a>
+配置 Claude Code 并接入 DeepSeek API 教程
+</h1><p>这篇是一个完整的从零开始的教程，包括安装 Claude Code、配置 CC-Switch，以及接入 DeepSeek API，一步到位嘻嘻。</p>
+<hr>
+<h2 id="一安装-claude-code">
+<a class="header-anchor" href="#%e4%b8%80%e5%ae%89%e8%a3%85-claude-code"></a>
+一、安装 Claude Code
+</h2><h3 id="11-安装前准备">
+<a class="header-anchor" href="#11-%e5%ae%89%e8%a3%85%e5%89%8d%e5%87%86%e5%a4%87"></a>
+1.1 安装前准备
+</h3><p>Claude Code 是通过 npm 安装的，所以要先装好 Node.js和 <strong>Git</strong>。</p>
+<p><strong>Git</strong>安装很简单，直接网上下载一下就行了，然后<strong>Node.js</strong>这边可以参考一下这篇博客<a href="https://blog.csdn.net/Natsuago/article/details/145567734">Node.js 下载安装与环境配置全流程</a>，这个做到第三步就可以了，第四步配置镜像我没试过，其实感觉只要网络好问题不大，反正我目前还没有碰到过npm下载很慢的情况，或者说如果有可以用香港那边的代理就很快了。</p>
+<h3 id="12-安装-claude-code">
+<a class="header-anchor" href="#12-%e5%ae%89%e8%a3%85-claude-code"></a>
+1.2 安装 Claude Code
+</h3><p>用管理员打开 <code>PowerShell</code> 命令窗口，输入：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install -g @anthropic-ai/claude-code
+</span></span></code></pre></div><p>然后稍等一会就 OK 了，它只是一个小工具，不会很大，很快完成。如果很久没反应，看看是不是网络问题，挂个代理或者配置国内的 npm 镜像试试。</p>
+<h3 id="13-配置环境变量">
+<a class="header-anchor" href="#13-%e9%85%8d%e7%bd%ae%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f"></a>
+1.3 配置环境变量
+</h3><p>一般来说 Node 环境配好了就没问题，直接输入 <code>claude --version</code> 有版本号就说明 OK 了。</p>
+<p>如果显示有问题，那就要去配一下环境变量。</p>
+<h4 id="131-确认安装成功">
+<a class="header-anchor" href="#131-%e7%a1%ae%e8%ae%a4%e5%ae%89%e8%a3%85%e6%88%90%e5%8a%9f"></a>
+1.3.1 确认安装成功
+</h4><p>运行：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm list -g --depth<span class="o">=</span><span class="m">0</span>
+</span></span></code></pre></div><p>看看有没有：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">@anthropic-ai/claude-code
+</span></span></code></pre></div><hr>
+<h4 id="132-找到-npm-全局安装路径">
+<a class="header-anchor" href="#132-%e6%89%be%e5%88%b0-npm-%e5%85%a8%e5%b1%80%e5%ae%89%e8%a3%85%e8%b7%af%e5%be%84"></a>
+1.3.2 找到 npm 全局安装路径
+</h4><p>运行：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm root -g
+</span></span></code></pre></div><p>通常会返回类似：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">C:\Users\你的用户名\AppData\Roaming\npm\node_modules
+</span></span></code></pre></div><p>那么对应的<strong>可执行文件目录</strong>是：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">C:\Users\你的用户名\AppData\Roaming\npm
+</span></span></code></pre></div><p>像这里我的是</p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260412152555720.png" alt="image-20260412152555720"></p>
+<p>所以我就需要把 <code>D:\nodejs\node_global</code> 加入环境变量。</p>
+<h4 id="133-检查这个目录有没有-claude">
+<a class="header-anchor" href="#133-%e6%a3%80%e6%9f%a5%e8%bf%99%e4%b8%aa%e7%9b%ae%e5%bd%95%e6%9c%89%e6%b2%a1%e6%9c%89-claude"></a>
+1.3.3 检查这个目录有没有 <code>claude</code>
+</h4><p>运行：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">dir C:<span class="se">\U</span>sers<span class="se">\你</span>的用户名<span class="se">\A</span>ppData<span class="se">\R</span>oaming<span class="se">\n</span>pm
+</span></span></code></pre></div><p>看有没有：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">claude
+</span></span><span class="line"><span class="cl">claude.cmd
+</span></span></code></pre></div><p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260412152847456.png" alt="image-20260412152847456"></p>
+<h4 id="134-如果有但命令仍然不能用--path-问题">
+<a class="header-anchor" href="#134-%e5%a6%82%e6%9e%9c%e6%9c%89%e4%bd%86%e5%91%bd%e4%bb%a4%e4%bb%8d%e7%84%b6%e4%b8%8d%e8%83%bd%e7%94%a8--path-%e9%97%ae%e9%a2%98"></a>
+1.3.4 如果有，但命令仍然不能用 → PATH 问题
+</h4><p>把这个路径加入环境变量：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">C:\Users\你的用户名\AppData\Roaming\npm
+</span></span></code></pre></div><p>操作步骤：</p>
+<ol>
+<li>打开：系统环境变量 → 高级 → 环境变量</li>
+<li>找到 <strong>Path</strong></li>
+<li>点击 <strong>编辑 → 新建</strong></li>
+<li>添加对应路径</li>
+<li>保存</li>
+</ol>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260412152707421.png" alt="image-20260412152707421"></p>
+<hr>
+<h4 id="135-重新打开终端">
+<a class="header-anchor" href="#135-%e9%87%8d%e6%96%b0%e6%89%93%e5%bc%80%e7%bb%88%e7%ab%af"></a>
+1.3.5 重新打开终端
+</h4><p>很关键！必须重新开 PowerShell / CMD，然后再试：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">claude --version
+</span></span></code></pre></div><h3 id="14-配置网络跳过登录弹窗">
+<a class="header-anchor" href="#14-%e9%85%8d%e7%bd%ae%e7%bd%91%e7%bb%9c%e8%b7%b3%e8%bf%87%e7%99%bb%e5%bd%95%e5%bc%b9%e7%aa%97"></a>
+1.4 配置网络（跳过登录弹窗）
+</h3><p>直接用 <code>claude</code> 打开的话，一开始会报错：</p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260412153817432.png" alt="image-20260412153817432"></p>
+<p>需要配置一下，跳过这个联网校验。</p>
+<h4 id="141-找到-claudejson-文件">
+<a class="header-anchor" href="#141-%e6%89%be%e5%88%b0-claudejson-%e6%96%87%e4%bb%b6"></a>
+1.4.1 找到 claude.json 文件
+</h4><p>我的是在 C 盘用户目录下面：</p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260412154020709.png" alt="image-20260412154020709"></p>
+<h4 id="142-修改-json-文件">
+<a class="header-anchor" href="#142-%e4%bf%ae%e6%94%b9-json-%e6%96%87%e4%bb%b6"></a>
+1.4.2 修改 json 文件
+</h4><p>打开这个文件，在 <code>&quot;changelogLastFetched&quot;: 1775977643232</code> 这一串后面加个<strong>英文</strong>逗号，然后在下面新增一行：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="s2">&#34;hasCompletedOnboarding&#34;</span><span class="err">:</span> <span class="kc">true</span>
+</span></span></code></pre></div><p>改完记得保存哦。</p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260412154512027.png" alt="image-20260412154512027"></p>
+<p>然后回去输入 <code>claude</code> 命令就进去了，这一步直接回车就行，是询问是否信任当前目录的意思。</p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260412154609834.png" alt="image-20260412154609834"></p>
+<p>然后会让你登录 Claude 账号，不过这里我们不走官方 API，直接用国内大模型，跳过这一步就行。</p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260412154823342.png" alt="image-20260412154823342"></p>
+<hr>
+<h2 id="二下载并安装-cc-switch">
+<a class="header-anchor" href="#%e4%ba%8c%e4%b8%8b%e8%bd%bd%e5%b9%b6%e5%ae%89%e8%a3%85-cc-switch"></a>
+二、下载并安装 CC-Switch
+</h2><p>CC-Switch 是一个用来给 Claude Code 切换 API 提供商的工具，我们用它来接入 DeepSeek。</p>
+<h3 id="21-下载-cc-switch">
+<a class="header-anchor" href="#21-%e4%b8%8b%e8%bd%bd-cc-switch"></a>
+2.1 下载 CC-Switch
+</h3><p>在 GitHub 里面搜 <code>cc switch</code>，然后点击右边 <code>Releases</code> 下面最近的版本，拉到最下面。</p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260412164558573.png" alt=""></p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260412164815949.png" alt="image-20260412164815949"></p>
+<p>下载 <code>CC-Switch-vx.x.x-Windows.msi</code>（Windows 系统下这个）：</p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260412165053853.png" alt="image-20260412165053853"></p>
+<h3 id="22-安装-cc-switch">
+<a class="header-anchor" href="#22-%e5%ae%89%e8%a3%85-cc-switch"></a>
+2.2 安装 CC-Switch
+</h3><p>下载好之后点击安装，可能会弹出这个窗口，点 <strong>查看详情</strong> → <strong>仍要运行</strong> 就行了：</p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260412165242335.png" alt="image-20260412165242335"></p>
+<p>这里可以改一下安装路径：</p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260412165432565.png" alt="image-20260412165432565"></p>
+<p>然后安装完就进去了：</p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260412170423217.png" alt="image-20260412170423217"></p>
+<hr>
+<h2 id="三获取-deepseek-api-key">
+<a class="header-anchor" href="#%e4%b8%89%e8%8e%b7%e5%8f%96-deepseek-api-key"></a>
+三、获取 DeepSeek API Key
+</h2><h3 id="31-注册-deepseek-开放平台">
+<a class="header-anchor" href="#31-%e6%b3%a8%e5%86%8c-deepseek-%e5%bc%80%e6%94%be%e5%b9%b3%e5%8f%b0"></a>
+3.1 注册 DeepSeek 开放平台
+</h3><p>打开 <a href="https://platform.deepseek.com">DeepSeek 开放平台</a>，注册一个账号，手机号直接用国内的就行，非常方便。</p>
+<p>登进去之后点左边的 <strong>API Keys</strong>，然后点 <strong>创建 API Key</strong>：</p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260526210552645.png" alt="image-20260526210552645"></p>
+<p>这里名字随便填，比如填个 <code>claudecode</code> 就好了，然后点确认。</p>
+<p><strong>注意！这个 Key 只会显示一次，记得马上复制保存好，关掉就看不到了！</strong></p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-05-26%20210642.png" alt="屏幕截图 2026-05-26 210642"></p>
+<h3 id="32-充值余额新用户有免费额度">
+<a class="header-anchor" href="#32-%e5%85%85%e5%80%bc%e4%bd%99%e9%a2%9d%e6%96%b0%e7%94%a8%e6%88%b7%e6%9c%89%e5%85%8d%e8%b4%b9%e9%a2%9d%e5%ba%a6"></a>
+3.2 充值余额（新用户有免费额度）
+</h3><p>新用户注册完会有一些免费试用额度，可以先拿来试试。如果后面用完了，进到 <strong>充值</strong> 页面，充个几十块钱用很久了，DeepSeek 还是比较便宜的。但是如果用量比较大，其实订阅一下claude或者codex感觉性价比会高一点。（这个可以参考我这篇博客<a href="https://blog.linkwushuang.top/post/blog11/">Claude、codex订阅方案</a>，虽然没有很详细，但是分享了一些比较稳定的低价小tips）</p>
+<p>复制好 API Key，我们去 CC-Switch 里面配置。</p>
+<hr>
+<h2 id="四在-cc-switch-中配置-deepseek">
+<a class="header-anchor" href="#%e5%9b%9b%e5%9c%a8-cc-switch-%e4%b8%ad%e9%85%8d%e7%bd%ae-deepseek"></a>
+四、在 CC-Switch 中配置 DeepSeek
+</h2><h3 id="41-添加-deepseek-提供商">
+<a class="header-anchor" href="#41-%e6%b7%bb%e5%8a%a0-deepseek-%e6%8f%90%e4%be%9b%e5%95%86"></a>
+4.1 添加 DeepSeek 提供商
+</h3><p>打开 CC-Switch，点右上角的 <strong>加号</strong>，这里选 <strong>DeepSeek</strong>：</p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260526211021915.png" alt="image-20260526211021915"></p>
+<p>然后往下滑，把刚才复制好的 API Key 粘贴进去，继续下滑添加一下模型：</p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260526211612161.png" alt="image-20260526211612161"></p>
+<p>点 <strong>添加</strong> 就行了。</p>
+<h3 id="42-确认配置成功">
+<a class="header-anchor" href="#42-%e7%a1%ae%e8%ae%a4%e9%85%8d%e7%bd%ae%e6%88%90%e5%8a%9f"></a>
+4.2 确认配置成功
+</h3><p>添加完之后，在主界面可以看到 DeepSeek 已经出现在列表里了，说明配置成功啦，你只需要选择启用就可以了：</p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260526211700124.png" alt="image-20260526211700124"></p>
+<hr>
+<h2 id="五在-claude-code-中使用-deepseek">
+<a class="header-anchor" href="#%e4%ba%94%e5%9c%a8-claude-code-%e4%b8%ad%e4%bd%bf%e7%94%a8-deepseek"></a>
+五、在 Claude Code 中使用 DeepSeek
+</h2><h3 id="51-打开-claude-code">
+<a class="header-anchor" href="#51-%e6%89%93%e5%bc%80-claude-code"></a>
+5.1 打开 Claude Code
+</h3><p>在命令窗口输入 <code>claude</code> 回车，现在应该能正常进去了。如果提示网络有问题，检查一下 CC-Switch 有没有在后台运行，它需要挂着才能生效哦。</p>
+<h3 id="52-切换模型">
+<a class="header-anchor" href="#52-%e5%88%87%e6%8d%a2%e6%a8%a1%e5%9e%8b"></a>
+5.2 切换模型
+</h3><p>进去之后输入 <code>/model</code> 回车，就能看到模型列表，这里可以看到 DeepSeek 的几个模型：</p>
+<ul>
+<li><code>deepseek-v4-pro</code></li>
+</ul>
+<p>用方向键选好想要的模型，然后回车确认，就切换过去了。</p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260526213818528.png" alt="image-20260526213818528"></p>
+<h3 id="53-测试一下">
+<a class="header-anchor" href="#53-%e6%b5%8b%e8%af%95%e4%b8%80%e4%b8%8b"></a>
+5.3 测试一下
+</h3><p>随便问它一句话，比如&quot;你好，你是什么模型？&quot;，它回复了的话就说明没问题了，拿下！</p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260526213927112.png" alt="image-20260526213927112"></p>
+<hr>
+<h2 id="小结">
+<a class="header-anchor" href="#%e5%b0%8f%e7%bb%93"></a>
+小结
+</h2><p>总体步骤：安装 Claude Code → 修改 <code>claude.json</code> 跳过登录 → 下载 CC-Switch → 注册 DeepSeek 拿 API Key → 在 CC-Switch 里加 DeepSeek 提供商填入 Key → 打开 Claude Code 用 <code>/model</code> 切换模型。</p>
+<p>总的来说ds应该还行吧，据说虽然代码方面可能略逊一筹，但是架构方面还是可以的。</p>
+<p>可以注意一下说是ds有时候他cache命中率会有问题，因为我本人没有在cc上用过，所以我也只是道听途说罢了，如果你的ds这个有时候费用比较高的话，可以看看别人是怎么解决的。</p>
+<p>就是这样啦，Having a nice day！！！</p>
+</div>
+    <footer class="article-footer"><a
+          data-aos="zoom-in"
+          href="/post/blog12/#comments"
+          class="article-comment-link"
+        >
+          <span
+            class="post-comments-count waline-comment-count"
+            data-path="/post/blog12/"
+            itemprop="commentCount"
+          ></span>
+          留言
+        </a><span
+          data-aos="zoom-in"
+          class="article-visitor-link"
+        >
+          <span
+            class="waline-pageview-count"
+            data-path="/post/blog12/"
+            >0</span
+          >
+          <em class="post-meta-item-text">阅读量</em>
+        </span><ul class="article-category-list"><li class="article-tag-list-item" data-aos="zoom-in">
+    <a
+      class="article-category-link"
+      href="/categories/%e8%be%89%e5%a4%9c"
       data-aos="zoom-in"
+      >辉夜</a
     >
-      <a class="archives-tag-list-link" href="/tags/claude-code/"
-        >Claude Code</a
+    </li></ul>
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/tags/claude-code"
+        rel="tag"
+        >Claude code</a
       >
-    </div><div
-      class="archives-tag-list-item"
-      data-aos="zoom-in"
-    >
-      <a class="archives-tag-list-link" href="/tags/cloudflare/"
-        >Cloudflare</a
-      >
-    </div><div
-      class="archives-tag-list-item"
-      data-aos="zoom-in"
-    >
-      <a class="archives-tag-list-link" href="/tags/codex/"
-        >Codex</a
-      >
-    </div><div
-      class="archives-tag-list-item"
-      data-aos="zoom-in"
-    >
-      <a class="archives-tag-list-link" href="/tags/deepseek/"
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/tags/deepseek"
+        rel="tag"
         >DeepSeek</a
       >
-    </div><div
-      class="archives-tag-list-item"
-      data-aos="zoom-in"
-    >
-      <a class="archives-tag-list-link" href="/tags/github-pages/"
-        >GitHub Pages</a
-      >
-    </div><div
-      class="archives-tag-list-item"
-      data-aos="zoom-in"
-    >
-      <a class="archives-tag-list-link" href="/tags/hugo/"
-        >Hugo</a
-      >
-    </div><div
-      class="archives-tag-list-item"
-      data-aos="zoom-in"
-    >
-      <a class="archives-tag-list-link" href="/tags/life/"
-        >Life</a
-      >
-    </div><div
-      class="archives-tag-list-item"
-      data-aos="zoom-in"
-    >
-      <a class="archives-tag-list-link" href="/tags/typora/"
-        >Typora</a
-      >
+    </li></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    aria-label="Article navigation"
+    data-aos="fade-up"
+  ><div class="article-nav-link-wrap left"><img
+            data-src="/images/marin2.jpg"
+            data-sizes="auto"
+            alt="Claude、codex订阅方案"
+            class="lazyload"
+          /><a
+          href="/post/blog11/"
+          aria-label="前一篇:Claude、codex订阅方案"
+          title="前一篇:Claude、codex订阅方案"
+        ></a>
+        <div class="article-nav-caption">前一篇</div>
+        <h3 class="article-nav-title">Claude、codex订阅方案</h3>
+      </div></nav></article><section id="comments" data-aos="fade-up">
+<div class="comment-header"><h2 class="comment-title">说些什么吧！</h2>
+  <div class="comment-selector">
+    <div class="comment-selector-wrap"><div class="selector-item" data-selector="waline">
+          <span>waline</span>
+        </div></div>
+  </div>
+</div>
+
+<div class="comment-content"><div class="comment waline-comment" data-aos="fade-up"
+     >
     </div></div>
-<div class="category-wrap"><div
-      class="archives-category-list-item"
-      data-aos="zoom-in"
-    >
-      <a class="archives-category-list-link" href="/categories/%E6%B5%B7%E6%A2%A6/"
-        >海梦</a
-      >
-    </div><div
-      class="archives-category-list-item"
-      data-aos="zoom-in"
-    >
-      <a class="archives-category-list-link" href="/categories/%E8%BE%89%E5%A4%9C/"
-        >辉夜</a
-      >
-    </div></div><section class="archives-wrap" data-aos="fade-up">
-    <div class="archive-year-wrap">
-      <span class="archive-year">2026</span>
-    </div>
-    <ul><li class="archive-article">
-          <div class="archive-article-date">
-            <span>
-              <time
-                class="dt-published"
-                datetime="2026-05-10 11:17:29 &#43;0800 &#43;0800"
-                itemprop="datePublished"
-                >2026-05</time
-              >
-            </span>
-          </div><a class="archive-article-title" href="/post/blog10/"
-              >Zero</a
-            ></li></ul>
-  </section></div><nav id="page-nav" aria-label="Pagination navigation" data-aos="fade-up"><span class="page-number current">1</span></nav>
-</section>
+</section></section>
         </div><footer id="footer" aria-label="Site footer">
   <div style="width: 100%; overflow: hidden">
     <div class="footer-line"></div>
@@ -582,7 +644,65 @@
 </footer>
 <div id="mask" class="hide"></div>
       </div><nav id="mobile-nav" aria-label="Mobile navigation">
-  <div class="sidebar-wrap"><div class="sidebar-author">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ol>
+    <li><a href="#配置-claude-code-并接入-deepseek-api-教程">配置 Claude Code 并接入 DeepSeek API 教程</a>
+      <ol>
+        <li><a href="#一安装-claude-code">一、安装 Claude Code</a>
+          <ol>
+            <li><a href="#11-安装前准备">1.1 安装前准备</a></li>
+            <li><a href="#12-安装-claude-code">1.2 安装 Claude Code</a></li>
+            <li><a href="#13-配置环境变量">1.3 配置环境变量</a>
+              <ol>
+                <li><a href="#131-确认安装成功">1.3.1 确认安装成功</a></li>
+                <li><a href="#132-找到-npm-全局安装路径">1.3.2 找到 npm 全局安装路径</a></li>
+                <li><a href="#133-检查这个目录有没有-claude">1.3.3 检查这个目录有没有 <code>claude</code></a></li>
+                <li><a href="#134-如果有但命令仍然不能用--path-问题">1.3.4 如果有，但命令仍然不能用 → PATH 问题</a></li>
+                <li><a href="#135-重新打开终端">1.3.5 重新打开终端</a></li>
+              </ol>
+            </li>
+            <li><a href="#14-配置网络跳过登录弹窗">1.4 配置网络（跳过登录弹窗）</a>
+              <ol>
+                <li><a href="#141-找到-claudejson-文件">1.4.1 找到 claude.json 文件</a></li>
+                <li><a href="#142-修改-json-文件">1.4.2 修改 json 文件</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li><a href="#二下载并安装-cc-switch">二、下载并安装 CC-Switch</a>
+          <ol>
+            <li><a href="#21-下载-cc-switch">2.1 下载 CC-Switch</a></li>
+            <li><a href="#22-安装-cc-switch">2.2 安装 CC-Switch</a></li>
+          </ol>
+        </li>
+        <li><a href="#三获取-deepseek-api-key">三、获取 DeepSeek API Key</a>
+          <ol>
+            <li><a href="#31-注册-deepseek-开放平台">3.1 注册 DeepSeek 开放平台</a></li>
+            <li><a href="#32-充值余额新用户有免费额度">3.2 充值余额（新用户有免费额度）</a></li>
+          </ol>
+        </li>
+        <li><a href="#四在-cc-switch-中配置-deepseek">四、在 CC-Switch 中配置 DeepSeek</a>
+          <ol>
+            <li><a href="#41-添加-deepseek-提供商">4.1 添加 DeepSeek 提供商</a></li>
+            <li><a href="#42-确认配置成功">4.2 确认配置成功</a></li>
+          </ol>
+        </li>
+        <li><a href="#五在-claude-code-中使用-deepseek">五、在 Claude Code 中使用 DeepSeek</a>
+          <ol>
+            <li><a href="#51-打开-claude-code">5.1 打开 Claude Code</a></li>
+            <li><a href="#52-切换模型">5.2 切换模型</a></li>
+            <li><a href="#53-测试一下">5.3 测试一下</a></li>
+          </ol>
+        </li>
+        <li><a href="#小结">小结</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
   <img
     data-src="/avatar/avatar.png"
     data-sizes="auto"
@@ -661,7 +781,10 @@
         href="/link"
         aria-label="更多"
       ></a><div class='sidebar-menu-icon icon '>&#xe639;</div><div class="sidebar-menu-link">更多</div>
-    </div></div></div></nav>
+    </div></div></div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
 </div><script src="https://unpkg.com/oh-my-live2d@latest"></script>
 <script>
   (function () {
@@ -881,9 +1004,9 @@
   <div><script data-pjax>
         window.REIMU_POST = {
           author: "Link-wushuang",
-          title: "海梦",
-          url: "https:\/\/blog.linkwushuang.top\/categories\/%E6%B5%B7%E6%A2%A6\/",
-          description: "",
+          title: "配置 Claude Code 并接入 DeepSeek API 教程",
+          url: "https:\/\/blog.linkwushuang.top\/post\/blog12\/",
+          description: " 配置 Claude Code 并接入 DeepSeek API 教程 这篇是一个完整的从零开始的教程，包括安装 Claude Code、配置 CC-Switch，以及接入 DeepSeek API，一步到位嘻嘻。\n一、安装 Claude Code 1.1 安装前准备 Claude Code 是通过 npm 安装的，所以要先装好 Node.js和 Git。\n",
           cover: "https:\/\/blog.linkwushuang.top\/images\/banner3.jpg",
         };
       </script><script src="/js/insert_highlight.js" integrity="" crossorigin="anonymous" data-pjax ></script><script src="/js/tabs.js" integrity="" crossorigin="anonymous" data-pjax defer></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const initPswp = (gallery, children) => {
