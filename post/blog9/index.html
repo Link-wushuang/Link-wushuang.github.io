@@ -347,20 +347,20 @@ Hugo博客接入Cloudflare——自定义域名 + CDN加速 + 缓存优化
 </h3><p>首先你需要有一个自己的域名，这个需要买一下，阿里云啊等等都可以买，我是在namesilo买的便宜的.top</p>
 <p>在域名服务商那边添加一条 CNAME 记录：</p>
 <table>
-  <thead>
-      <tr>
-          <th>类型</th>
-          <th>主机记录</th>
-          <th>记录值</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>CNAME</td>
-          <td>blog</td>
-          <td>Link-wushuang.github.io</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>类型</th>
+					<th>主机记录</th>
+					<th>记录值</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>CNAME</td>
+					<td>blog</td>
+					<td>Link-wushuang.github.io</td>
+			</tr>
+	</tbody>
 </table>
 <p>然后把这条记录迁移到 Cloudflare 管理，打开橙云（Proxy）就行了。(打开橙云就是配置这个时打开代理就行)</p>
 <h3 id="2-修改-hugotoml">
