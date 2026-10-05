@@ -174,6 +174,12 @@ Hugo 主题设置
 </h3><ol>
 <li>
 <p>打开 <code>/Blog/config/_default/params.yml</code>，自定义配置<code> name</code>和 <code>url</code>，修改完后保存</p>
+<p><img src="https://link-typora.oss-cn-hangzhou.aliyuncs.com/image-typora/image-20260402095724876.png" alt="image-20260402095724876"></p>
+</li>
+<li>
+<p>打开<code> /Blog/i18n</code> 文件夹内对应语言的 <code>.yml</code>文件，开启几个就把对应部分都改了(这边可以复制<code>theme</code>里面的i18n，需要哪几个语言就复制哪几个)</p>
+</li>
+</ol>
         
         <hr><p>本文2026-04-03首发于<a href='https://blog.linkwushuang.top/'>辉夜</a>，最后修改于2026-04-03</p>]]>
       </description>
