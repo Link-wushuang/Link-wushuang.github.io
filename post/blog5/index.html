@@ -727,6 +727,29 @@ Typora + PicGo + 阿里云OSS搭建图床
       oml2d.tipsMessage('装扮：' + outfit.label, 2500, 8);
     }
 
+    function setCustomMenuIcons() {
+      var faceIcon = document.querySelector('#SwitchFace .oml2d-icon');
+      var outfitIcon = document.querySelector('#SwitchOutfit .oml2d-icon');
+
+      if (faceIcon && faceIcon.getAttribute('data-blog-icon') !== 'face') {
+        faceIcon.setAttribute('data-blog-icon', 'face');
+        faceIcon.setAttribute('viewBox', '0 0 24 24');
+        faceIcon.innerHTML =
+          '<circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none"/>' +
+          '<circle cx="9" cy="10" r="1.5" fill="currentColor"/>' +
+          '<circle cx="15" cy="10" r="1.5" fill="currentColor"/>' +
+          '<path d="M9 14.5 Q12 17 15 14.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>';
+      }
+
+      if (outfitIcon && outfitIcon.getAttribute('data-blog-icon') !== 'outfit') {
+        outfitIcon.setAttribute('data-blog-icon', 'outfit');
+        outfitIcon.setAttribute('viewBox', '0 0 24 24');
+        outfitIcon.innerHTML =
+          '<path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.57a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.57a2 2 0 0 0-1.34-2.13z"' +
+          ' stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>';
+      }
+    }
+
     function startLive2D() {
       if (typeof OML2D === "undefined") return;
 
@@ -756,11 +779,13 @@ Typora + PicGo + 阿里云OSS搭建图床
               return filtered.concat([
                 {
                   id: 'SwitchFace',
+                  icon: 'icon-about',
                   title: '切换表情',
                   onClick: function (oml2d) { nextFace(oml2d); }
                 },
                 {
                   id: 'SwitchOutfit',
+                  icon: 'icon-skin',
                   title: '切换装扮',
                   onClick: function (oml2d) { nextOutfit(oml2d); }
                 }
@@ -778,23 +803,10 @@ Typora + PicGo + 阿里云OSS搭建图床
         });
 
         var iconObserver = new MutationObserver(function () {
-          var faceIcon = document.querySelector('#SwitchFace .oml2d-icon');
-          var outfitIcon = document.querySelector('#SwitchOutfit .oml2d-icon');
-          if (!faceIcon || !outfitIcon) return;
-          faceIcon.setAttribute('viewBox', '0 0 24 24');
-          faceIcon.innerHTML =
-            '<circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none"/>' +
-            '<circle cx="9" cy="10" r="1.5" fill="currentColor"/>' +
-            '<circle cx="15" cy="10" r="1.5" fill="currentColor"/>' +
-            '<path d="M9 14.5 Q12 17 15 14.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>';
-          outfitIcon.setAttribute('viewBox', '0 0 24 24');
-          outfitIcon.innerHTML =
-            '<path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.57a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.57a2 2 0 0 0-1.34-2.13z"' +
-            ' stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>';
-          iconObserver.disconnect();
+          setCustomMenuIcons();
         });
         iconObserver.observe(document.body, { childList: true, subtree: true });
-        setTimeout(function () { iconObserver.disconnect(); }, 30000);
+        setCustomMenuIcons();
 
         document.addEventListener("click", function (event) {
           var stage = document.getElementById("oml2d-stage");
